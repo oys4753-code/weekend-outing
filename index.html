@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#f5f7f2">
+    <meta name="description" content="순천에서 출발하는 우리 가족 주말 나들이 추천">
+    <title>주말나들이 | 순천 가족 나들이</title>
+    <link rel="manifest" href="./manifest.json">
+    <link rel="icon" href="./icon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="주말나들이 홈">
+        <span class="brand-mark" aria-hidden="true">밖</span>
+        <span>주말나들이</span>
+      </a>
+      <button class="location-button" id="location-button" type="button" aria-label="현재 위치로 날씨 갱신">
+        <span aria-hidden="true">⌖</span> 순천 기준
+      </button>
+    </header>
+
+    <main>
+      <section class="hero">
+        <p class="eyebrow">SUN-CHEON · FAMILY WEEKEND</p>
+        <h1>이번 주말,<br><span>어디로 떠나볼까요?</span></h1>
+        <p class="hero-copy">아이 둘과 함께 가기 좋은 곳을 날씨와 행사 일정에 맞춰 골라드려요.</p>
+        <form class="family-settings" id="family-settings">
+          <label class="family-control">어른
+            <select id="adult-count" name="adults" aria-label="어른 인원">
+              <option>1</option><option selected>2</option><option>3</option><option>4</option>
+              <option>5</option><option>6</option><option>7</option><option>8</option>
+            </select>
+          </label>
+          <label class="family-control">아이
+            <select id="child-count" name="children" aria-label="아이 인원">
+              <option>0</option><option>1</option><option selected>2</option><option>3</option>
+              <option>4</option><option>5</option><option>6</option><option>7</option><option>8</option>
+            </select>
+          </label>
+          <fieldset class="child-ages">
+            <legend>아이 나이 <span>(만 나이)</span></legend>
+            <div class="child-age-inputs" id="child-age-inputs"></div>
+          </fieldset>
+          <p class="family-summary" id="family-summary" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <section class="section weather-section" aria-labelledby="weather-heading">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">WEEKEND WEATHER</p>
+            <h2 id="weather-heading">날씨 먼저 보기</h2>
+          </div>
+          <button class="text-button" id="refresh-button" type="button">새로고침</button>
+        </div>
+        <div class="weather-status" id="weather-status" role="status">순천의 주말 날씨를 불러오는 중이에요…</div>
+        <div class="day-list" id="day-list" aria-label="날짜 선택"></div>
+        <p class="weather-footnote" id="weather-footnote">예보는 순천 기준이며, 지역·시간대에 따라 달라질 수 있어요.</p>
+      </section>
+
+      <section class="section recommendations-section" aria-labelledby="recommend-heading">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">MADE FOR YOUR FAMILY</p>
+            <h2 id="recommend-heading">추천 나들이</h2>
+          </div>
+          <span class="section-icon" aria-hidden="true">✦</span>
+        </div>
+        <p class="recommend-intro" id="recommend-intro">날씨와 인원·아이 나이를 고려해 장소를 골랐어요.</p>
+        <div class="place-list" id="place-list"></div>
+        <div class="all-places-section">
+          <div class="all-places-heading">
+            <div>
+              <p class="eyebrow">RANKED FOR YOUR DAY</p>
+              <h3 id="all-places-title">전체 장소 36곳 · 추천 점수순</h3>
+            </div>
+          </div>
+          <p class="all-places-note">선택한 날짜의 각 지역 날씨·공기질을 반영했어요. 점수는 나들이 적합도를 비교하기 위한 참고 지수예요.</p>
+          <ol class="ranked-place-list" id="ranked-place-list" aria-labelledby="all-places-title"></ol>
+        </div>
+      </section>
+
+      <section class="section events-section" aria-labelledby="events-heading">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">MARK YOUR CALENDAR</p>
+            <h2 id="events-heading">근처 축제·행사</h2>
+          </div>
+          <span class="section-icon" aria-hidden="true">✳</span>
+        </div>
+        <p class="events-intro">순천에서 차로 편도 약 3시간 이내인 지역의 축제를 월별로 모았어요. 아래 시기는 통상적인 개최철이며, 확정 날짜가 아니라는 점을 참고해 주세요.</p>
+        <div class="event-list" id="event-list"></div>
+      </section>
+
+      <section class="tips-card">
+        <span class="tip-emoji" aria-hidden="true">🧺</span>
+        <div>
+          <h2>아이와 외출, 이것만 챙겨요</h2>
+          <p>기저귀·여벌옷·간식과 유모차를 준비하고, 방문 전 운영시간과 유아 편의시설을 확인해 주세요.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>날씨·공기질: Open-Meteo · 행사: 최신 일정 검색 링크 제공</p>
+      <p>추천은 참고용이며, 방문 전 운영 여부와 기상특보를 확인해 주세요.</p>
+    </footer>
+
+    <nav class="bottom-nav" aria-label="빠른 이동">
+      <a href="#weather-heading"><span aria-hidden="true">☀</span>날씨</a>
+      <a href="#recommend-heading"><span aria-hidden="true">⌖</span>추천</a>
+      <a href="#events-heading"><span aria-hidden="true">▦</span>행사</a>
+    </nav>
+    <script src="./app.js" defer></script>
+  </body>
+</html>
