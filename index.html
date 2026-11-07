@@ -92,10 +92,16 @@
           <span class="section-icon" aria-hidden="true">↗</span>
         </div>
         <p class="distance-intro" id="distance-intro">출발 지역에서 가까운 나들이 장소를 찾아볼게요.</p>
+        <div class="place-data-status" id="place-data-status" role="status" aria-live="polite">
+          <span class="place-data-copy">주변 지도 데이터로 새 장소를 찾아요</span>
+          <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap</a>
+          <button type="button" id="refresh-places-button">지금 새로 찾기</button>
+          <span class="place-data-policy">출발지 주변 최대 3시간 거리 · 웹을 열 때 주 1회 갱신</span>
+        </div>
         <div class="distance-tabs" role="group" aria-label="차량 이동 시간 선택">
           <button type="button" class="distance-tab" data-max-hours="1" aria-pressed="true"><strong>1시간</strong><span>가볍게 당일치기</span></button>
-          <button type="button" class="distance-tab" data-max-hours="2" aria-pressed="false"><strong>2시간</strong><span>근교 나들이</span></button>
-          <button type="button" class="distance-tab" data-max-hours="3" aria-pressed="false"><strong>3시간</strong><span>조금 더 멀리</span></button>
+          <button type="button" class="distance-tab" data-max-hours="2" aria-pressed="false"><strong>1~2시간</strong><span>근교 나들이</span></button>
+          <button type="button" class="distance-tab" data-max-hours="3" aria-pressed="false"><strong>2~3시간</strong><span>조금 더 멀리</span></button>
         </div>
         <ol class="ranked-place-list distance-place-list" id="distance-place-list" aria-live="polite"></ol>
       </section>
@@ -113,7 +119,10 @@
         <p class="weather-footnote" id="weather-footnote">예보와 추천은 선택한 출발 지역 기준이에요.</p>
         <aside class="weather-tip">
           <span aria-hidden="true">☂</span>
-          <p>날씨는 선택한 날짜와 출발 지역 기준이에요. 장소별 예보도 추천에 반영해요.</p>
+          <div>
+            <h2>나들이 준비 팁</h2>
+            <p id="weather-tip-copy">선택한 날짜의 날씨에 맞춰 준비물을 알려드릴게요.</p>
+          </div>
         </aside>
       </section>
 
@@ -139,6 +148,7 @@
 
     <footer>
       <p>날씨·공기질: Open-Meteo · 행사: 최신 일정 검색 링크 제공</p>
+      <p>주변 장소 데이터: <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">© OpenStreetMap contributors</a></p>
       <p>추천은 참고용이며, 방문 전 운영 여부와 기상특보를 확인해 주세요.</p>
     </footer>
 
