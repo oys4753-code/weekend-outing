@@ -30,11 +30,18 @@ button { cursor: pointer; }
   backdrop-filter: blur(12px);
 }
 .brand { display: flex; align-items: center; gap: 9px; color: var(--ink); text-decoration: none; font-weight: 800; letter-spacing: -.04em; }
-.brand-mark { display: grid; place-items: center; width: 30px; height: 30px; border-radius: 11px 11px 11px 4px; background: var(--green); color: white; font-size: 15px; }
+.brand-mark { display: flex; flex: 0 0 auto; align-items: center; justify-content: center; gap: 2px; min-width: 51px; height: 34px; padding: 0 6px; border: 1px solid rgba(35,90,65,.1); border-radius: 13px 13px 13px 5px; background: linear-gradient(145deg, #347d5d, #235a41); box-shadow: 0 3px 8px rgba(35,90,65,.18); color: white; }
+.brand-mark svg { display: block; flex: 0 0 21px; width: 21px; height: 21px; }
+.brand-mark span { font-size: 17px; font-weight: 800; letter-spacing: -.08em; line-height: 1; }
 .location-controls { display: flex; align-items: center; gap: 5px; }
 .location-controls select { max-width: 118px; min-width: 82px; padding: 8px 20px 8px 9px; border: 1px solid #dfe7dd; border-radius: 999px; background: white; color: var(--green-dark); font: inherit; font-size: 10px; font-weight: 700; }
 .location-button { border: 1px solid #dfe7dd; background: white; border-radius: 999px; padding: 8px 10px; color: var(--green-dark); font-size: 10px; font-weight: 700; white-space: nowrap; }
 .location-button span { font-size: 15px; margin-right: 3px; }
+@media (max-width: 380px) {
+  .brand { gap: 6px; font-size: 13px; }
+  .location-controls select { min-width: 68px; max-width: 88px; padding: 7px 16px 7px 7px; font-size: 9px; }
+  .location-button { padding: 7px 7px; font-size: 9px; }
+}
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
 main { max-width: 760px; margin: 0 auto; padding: 0 22px 32px; }
 .hero { position: relative; overflow: hidden; padding: 40px 27px 25px; border-radius: 28px; background: #e8f0e5; }
@@ -58,6 +65,14 @@ h1 span { color: var(--green); }
 .section-heading { display: flex; justify-content: space-between; align-items: end; margin-bottom: 15px; }
 .section-heading h2 { margin: 0; font-size: 21px; letter-spacing: -.055em; }
 .section-icon { color: var(--green); font-size: 20px; padding: 0 3px 4px; }
+.home-weather-section { margin-top: 20px; padding: 17px 15px 13px; border: 1px solid #e5ebe3; border-radius: 20px; background: rgba(255,255,255,.82); box-shadow: 0 5px 16px rgba(32,52,44,.035); }
+.home-weather-section .section-heading { margin-bottom: 5px; }
+.home-weather-section .section-heading h2 { font-size: 18px; }
+.home-weather-section .weather-status { min-height: 28px; margin-bottom: 2px; font-size: 10px; }
+.home-weather-section .day-list { grid-auto-columns: minmax(68px, 1fr); gap: 7px; }
+.home-weather-section .day-card { min-width: 68px; min-height: 126px; padding: 9px 5px; border-radius: 14px; box-shadow: none; }
+.home-weather-section .weather-footnote { font-size: 9px; }
+.home-weather-section .weather-tip { margin-top: 10px; }
 .shuffle-button { display: inline-flex; align-items: center; gap: 5px; padding: 8px 11px; border: 1px solid #dfe9dd; border-radius: 999px; background: white; color: var(--green-dark); font-size: 10px; font-weight: 700; white-space: nowrap; }
 .shuffle-button span { font-size: 15px; line-height: 1; }
 .text-button { padding: 7px 0 4px 10px; border: 0; background: transparent; color: var(--green); font-size: 12px; font-weight: 700; }
@@ -65,16 +80,19 @@ h1 span { color: var(--green); }
 .weather-status.error { color: #9c4a3c; }
 .day-list { display: grid; grid-auto-columns: minmax(72px, 1fr); grid-auto-flow: column; gap: 8px; overflow-x: auto; padding: 2px 1px 8px; scrollbar-width: none; }
 .day-list::-webkit-scrollbar { display: none; }
-.day-card { min-width: 72px; min-height: 114px; padding: 12px 7px 10px; border: 1px solid var(--line); border-radius: 17px; background: var(--paper); text-align: center; color: var(--ink); }
+.day-card { min-width: 72px; min-height: 132px; padding: 12px 7px 10px; border: 1px solid var(--line); border-radius: 17px; background: var(--paper); text-align: center; color: var(--ink); }
 .day-card.selected { border-color: var(--green); box-shadow: 0 0 0 1px var(--green); background: #f2f8f1; }
 .day-card .day-name { display: block; color: var(--muted); font-size: 10px; font-weight: 600; }
 .day-card .day-date { display: block; margin-top: 2px; font-size: 11px; font-weight: 700; }
 .day-card .weather-icon { display: block; margin: 7px 0 4px; font-size: 21px; }
 .day-card .temperature { font-size: 11px; font-weight: 700; }
 .day-card .rain { display: block; margin-top: 4px; color: #6882a0; font-size: 9px; }
+.day-card .ampm-weather { display: block; margin-top: 3px; color: var(--green-dark); font-size: 8px; font-weight: 600; line-height: 1.3; }
 .weather-footnote { margin: 6px 0 0; color: #98a29c; font-size: 10px; }
 .recommend-intro, .events-intro { margin: -5px 0 14px; color: var(--muted); font-size: 12px; line-height: 1.6; }
 .discovery-hint { margin: -7px 0 14px; color: #849188; font-size: 10px; line-height: 1.55; }
+.indoor-filter { display: inline-flex; align-items: center; gap: 7px; margin: 0 0 15px; padding: 9px 12px; border: 1px solid #e5ebe3; border-radius: 999px; background: rgba(255,255,255,.88); color: var(--green-dark); font-size: 11px; font-weight: 700; }
+.indoor-filter input { width: 15px; height: 15px; margin: 0; accent-color: var(--green); }
 .recommendation-feedback-row { display: flex; align-items: center; gap: 8px; }
 .recommendation-feedback { min-height: 0; margin: -5px 0 10px; color: var(--green); font-size: 10px; line-height: 1.5; }
 .recommendation-feedback:empty { display: none; }
@@ -92,10 +110,26 @@ h1 span { color: var(--green); }
 .place-tags { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 9px; }
 .tag { padding: 4px 7px; border-radius: 6px; background: #f4f6f2; color: #63726a; font-size: 9px; }
 .place-reason { padding: 10px 15px; background: #f8faf6; color: #55705e; font-size: 10px; line-height: 1.5; }
-.place-actions { display: flex; gap: 8px; padding: 0 15px 14px; }
+.nearby-food-box { margin: 0 15px 10px; padding: 8px 11px; border: 1px solid #f3e5d3; border-radius: 10px; background: #fdf8f2; color: #7c5832; font-size: 10px; line-height: 1.5; }
+.nearby-food-box strong { color: #5c3d1e; }
+.place-actions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 7px; padding: 0 15px 14px; }
+.place-actions.five-actions { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.place-actions .action-link.food-link { grid-column: 1 / -1; border-color: #eedbc3; background: #fff9f2; color: #8a5a2b; }
 .action-link { flex: 1; display: block; padding: 9px; border: 1px solid #e6ece5; border-radius: 10px; color: var(--green-dark); text-align: center; text-decoration: none; font-size: 10px; font-weight: 700; }
 .action-link.primary { border-color: var(--green); background: var(--green); color: white; }
 .visited-button { background: white; cursor: pointer; }
+.itinerary-add-button:disabled, .alternative-save-button:disabled { background: #f2f5f0; color: #89958d; cursor: default; }
+.weather-alternatives { margin-top: 22px; padding: 16px 13px; border: 1px solid #e3ebe1; border-radius: 18px; background: #f7faf6; }
+.weather-alternatives[hidden] { display: none; }
+.weather-alternatives .section-heading { margin-bottom: 5px; }
+.weather-alternatives .section-heading h2 { font-size: 17px; }
+.weather-alternative-note { margin: 0 0 11px; color: var(--muted); font-size: 10px; line-height: 1.5; }
+.weather-alternative-list { display: grid; gap: 8px; }
+.weather-alternative-card { display: flex; align-items: center; gap: 9px; min-width: 0; padding: 10px; border: 1px solid var(--line); border-radius: 13px; background: white; }
+.weather-alternative-card .place-emoji { flex-basis: 38px; width: 38px; height: 38px; font-size: 20px; }
+.weather-alternative-content { display: grid; flex: 1; min-width: 0; gap: 3px; color: var(--muted); font-size: 9px; }
+.weather-alternative-content strong { overflow: hidden; color: var(--ink); font-size: 11px; text-overflow: ellipsis; white-space: nowrap; }
+.alternative-save-button { flex: 0 0 auto; padding: 7px 8px; border: 1px solid #dfe9dd; border-radius: 9px; background: white; color: var(--green-dark); font-size: 9px; font-weight: 700; }
 .event-card { display: flex; align-items: center; gap: 12px; padding: 14px; border: 1px solid var(--line); border-radius: 17px; background: white; }
 .event-month { flex: 0 0 48px; display: grid; place-items: center; min-height: 49px; border-radius: 14px; background: #f8efe2; color: #a76e36; font-size: 10px; font-weight: 800; line-height: 1.4; }
 .event-body { flex: 1; min-width: 0; }
@@ -138,12 +172,62 @@ footer a { color: inherit; }
 .rank-place-meta, .rank-place-weather { overflow: hidden; color: var(--muted); font-size: 9px; text-overflow: ellipsis; white-space: nowrap; }
 .rank-place-score { flex: 0 0 auto; padding: 5px 6px; border-radius: 999px; background: var(--mint); color: var(--green-dark); font-size: 9px; font-weight: 800; }
 .rank-map-link { flex: 0 0 auto; padding: 6px 7px; border-radius: 8px; background: #f3f5f0; color: var(--green-dark); text-decoration: none; font-size: 9px; font-weight: 700; }
+.visited-toolbar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 5px; }
+.visited-toolbar .visited-summary { margin: 0; }
+.visited-backup-actions { display: flex; gap: 6px; }
+.backup-button { padding: 6px 10px; border: 1px solid #dfe7dd; border-radius: 999px; background: white; color: var(--green-dark); font-size: 9px; font-weight: 700; cursor: pointer; }
+.visited-backup-status { min-height: 0; margin: 0 0 9px; color: var(--green); font-size: 10px; }
+.visited-backup-status:empty { display: none; }
+.visited-place-list { display: grid; gap: 9px; }
+.visited-place-card { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; min-width: 0; padding: 12px 10px; border: 1px solid var(--line); border-radius: 14px; background: white; }
+.visited-place-card .rank-place-content { flex: 1; min-width: 0; display: grid; gap: 3px; }
+.visited-place-card .rank-place-name { overflow: hidden; color: var(--ink); font-size: 12px; text-overflow: ellipsis; white-space: nowrap; }
+.visited-place-card .rank-place-meta { color: var(--muted); font-size: 9px; }
+.visited-memo-row { display: flex; flex: 1 0 100%; gap: 6px; width: 100%; margin-top: 6px; }
+.visited-memo-input { flex: 1; min-width: 0; padding: 7px 9px; border: 1px solid var(--line); border-radius: 8px; background: #fcfdfb; color: var(--ink); font: inherit; font-size: 10px; }
+.visit-count { flex: 0 0 auto; padding: 5px 8px; border-radius: 999px; background: var(--mint); color: var(--green-dark); font-size: 10px; font-weight: 800; }
+.itinerary-intro { margin: -5px 0 14px; color: var(--muted); font-size: 11px; line-height: 1.6; }
+.itinerary-toolbar { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 8px; padding: 12px; border: 1px solid #e4ece1; border-radius: 14px; background: white; }
+.itinerary-toolbar p { margin: 0; color: var(--green-dark); font-size: 11px; font-weight: 700; }
+.itinerary-toolbar button { flex: 0 0 auto; padding: 8px 11px; border: 0; border-radius: 10px; background: var(--green); color: white; font-size: 10px; font-weight: 700; }
+.itinerary-toolbar button:disabled { background: #e7ece7; color: #89958d; cursor: default; }
+.itinerary-feedback { min-height: 0; margin: 0 0 8px; color: var(--green); font-size: 10px; }
+.itinerary-feedback:empty { display: none; }
+.suggested-itinerary { margin: 0 0 23px; padding: 15px 13px; border: 1px solid #e2ebe0; border-radius: 17px; background: linear-gradient(145deg, #f3f8f1, #fff); }
+.suggested-itinerary .section-heading { align-items: center; margin-bottom: 8px; }
+.suggested-itinerary .section-heading h3, .saved-itinerary-heading { margin: 0; color: var(--ink); font-size: 16px; letter-spacing: -.04em; }
+.suggested-itinerary .eyebrow { margin-bottom: 5px; font-size: 8px; }
+.suggested-itinerary #suggested-itinerary-summary { margin: 0 0 9px; color: var(--muted); font-size: 10px; line-height: 1.5; }
+.suggested-itinerary-list { display: grid; gap: 7px; margin: 0; padding: 0; list-style: none; }
+.suggested-itinerary-list:empty { display: none; }
+.suggested-stop { display: flex; align-items: center; gap: 8px; padding: 9px; border: 1px solid #e8eee6; border-radius: 12px; background: white; }
+.suggested-stop .rank-place-content { flex: 1; min-width: 0; display: grid; gap: 3px; }
+.suggested-stop .rank-place-name { font-size: 10px; }
+.suggested-stop .rank-place-meta { font-size: 9px; }
+.suggested-leg { padding: 0 0 0 35px; color: #849188; font-size: 9px; }
+.suggested-itinerary #add-suggested-itinerary { width: 100%; margin-top: 10px; padding: 10px; border: 0; border-radius: 10px; background: var(--green); color: white; font-size: 10px; font-weight: 700; }
+.suggested-itinerary #add-suggested-itinerary:disabled { background: #e7ece7; color: #89958d; cursor: default; }
+.saved-itinerary-heading { margin: 0 0 10px; }
+.itinerary-list { display: grid; gap: 8px; margin: 0; padding: 0; list-style: none; }
+.itinerary-item { display: flex; align-items: center; gap: 8px; min-width: 0; padding: 10px; border: 1px solid var(--line); border-radius: 14px; background: white; }
+.itinerary-order { flex: 0 0 24px; display: grid; place-items: center; width: 24px; height: 24px; border-radius: 50%; background: var(--mint); color: var(--green-dark); font-size: 10px; font-weight: 800; }
+.itinerary-actions { display: flex; flex: 0 0 auto; align-items: center; gap: 4px; }
+.itinerary-actions button { min-width: 26px; min-height: 27px; padding: 4px 6px; border: 0; border-radius: 7px; background: #f3f5f0; color: var(--green-dark); font-size: 9px; font-weight: 700; }
+.itinerary-actions button:disabled { color: #b7c0b9; }
 .distance-intro { margin: -5px 0 12px; color: var(--muted); font-size: 11px; line-height: 1.6; }
+.distance-estimate-note { margin: -8px 0 14px; color: #78847e; font-size: 10px; line-height: 1.55; }
 .distance-tabs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 7px; margin-bottom: 10px; }
 .distance-tab { padding: 10px 6px; border: 1px solid #dfe7dd; border-radius: 12px; background: white; color: var(--green-dark); font-size: 11px; font-weight: 700; }
 .distance-tab[aria-pressed="true"] { border-color: var(--green); background: var(--green); color: white; }
 .distance-place-list { grid-template-columns: 1fr; }
 .distance-place-list .empty-state { list-style: none; }
+@media (max-width: 400px) {
+  .bottom-nav { gap: 0; padding-right: 5px; padding-left: 5px; }
+  .bottom-nav button { flex: 1; min-width: 0; padding-right: 2px; padding-left: 2px; font-size: 8px; }
+  .itinerary-item { flex-wrap: wrap; }
+  .itinerary-item .rank-place-content { flex-basis: calc(100% - 75px); }
+  .itinerary-actions { width: 100%; justify-content: flex-end; }
+}
 
 @media (min-width: 700px) {
   main { padding-top: 12px; }
@@ -199,8 +283,9 @@ main { max-width: 820px; }
 .all-places-note { margin: 0 15px 10px; }
 .all-places-section .ranked-place-list { padding: 0 10px 12px; }
 .all-places-section .ranked-place-item { padding: 8px; }
-.distance-view > .section-heading, .weather-view > .section-heading, .events-view > .section-heading { margin-bottom: 8px; }
+.distance-view > .section-heading, .visited-view > .section-heading, .events-view > .section-heading { margin-bottom: 8px; }
 .distance-intro { margin: 0 0 16px; }
+.distance-estimate-note { margin: -9px 0 14px; }
 .place-data-status { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: -5px 0 14px; padding: 10px 12px; border: 1px solid #e3ebe1; border-radius: 12px; background: rgba(255,255,255,.82); color: #64736a; font-size: 10px; line-height: 1.4; }
 .place-data-status .place-data-copy { flex: 1 1 145px; }
 .place-data-status a { color: var(--green); text-decoration: underline; text-underline-offset: 2px; }
@@ -215,7 +300,6 @@ main { max-width: 820px; }
 .distance-tab[aria-pressed="true"] span { opacity: .82; }
 .distance-place-list { gap: 9px; }
 .distance-place-list .ranked-place-item { min-height: 70px; padding: 11px 10px; }
-.weather-view .section-heading { margin-bottom: 13px; }
 .weather-status { min-height: 30px; margin-bottom: 5px; font-size: 11px; }
 .day-list { grid-auto-columns: minmax(75px, 1fr); gap: 9px; padding-bottom: 10px; }
 .day-card { min-height: 124px; border-radius: 18px; box-shadow: 0 4px 12px rgba(32,52,44,.035); }
@@ -236,6 +320,7 @@ footer { padding-top: 4px; }
   .view-page { padding-top: 28px; }
   .hero { padding: 36px 36px 26px; }
   .recommendations-section { margin-top: 30px; }
+  .home-weather-section { margin-top: 22px; padding: 20px 19px 15px; }
   .distance-tabs { max-width: 560px; }
   .distance-place-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .events-view .event-calendar { grid-template-columns: repeat(3, minmax(0, 1fr)); }

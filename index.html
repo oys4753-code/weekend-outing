@@ -13,7 +13,7 @@
   <body>
     <header class="topbar">
       <a class="brand" href="#" aria-label="주말나들이 홈">
-        <span class="brand-mark" aria-hidden="true">밖</span>
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 64 64" focusable="false"><path d="M32 8C19.3 8 9 18.3 9 31c0 17 23 37 23 37s23-20 23-37C55 18.3 44.7 8 32 8Zm0 32a9 9 0 1 1 0-18 9 9 0 0 1 0 18Z" fill="currentColor"/><circle cx="32" cy="31" r="5" fill="#e9a458"/></svg><span>콕</span></span>
         <span>주말나들이</span>
       </a>
       <div class="location-controls">
@@ -52,6 +52,26 @@
         </form>
       </section>
 
+      <section class="home-weather-section" aria-labelledby="home-weather-heading">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">WEATHER AT A GLANCE</p>
+            <h2 id="home-weather-heading">이번 주말 날씨</h2>
+          </div>
+          <button class="text-button" id="refresh-button" type="button">새로고침</button>
+        </div>
+        <p class="weather-status" id="home-weather-status" role="status">출발 지역의 주말 날씨를 불러오는 중이에요…</p>
+        <div class="day-list" id="home-day-list" aria-label="날짜 선택"></div>
+        <p class="weather-footnote" id="home-weather-footnote">예보와 추천은 선택한 출발 지역 기준이에요.</p>
+        <aside class="weather-tip">
+          <span aria-hidden="true">☂</span>
+          <div>
+            <h2>나들이 준비 팁</h2>
+            <p id="weather-tip-copy">선택한 날짜의 날씨에 맞춰 준비물을 알려드릴게요.</p>
+          </div>
+        </aside>
+      </section>
+
       <section class="section recommendations-section" aria-labelledby="recommend-heading">
         <div class="section-heading">
           <div>
@@ -64,11 +84,22 @@
         </div>
         <p class="recommend-intro" id="recommend-intro">날씨와 인원·아이 나이를 고려해 장소를 골랐어요.</p>
         <p class="discovery-hint">다른 코스로 추천을 바꾸고, 다녀온 곳은 표시해 두세요. 한동안 새로운 장소를 먼저 보여드려요.</p>
+        <label class="indoor-filter"><input type="checkbox" id="indoor-only-filter"> 실내 장소만 보기</label>
         <div class="recommendation-feedback-row">
           <p class="recommendation-feedback" id="recommendation-feedback" role="status" aria-live="polite"></p>
           <button class="undo-visit-button" id="undo-visit" type="button" hidden>취소</button>
         </div>
         <div class="place-list" id="place-list"></div>
+        <section class="weather-alternatives" id="weather-alternatives" aria-labelledby="weather-alternatives-heading" hidden>
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">INDOOR BACKUP PLAN</p>
+              <h2 id="weather-alternatives-heading">날씨가 궂을 땐 실내 코스</h2>
+            </div>
+          </div>
+          <p class="weather-alternative-note" id="weather-alternative-note"></p>
+          <div class="weather-alternative-list" id="weather-alternative-list"></div>
+        </section>
         <details class="all-places-section">
           <summary class="all-places-summary">
             <span>
@@ -98,6 +129,7 @@
           <button type="button" id="refresh-places-button">지금 새로 찾기</button>
           <span class="place-data-policy">출발지 주변 최대 3시간 거리 · 웹을 열 때 주 1회 갱신</span>
         </div>
+        <p class="distance-estimate-note">예상 시간은 OpenStreetMap 도로망 주행 시간에 날짜·권역별 혼잡과 정차 여유를 반영한 참고치예요. 조회가 안 되면 지형별 추정치를 사용하며, 실시간 정체와 정확한 경로는 네이버 길찾기에서 확인해 주세요.</p>
         <div class="distance-tabs" role="group" aria-label="차량 이동 시간 선택">
           <button type="button" class="distance-tab" data-max-hours="1" aria-pressed="true"><strong>1시간</strong><span>가볍게 당일치기</span></button>
           <button type="button" class="distance-tab" data-max-hours="2" aria-pressed="false"><strong>1~2시간</strong><span>근교 나들이</span></button>
@@ -106,24 +138,54 @@
         <ol class="ranked-place-list distance-place-list" id="distance-place-list" aria-live="polite"></ol>
       </section>
 
-      <section class="view-page weather-view" id="weather-view" data-view-page="weather" aria-labelledby="weather-heading" hidden>
+      <section class="view-page visited-view" id="visited-view" data-view-page="visited" aria-labelledby="visited-heading" hidden>
         <div class="section-heading">
           <div>
-            <p class="eyebrow">WEEKEND WEATHER</p>
-            <h2 id="weather-heading">날씨 먼저 보기</h2>
+            <p class="eyebrow">YOUR FAMILY MEMORIES</p>
+            <h2 id="visited-heading">다녀온 곳</h2>
           </div>
-          <button class="text-button" id="refresh-button" type="button">새로고침</button>
+          <span class="section-icon" aria-hidden="true">♡</span>
         </div>
-        <div class="weather-status" id="weather-status" role="status">출발 지역의 주말 날씨를 불러오는 중이에요…</div>
-        <div class="day-list" id="day-list" aria-label="날짜 선택"></div>
-        <p class="weather-footnote" id="weather-footnote">예보와 추천은 선택한 출발 지역 기준이에요.</p>
-        <aside class="weather-tip">
-          <span aria-hidden="true">☂</span>
-          <div>
-            <h2>나들이 준비 팁</h2>
-            <p id="weather-tip-copy">선택한 날짜의 날씨에 맞춰 준비물을 알려드릴게요.</p>
+        <div class="visited-toolbar">
+          <p class="visited-summary" id="visited-summary" role="status" aria-live="polite"></p>
+          <div class="visited-backup-actions">
+            <button type="button" class="backup-button" id="export-visited">기록 백업</button>
+            <label class="backup-button" for="import-visited-input">불러오기</label>
+            <input type="file" id="import-visited-input" accept="application/json,.json" hidden>
           </div>
-        </aside>
+        </div>
+        <p class="visited-backup-status" id="visited-backup-status" role="status" aria-live="polite"></p>
+        <div class="visited-place-list" id="visited-place-list"></div>
+      </section>
+
+      <section class="view-page itinerary-view" id="itinerary-view" data-view-page="itinerary" aria-labelledby="itinerary-heading" hidden>
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">YOUR FAMILY DAY OUT</p>
+            <h2 id="itinerary-heading">내 나들이 코스</h2>
+          </div>
+          <span class="section-icon" aria-hidden="true">⌖</span>
+        </div>
+        <p class="itinerary-intro">날씨와 장소 간 이동 거리를 고려한 코스를 추천받거나, 마음에 드는 장소를 직접 담아 순서를 정해 보세요.</p>
+        <section class="suggested-itinerary" aria-labelledby="suggested-itinerary-heading">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">A ROUTE MADE FOR TODAY</p>
+              <h3 id="suggested-itinerary-heading">오늘의 추천 코스</h3>
+            </div>
+            <button type="button" class="shuffle-button" id="recommend-itinerary">코스 추천받기</button>
+          </div>
+          <p id="suggested-itinerary-summary" role="status" aria-live="polite">날씨를 불러온 뒤 코스를 추천받아 보세요.</p>
+          <ol class="suggested-itinerary-list" id="suggested-itinerary-list"></ol>
+          <button type="button" id="add-suggested-itinerary" disabled>추천 코스를 내 코스에 담기</button>
+        </section>
+        <h3 class="saved-itinerary-heading">내가 담은 코스</h3>
+        <div class="itinerary-toolbar">
+          <p id="itinerary-summary" role="status" aria-live="polite"></p>
+          <button type="button" id="share-itinerary" disabled>코스 공유</button>
+        </div>
+        <p class="itinerary-feedback" id="itinerary-feedback" role="status" aria-live="polite"></p>
+        <ol class="itinerary-list" id="itinerary-list"></ol>
       </section>
 
       <section class="view-page events-view" id="events-view" data-view-page="events" aria-labelledby="events-heading" hidden>
@@ -155,7 +217,8 @@
     <nav class="bottom-nav" aria-label="화면 선택">
       <button type="button" data-view="recommendations" aria-pressed="true"><span aria-hidden="true">✦</span>추천</button>
       <button type="button" data-view="distance" aria-pressed="false"><span aria-hidden="true">↗</span>거리별</button>
-      <button type="button" data-view="weather" aria-pressed="false"><span aria-hidden="true">☀</span>날씨</button>
+      <button type="button" data-view="itinerary" aria-pressed="false"><span aria-hidden="true">⌖</span>내 코스</button>
+      <button type="button" data-view="visited" aria-pressed="false"><span aria-hidden="true">♡</span>다녀온 곳</button>
       <button type="button" data-view="events" aria-pressed="false"><span aria-hidden="true">▦</span>행사</button>
     </nav>
     <script src="./app.js" defer></script>
