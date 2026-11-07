@@ -1,4 +1,23 @@
 const SUN_CHEON = { latitude: 34.9506, longitude: 127.4872, label: "순천" };
+const REGIONS = [
+  { id: "seoul", label: "서울", latitude: 37.5665, longitude: 126.978 },
+  { id: "incheon", label: "인천", latitude: 37.4563, longitude: 126.7052 },
+  { id: "gyeonggi", label: "경기(수원)", latitude: 37.2636, longitude: 127.0286 },
+  { id: "gangwon", label: "강원(춘천)", latitude: 37.8813, longitude: 127.7298 },
+  { id: "daejeon", label: "대전", latitude: 36.3504, longitude: 127.3845 },
+  { id: "sejong", label: "세종", latitude: 36.4801, longitude: 127.289 },
+  { id: "chungbuk", label: "충북(청주)", latitude: 36.6424, longitude: 127.489 },
+  { id: "chungnam", label: "충남(천안)", latitude: 36.8151, longitude: 127.1139 },
+  { id: "jeonbuk", label: "전북(전주)", latitude: 35.8242, longitude: 127.148 },
+  { id: "gwangju", label: "광주", latitude: 35.1595, longitude: 126.8526 },
+  { id: "suncheon", label: "순천", ...SUN_CHEON },
+  { id: "daegu", label: "대구", latitude: 35.8714, longitude: 128.6014 },
+  { id: "gyeongbuk", label: "경북(안동)", latitude: 36.5684, longitude: 128.7294 },
+  { id: "busan", label: "부산", latitude: 35.1796, longitude: 129.0756 },
+  { id: "ulsan", label: "울산", latitude: 35.5384, longitude: 129.3114 },
+  { id: "gyeongnam", label: "경남(창원)", latitude: 35.2281, longitude: 128.6811 },
+  { id: "jeju", label: "제주", latitude: 33.4996, longitude: 126.5312, island: "jeju" }
+];
 const DESTINATIONS = [
   {
     name: "순천만국가정원", city: "순천", distance: "시내", driveMinutes: 0, latitude: 34.9506, longitude: 127.4872, type: "outdoor", emoji: "🌷",
@@ -215,6 +234,110 @@ const DESTINATIONS = [
     description: "해운대 해변과 연계할 수 있는 실내 아쿠아리움이에요. 입장 시간과 주말 혼잡을 확인하세요.",
     tags: ["실내", "해양 생물", "주말 혼잡 확인"], weather: "비·추위 피하기",
     map: "부산 SEA LIFE 아쿠아리움"
+  },
+  {
+    name: "국립중앙박물관 어린이박물관", city: "서울", distance: "", driveMinutes: 0, latitude: 37.5239, longitude: 126.9804, type: "indoor", emoji: "🏛️",
+    description: "어린이 눈높이 전시와 체험이 있는 실내 박물관이에요. 어린이박물관은 예약 여부를 확인하세요.",
+    tags: ["실내", "어린이 체험", "예약 확인"], weather: "비·추위 피하기",
+    map: "국립중앙박물관 어린이박물관"
+  },
+  {
+    name: "서울어린이대공원", city: "서울", distance: "", driveMinutes: 0, latitude: 37.5493, longitude: 127.0815, type: "outdoor", emoji: "🎠",
+    description: "동물원과 넓은 산책 공간이 있어 가족 나들이에 좋아요. 운영 시설과 주말 혼잡을 확인하세요.",
+    tags: ["동물 관람", "넓은 산책", "유모차 추천"], weather: "맑고 온화한 날",
+    map: "서울어린이대공원"
+  },
+  {
+    name: "국립인천해양박물관", city: "인천", distance: "", driveMinutes: 0, latitude: 37.4738, longitude: 126.6012, type: "indoor", emoji: "⚓",
+    description: "바다와 항만 이야기를 전시와 체험으로 만나는 실내 코스예요. 관람 시간과 프로그램을 확인하세요.",
+    tags: ["실내", "해양 전시", "어린이 체험"], weather: "비·추위 피하기",
+    map: "국립인천해양박물관"
+  },
+  {
+    name: "한국민속촌", city: "용인", distance: "", driveMinutes: 0, latitude: 37.2595, longitude: 127.118, type: "outdoor", emoji: "🏘️",
+    description: "전통 가옥과 공연, 체험을 함께 즐길 수 있어요. 공연 일정과 유모차 동선을 확인하세요.",
+    tags: ["전통문화", "공연·체험", "야외 코스"], weather: "맑고 온화한 날",
+    map: "한국민속촌"
+  },
+  {
+    name: "수원화성", city: "수원", distance: "", driveMinutes: 0, latitude: 37.2819, longitude: 127.0158, type: "outdoor", emoji: "🏯",
+    description: "성곽과 행궁을 둘러보는 역사 산책 코스예요. 걷는 구간과 주차 위치를 미리 정해두세요.",
+    tags: ["역사 산책", "문화유산", "편한 신발"], weather: "비 적고 온화한 날",
+    map: "수원화성"
+  },
+  {
+    name: "국립춘천박물관", city: "춘천", distance: "", driveMinutes: 0, latitude: 37.8582, longitude: 127.7502, type: "indoor", emoji: "🖼️",
+    description: "강원 지역의 역사와 문화를 전시로 살펴볼 수 있는 실내 나들이 장소예요.",
+    tags: ["실내", "전시 관람", "유아 휴식 확인"], weather: "비·추위 피하기",
+    map: "국립춘천박물관"
+  },
+  {
+    name: "강릉 경포해변", city: "강릉", distance: "", driveMinutes: 0, latitude: 37.7952, longitude: 128.8961, type: "outdoor", emoji: "🏖️",
+    description: "바다와 호수 주변을 함께 둘러보기 좋아요. 강풍과 파도, 해변 안전 안내를 확인하세요.",
+    tags: ["바다 산책", "자연 관찰", "바람 확인"], weather: "맑고 바람 약한 날",
+    map: "강릉 경포해변"
+  },
+  {
+    name: "국립중앙과학관", city: "대전", distance: "", driveMinutes: 0, latitude: 36.3744, longitude: 127.3848, type: "indoor", emoji: "🔭",
+    description: "과학 전시와 체험 공간이 있는 가족 실내 코스예요. 전시별 운영 시간과 예약을 확인하세요.",
+    tags: ["실내", "과학 체험", "예약 확인"], weather: "비·추위 피하기",
+    map: "국립중앙과학관"
+  },
+  {
+    name: "국립세종수목원", city: "세종", distance: "", driveMinutes: 0, latitude: 36.4987, longitude: 127.2821, type: "outdoor", emoji: "🌳",
+    description: "온실과 야외 정원을 함께 둘러볼 수 있어 날씨에 따라 코스를 조절하기 좋아요.",
+    tags: ["온실", "정원 산책", "유모차 확인"], weather: "맑고 온화한 날",
+    map: "국립세종수목원"
+  },
+  {
+    name: "독립기념관", city: "천안", distance: "", driveMinutes: 0, latitude: 36.7838, longitude: 127.2232, type: "outdoor", emoji: "🇰🇷",
+    description: "실내 전시와 야외 산책을 함께 할 수 있어요. 넓은 관람 구역과 이동 시간을 고려해 주세요.",
+    tags: ["역사 전시", "실내외 선택", "넓은 산책"], weather: "날씨에 따라 실내외 선택",
+    map: "독립기념관"
+  },
+  {
+    name: "국립대구과학관", city: "대구", distance: "", driveMinutes: 0, latitude: 35.7988, longitude: 128.488, type: "indoor", emoji: "🧪",
+    description: "어린이 전시와 과학 체험을 즐길 수 있는 실내 장소예요. 체험관 예약을 확인하세요.",
+    tags: ["실내", "과학 체험", "어린이 프로그램"], weather: "비·추위 피하기",
+    map: "국립대구과학관"
+  },
+  {
+    name: "포항 스페이스워크", city: "포항", distance: "", driveMinutes: 0, latitude: 36.056, longitude: 129.379, type: "outdoor", emoji: "🌉",
+    description: "바다를 조망하는 독특한 야외 산책 명소예요. 강풍·우천 시 통제 여부와 이용 연령을 확인하세요.",
+    tags: ["바다 전망", "야외 코스", "운영 통제 확인"], weather: "맑고 바람 약한 날",
+    map: "포항 스페이스워크"
+  },
+  {
+    name: "국립김해박물관", city: "김해", distance: "", driveMinutes: 0, latitude: 35.2313, longitude: 128.8719, type: "indoor", emoji: "🏺",
+    description: "가야의 역사와 유물을 실내에서 만날 수 있어요. 어린이 체험 프로그램 일정을 확인하세요.",
+    tags: ["실내", "역사 전시", "어린이 프로그램"], weather: "비·추위 피하기",
+    map: "국립김해박물관"
+  },
+  {
+    name: "장생포고래박물관", city: "울산", distance: "", driveMinutes: 0, latitude: 35.5012, longitude: 129.376, type: "indoor", emoji: "🐋",
+    description: "고래 전시와 주변 생태체험관을 함께 둘러보세요. 시설별 운영 시간과 휴관일을 확인하세요.",
+    tags: ["실내", "해양 생물", "주변 체험"], weather: "비·추위 피하기",
+    map: "장생포고래박물관"
+  },
+  {
+    name: "안동 하회마을", city: "안동", distance: "", driveMinutes: 0, latitude: 36.5392, longitude: 128.5186, type: "outdoor", emoji: "🏡",
+    description: "전통 마을의 풍경과 문화를 천천히 둘러볼 수 있어요. 관람 구역과 셔틀 운행을 확인하세요.",
+    tags: ["전통문화", "마을 산책", "운영정보 확인"], weather: "맑고 온화한 날",
+    map: "안동 하회마을"
+  },
+  {
+    name: "제주항공우주박물관", city: "제주", distance: "", driveMinutes: 0, latitude: 33.3054, longitude: 126.296, type: "indoor", emoji: "🚀",
+    description: "항공과 우주를 주제로 한 전시·체험 공간이에요. 체험 운영 시간과 예약을 확인하세요.",
+    tags: ["실내", "항공우주 체험", "예약 확인"], weather: "비·추위 피하기",
+    map: "제주항공우주박물관",
+    island: "jeju"
+  },
+  {
+    name: "에코랜드 테마파크", city: "제주", distance: "", driveMinutes: 0, latitude: 33.4552, longitude: 126.6662, type: "outdoor", emoji: "🚂",
+    description: "곶자왈 숲을 기차로 둘러볼 수 있어 가족 단위 자연 체험에 좋아요. 운영 시간과 기상 상황을 확인하세요.",
+    tags: ["기차 체험", "숲 산책", "날씨 확인"], weather: "비 적고 온화한 날",
+    map: "에코랜드 테마파크",
+    island: "jeju"
   }
 ];
 
@@ -234,7 +357,17 @@ const EVENTS = [
   { name: "진주남강유등축제", city: "진주", months: [10], season: "가을 무렵", emoji: "🏮" },
   { name: "통영한산대첩축제", city: "통영", months: [8], season: "8월 무렵", emoji: "⛵" },
   { name: "부산불꽃축제", city: "부산", months: [11], season: "가을 무렵", emoji: "🎆" },
-  { name: "경주벚꽃축제", city: "경주", months: [3, 4], season: "3~4월 무렵", emoji: "🌸" }
+  { name: "경주벚꽃축제", city: "경주", months: [3, 4], season: "3~4월 무렵", emoji: "🌸" },
+  { name: "화천산천어축제", city: "화천", months: [1, 2], season: "1~2월 무렵", emoji: "🐟" },
+  { name: "진해군항제", city: "창원", months: [3, 4], season: "3~4월 무렵", emoji: "🌸" },
+  { name: "태안 세계튤립꽃박람회", city: "태안", months: [4, 5], season: "4~5월 무렵", emoji: "🌷" },
+  { name: "함평나비대축제", city: "함평", months: [4, 5], season: "4~5월 무렵", emoji: "🦋" },
+  { name: "강릉단오제", city: "강릉", months: [6], season: "초여름 무렵", emoji: "🎭" },
+  { name: "보령머드축제", city: "보령", months: [7, 8], season: "여름 무렵", emoji: "🏖️" },
+  { name: "대구치맥페스티벌", city: "대구", months: [7], season: "여름 무렵", emoji: "🍗" },
+  { name: "안동국제탈춤페스티벌", city: "안동", months: [9, 10], season: "가을 무렵", emoji: "🎭" },
+  { name: "수원화성문화제", city: "수원", months: [9, 10], season: "가을 무렵", emoji: "🏯" },
+  { name: "서울빛초롱축제", city: "서울", months: [12], season: "겨울 무렵", emoji: "🏮" }
 ];
 
 const WEATHER_CODES = {
@@ -253,9 +386,213 @@ const state = {
   destinationWeather: new Map(),
   selectedDate: null,
   location: SUN_CHEON,
+  locationRegion: "suncheon",
+  distanceLimitHours: 1,
+  visitedPlaces: {},
+  recommendationCycle: 0,
+  recommendationCycleKey: "",
+  recommendationFeedback: "",
+  lastVisitedPlace: null,
   airQualityAvailable: false,
   family: { adults: 2, childAges: [4, 1] }
 };
+
+function initializeLocationSettings() {
+  const select = document.querySelector("#location-select");
+  const currentLocationOption = document.createElement("option");
+  currentLocationOption.value = "current";
+  currentLocationOption.textContent = "현재 위치";
+  currentLocationOption.disabled = true;
+  select.append(currentLocationOption);
+  REGIONS.forEach((region) => {
+    const option = document.createElement("option");
+    option.value = region.id;
+    option.textContent = region.label;
+    select.append(option);
+  });
+
+  try {
+    const savedRegion = localStorage.getItem("weekend-outing-region");
+    if (REGIONS.some((region) => region.id === savedRegion)) state.locationRegion = savedRegion;
+  } catch (error) {
+    console.warn("저장된 출발 지역을 불러오지 못했습니다.", error);
+  }
+  const region = REGIONS.find((item) => item.id === state.locationRegion) || REGIONS.find((item) => item.id === "suncheon");
+  state.location = { ...region };
+  select.value = region.id;
+  select.addEventListener("change", () => {
+    const selectedRegion = REGIONS.find((item) => item.id === select.value);
+    if (!selectedRegion) return;
+    state.locationRegion = selectedRegion.id;
+    state.location = { ...selectedRegion };
+    try {
+      localStorage.setItem("weekend-outing-region", selectedRegion.id);
+    } catch (error) {
+      console.warn("출발 지역을 이 기기에 저장하지 못했습니다.", error);
+    }
+    state.selectedDate = null;
+    state.forecast = [];
+    state.destinationWeather.clear();
+    renderDays();
+    renderRecommendations();
+    renderEvents();
+    loadWeather();
+  });
+}
+
+function isJejuCoordinates(latitude, longitude) {
+  return latitude >= 32.8 && latitude <= 34.2 && longitude >= 125.5 && longitude <= 127.5;
+}
+
+function estimateDriveMinutes(place) {
+  const originIsJeju = state.location.island === "jeju"
+    || isJejuCoordinates(state.location.latitude, state.location.longitude);
+  const destinationIsJeju = place.island === "jeju"
+    || isJejuCoordinates(place.latitude, place.longitude);
+  if (originIsJeju !== destinationIsJeju) return null;
+
+  const toRadians = (degrees) => degrees * Math.PI / 180;
+  const latitudeDifference = toRadians(place.latitude - state.location.latitude);
+  const longitudeDifference = toRadians(place.longitude - state.location.longitude);
+  const originLatitude = toRadians(state.location.latitude);
+  const destinationLatitude = toRadians(place.latitude);
+  const haversine = Math.sin(latitudeDifference / 2) ** 2
+    + Math.cos(originLatitude) * Math.cos(destinationLatitude) * Math.sin(longitudeDifference / 2) ** 2;
+  const straightDistanceKm = 6371 * 2 * Math.atan2(Math.sqrt(haversine), Math.sqrt(1 - haversine));
+  if (straightDistanceKm < 1) return 0;
+  return Math.max(10, Math.round((straightDistanceKm * 1.35 / 70 * 60 + 5) / 10) * 10);
+}
+
+function formatDriveTime(minutes) {
+  if (minutes == null) return "항공·선박 필요";
+  if (minutes === 0) return "출발지 인근";
+  if (minutes < 60) return `차량 약 ${minutes}분`;
+  const hours = Math.floor(minutes / 60);
+  const remainingMinutes = minutes % 60;
+  return `차량 약 ${hours}시간${remainingMinutes ? ` ${remainingMinutes}분` : ""}`;
+}
+
+function loadVisitedPlaces() {
+  try {
+    const saved = JSON.parse(localStorage.getItem("weekend-outing-visited") || "{}");
+    const knownPlaces = new Set(DESTINATIONS.map((place) => place.name));
+    const oneYearAgo = Date.now() - 365 * 24 * 60 * 60 * 1000;
+    state.visitedPlaces = Object.fromEntries(
+      Object.entries(saved).filter(([name, date]) =>
+        knownPlaces.has(name)
+        && typeof date === "string"
+        && Number.isFinite(Date.parse(`${date}T00:00:00`))
+        && Date.parse(`${date}T00:00:00`) >= oneYearAgo
+      )
+    );
+  } catch (error) {
+    console.warn("저장된 방문 기록을 불러오지 못했습니다.", error);
+  }
+}
+
+function recommendationCycleKey(day) {
+  const { latitude, longitude } = state.location;
+  return `${day.date}:${latitude.toFixed(2)}:${longitude.toFixed(2)}`;
+}
+
+function getRecommendationCycle(day) {
+  const key = recommendationCycleKey(day);
+  if (state.recommendationCycleKey === key) return state.recommendationCycle;
+  state.recommendationCycleKey = key;
+  state.recommendationCycle = 0;
+  try {
+    const saved = JSON.parse(localStorage.getItem("weekend-outing-recommendation-cycle") || "null");
+    if (saved?.key === key && Number.isInteger(saved.cycle) && saved.cycle >= 0) {
+      state.recommendationCycle = saved.cycle;
+    }
+  } catch (error) {
+    console.warn("저장된 추천 순환 설정을 불러오지 못했습니다.", error);
+  }
+  return state.recommendationCycle;
+}
+
+function saveRecommendationCycle(day) {
+  const key = recommendationCycleKey(day);
+  state.recommendationCycleKey = key;
+  state.recommendationCycle += 1;
+  try {
+    localStorage.setItem("weekend-outing-recommendation-cycle", JSON.stringify({
+      key,
+      cycle: state.recommendationCycle
+    }));
+  } catch (error) {
+    console.warn("다른 코스 설정을 이 기기에 저장하지 못했습니다.", error);
+  }
+}
+
+function recordPlaceVisit(placeName) {
+  state.lastVisitedPlace = {
+    name: placeName,
+    previousDate: state.visitedPlaces[placeName] || null
+  };
+  state.visitedPlaces[placeName] = toISODate(new Date());
+  try {
+    localStorage.setItem("weekend-outing-visited", JSON.stringify(state.visitedPlaces));
+  } catch (error) {
+    console.warn("방문 장소를 이 기기에 저장하지 못했습니다.", error);
+  }
+  state.recommendationFeedback = "방문 기록을 저장했어요. 당분간 다른 장소를 먼저 추천할게요.";
+  renderRecommendations();
+}
+
+function undoPlaceVisit() {
+  if (!state.lastVisitedPlace) return;
+  const { name, previousDate } = state.lastVisitedPlace;
+  if (previousDate) state.visitedPlaces[name] = previousDate;
+  else delete state.visitedPlaces[name];
+  state.lastVisitedPlace = null;
+  try {
+    localStorage.setItem("weekend-outing-visited", JSON.stringify(state.visitedPlaces));
+  } catch (error) {
+    console.warn("방문 기록을 이 기기에서 수정하지 못했습니다.", error);
+  }
+  state.recommendationFeedback = "방문 기록을 취소했어요.";
+  renderRecommendations();
+}
+
+function dateSeed(value) {
+  return [...value].reduce((hash, character) => (hash * 31 + character.charCodeAt(0)) >>> 0, 0);
+}
+
+function selectRecommendationPlaces(rankedPlaces, day) {
+  const nearbyPlaces = rankedPlaces.filter((item) => item.driveMinutes != null && item.driveMinutes <= 180);
+  const unseenPlaces = nearbyPlaces.filter(({ place }) => {
+    const visitedDate = state.visitedPlaces[place.name];
+    return !visitedDate || Date.now() - Date.parse(`${visitedDate}T00:00:00`) >= 90 * 24 * 60 * 60 * 1000;
+  });
+  const pool = unseenPlaces.length >= 3
+    ? unseenPlaces
+    : (nearbyPlaces.length ? nearbyPlaces : rankedPlaces.filter((item) => item.driveMinutes != null));
+  if (pool.length <= 3) return pool;
+
+  const cycle = getRecommendationCycle(day);
+  const windowSize = Math.min(9, pool.length);
+  const seed = dateSeed(recommendationCycleKey(day));
+  const start = (seed + cycle * windowSize) % pool.length;
+  const window = Array.from({ length: windowSize }, (_, index) => pool[(start + index) % pool.length]);
+  const selected = [];
+
+  while (selected.length < 3 && window.length) {
+    let bestIndex = 0;
+    let bestUtility = -Infinity;
+    window.forEach((candidate, index) => {
+      const repeatedCity = selected.some((item) => item.place.city === candidate.place.city);
+      const repeatedType = selected.some((item) => item.place.type === candidate.place.type);
+      const utility = candidate.score - (repeatedCity ? 12 : 0) - (repeatedType ? 5 : 0);
+      if (utility > bestUtility) {
+        bestUtility = utility;
+        bestIndex = index;
+      }
+    });
+    selected.push(window.splice(bestIndex, 1)[0]);
+  }
+  return selected;
+}
 
 function loadFamilySettings() {
   try {
@@ -360,7 +697,10 @@ function weatherFor(code) {
 
 function renderDays() {
   dayList.replaceChildren();
-  if (!state.forecast.length) return;
+  if (!state.forecast.length) {
+    document.querySelector("#weather-footnote").textContent = `${state.location.label} 기준 예보를 불러오고 있어요.`;
+    return;
+  }
   if (!state.selectedDate || !state.forecast.some((day) => day.date === state.selectedDate)) {
     state.selectedDate = nextWeekendDate(state.forecast);
   }
@@ -403,13 +743,26 @@ function airQualityLabel(aqi) {
   return "매우 나쁨";
 }
 
-function scoreDestination(place, day) {
+function scoreDestination(place, day, driveMinutes) {
   const isWet = day.rain >= 40 || day.code >= 51;
   const isStorm = [95, 96, 99].includes(day.code);
   const temp = (day.min + day.max) / 2;
   const placeInfo = `${place.name} ${place.description} ${place.tags.join(" ")}`;
   let score = place.type === "indoor" ? (isWet ? 94 : 73) : (isWet ? 46 : 88);
   const reasons = [];
+
+  if (driveMinutes == null) {
+    score -= 15;
+    reasons.push("출발지와 섬이 달라 항공·선박 이동이 필요해요");
+  } else if (driveMinutes <= 60) {
+    score += 6;
+    reasons.push("출발지에서 가까워 가볍게 다녀오기 좋아요");
+  } else if (driveMinutes <= 120) {
+    score += 3;
+  } else if (driveMinutes > 180) {
+    score -= 8;
+    reasons.push("이동 시간이 길어 여유 있는 일정이 좋아요");
+  }
 
   if (isWet && place.type === "indoor") reasons.push("비를 피해 실내에서 즐기기 좋아요");
   else if (isWet) reasons.push("야외 장소라 우산·우비와 현장 운영 확인이 필요해요");
@@ -462,10 +815,10 @@ function scoreDestination(place, day) {
     reasons.push("여럿이 함께 움직이기 좋은 넓은 장소예요");
   }
   if (state.family.adults === 1 && state.family.childAges.length > 0) {
-    if (place.driveMinutes <= 60 && /실내|유모차|짧은 산책|아쿠아|박물관|체험/.test(placeInfo)) {
+    if (driveMinutes != null && driveMinutes <= 60 && /실내|유모차|짧은 산책|아쿠아|박물관|체험/.test(placeInfo)) {
       score += 5;
       reasons.push("어른 한 명이 아이와 이동하기 편한 가까운 코스예요");
-    } else if (place.driveMinutes >= 120) {
+    } else if (driveMinutes != null && driveMinutes >= 120) {
       score -= 5;
     }
   }
@@ -473,7 +826,19 @@ function scoreDestination(place, day) {
     score = place.type === "indoor" ? 99 : 20;
     reasons.unshift(place.type === "indoor" ? "뇌우 예보가 있어 실내를 우선 추천해요" : "뇌우 예보: 야외 방문은 미루는 편이 안전해요");
   }
-  if (place.city === "순천") score += 3;
+  const visitedDate = state.visitedPlaces[place.name];
+  if (visitedDate) {
+    const daysSinceVisit = Math.floor((Date.now() - Date.parse(`${visitedDate}T00:00:00`)) / (24 * 60 * 60 * 1000));
+    if (daysSinceVisit < 14) {
+      score -= 30;
+      reasons.push("최근 다녀온 곳이라 새로운 장소를 먼저 추천해요");
+    } else if (daysSinceVisit < 45) {
+      score -= 20;
+      reasons.push("최근 방문한 곳보다 새로운 장소를 우선했어요");
+    } else if (daysSinceVisit < 90) {
+      score -= 10;
+    }
+  }
   return { score: Math.max(10, Math.min(99, score)), reason: reasons.join(" · ") };
 }
 
@@ -481,20 +846,22 @@ function rankDestinations(day) {
   return DESTINATIONS
     .map((place) => {
       const localForecast = state.destinationWeather.get(place.name)?.get(day.date);
+      const driveMinutes = estimateDriveMinutes(place);
       return {
         place,
         localForecast,
-        ...scoreDestination(place, localForecast || day)
+        driveMinutes,
+        ...scoreDestination(place, localForecast || day, driveMinutes)
       };
     })
     .sort((a, b) => b.score - a.score
-      || a.place.driveMinutes - b.place.driveMinutes
+      || (a.driveMinutes ?? Infinity) - (b.driveMinutes ?? Infinity)
       || a.place.name.localeCompare(b.place.name, "ko"));
 }
 
 function renderRankedPlaces(rankedPlaces, fallbackDay) {
   rankedPlaceList.replaceChildren();
-  rankedPlaces.forEach(({ place, score, localForecast }, index) => {
+  rankedPlaces.forEach(({ place, score, localForecast, driveMinutes }, index) => {
     const day = localForecast || fallbackDay;
     const [condition, icon] = weatherFor(day.code);
     const item = document.createElement("li");
@@ -503,7 +870,7 @@ function renderRankedPlaces(rankedPlaces, fallbackDay) {
       <span class="rank-place-icon" aria-hidden="true">${place.emoji}</span>
       <span class="rank-place-content">
         <strong class="rank-place-name">${place.name}</strong>
-        <span class="rank-place-meta">${place.city} · ${place.distance} · ${place.type === "indoor" ? "실내" : "야외"}</span>
+        <span class="rank-place-meta">${place.city} · ${formatDriveTime(driveMinutes)} · ${place.type === "indoor" ? "실내" : "야외"}</span>
         <span class="rank-place-weather">${icon} ${condition} · ${Math.round(day.min)}~${Math.round(day.max)}° · 비 ${Math.round(day.rain)}%</span>
       </span>
       <span class="rank-place-score">추천 ${score}점</span>
@@ -514,26 +881,67 @@ function renderRankedPlaces(rankedPlaces, fallbackDay) {
     `전체 장소 ${rankedPlaces.length}곳 · 추천 점수순`;
 }
 
+function renderDistanceRecommendations(rankedPlaces, fallbackDay) {
+  const list = document.querySelector("#distance-place-list");
+  list.replaceChildren();
+  const maxMinutes = state.distanceLimitHours * 60;
+  const nearbyPlaces = rankedPlaces
+    .filter((item) => item.driveMinutes != null && item.driveMinutes <= maxMinutes)
+    .slice(0, 8);
+
+  document.querySelectorAll(".distance-tab").forEach((button) => {
+    button.setAttribute("aria-pressed", String(Number(button.dataset.maxHours) === state.distanceLimitHours));
+  });
+  document.querySelector("#distance-intro").textContent =
+    `${state.location.label} 출발 · 차량 예상 ${state.distanceLimitHours}시간 이내 추천 장소예요. 예상 시간은 지도상 거리 기반으로 교통·실제 경로에 따라 달라질 수 있어요.`;
+
+  if (!nearbyPlaces.length) {
+    list.innerHTML = `<li class="empty-state">${state.location.label}에서 차량 ${state.distanceLimitHours}시간 이내로 예상되는 장소가 없어요. 다른 시간대를 선택해 보세요.</li>`;
+    return;
+  }
+
+  nearbyPlaces.forEach(({ place, score, localForecast, driveMinutes }, index) => {
+    const day = localForecast || fallbackDay;
+    const [condition, icon] = weatherFor(day.code);
+    const item = document.createElement("li");
+    item.className = "ranked-place-item";
+    item.innerHTML = `<span class="rank-number">${index + 1}</span>
+      <span class="rank-place-icon" aria-hidden="true">${place.emoji}</span>
+      <span class="rank-place-content">
+        <strong class="rank-place-name">${place.name}</strong>
+        <span class="rank-place-meta">${place.city} · ${formatDriveTime(driveMinutes)} · ${place.type === "indoor" ? "실내" : "야외"}</span>
+        <span class="rank-place-weather">${icon} ${condition} · 추천 ${score}점</span>
+      </span>
+      <a class="rank-map-link" href="https://map.naver.com/p/search/${encodeURIComponent(place.map)}" target="_blank" rel="noopener noreferrer" aria-label="${place.name} 지도에서 보기">지도</a>`;
+    list.append(item);
+  });
+}
+
 function renderRecommendations() {
   placeList.replaceChildren();
   rankedPlaceList.replaceChildren();
   const day = state.forecast.find((item) => item.date === state.selectedDate);
   if (!day) {
     placeList.innerHTML = '<div class="empty-state">날씨 정보를 불러오면 나들이 장소를 추천해 드릴게요.</div>';
+    document.querySelector("#distance-place-list").innerHTML =
+      '<li class="empty-state">날씨를 불러오면 거리별 추천 장소를 보여드릴게요.</li>';
     return;
   }
 
   const rankedPlaces = rankDestinations(day);
   renderRankedPlaces(rankedPlaces, day);
-  const candidates = rankedPlaces.slice(0, 4);
+  renderDistanceRecommendations(rankedPlaces, day);
+  const candidates = selectRecommendationPlaces(rankedPlaces, day);
   const [condition] = weatherFor(day.code);
   const childSummary = state.family.childAges.length
     ? `아이 만 ${state.family.childAges.join("·")}세`
     : "아이 동반 없음";
   document.querySelector("#recommend-intro").textContent =
     `${dateLabel(day.date, { month: "long", day: "numeric", weekday: "long" })} · 어른 ${state.family.adults}명, ${childSummary} · ${condition}, ${Math.round(day.min)}~${Math.round(day.max)}° · 비 ${Math.round(day.rain)}%`;
+  document.querySelector("#recommendation-feedback").textContent = state.recommendationFeedback;
+  document.querySelector("#undo-visit").hidden = !state.lastVisitedPlace;
 
-  candidates.forEach(({ place, score, reason, localForecast }) => {
+  candidates.forEach(({ place, score, reason, localForecast, driveMinutes }) => {
     const card = document.createElement("article");
     card.className = "place-card";
     const mapUrl = `https://map.naver.com/p/search/${encodeURIComponent(place.map)}`;
@@ -541,12 +949,12 @@ function renderRecommendations() {
     const [localCondition] = weatherFor(localForecast?.code ?? day.code);
     const localWeatherSummary = localForecast
       ? `${place.city} 현지예보 ${localCondition} · ${Math.round(localForecast.min)}~${Math.round(localForecast.max)}° · 비 ${Math.round(localForecast.rain)}%${localForecast.aqi == null ? "" : ` · AQI ${Math.round(localForecast.aqi)}`}`
-      : `${place.city} 현지 예보 없음 · 순천 예보로 추천`;
+      : `${place.city} 현지 예보 없음 · ${state.location.label} 예보로 추천`;
     card.innerHTML = `<div class="place-main">
         <div class="place-emoji" aria-hidden="true">${place.emoji}</div>
         <div class="place-content">
           <div class="place-title-row"><h3 class="place-title">${place.name}</h3><span class="score-pill">추천 ${score}점</span></div>
-          <p class="place-meta">${place.city} · ${place.distance} · ${place.type === "indoor" ? "실내" : "야외"}</p>
+          <p class="place-meta">${place.city} · ${formatDriveTime(driveMinutes)} · ${place.type === "indoor" ? "실내" : "야외"}</p>
           <p class="place-description">${place.description}</p>
           <div class="place-tags">${place.tags.map((tag) => `<span class="tag">${tag}</span>`).join("")}</div>
         </div>
@@ -555,9 +963,13 @@ function renderRecommendations() {
       <div class="place-actions">
         <a class="action-link primary" href="${mapUrl}" target="_blank" rel="noopener noreferrer">지도에서 보기</a>
         <a class="action-link" href="https://search.naver.com/search.naver?query=${eventQuery}" target="_blank" rel="noopener noreferrer">운영정보 확인</a>
+        <button class="action-link visited-button" type="button" data-visited-place="${encodeURIComponent(place.name)}">✓ 다녀왔어요</button>
       </div>`;
     if ([95, 96, 99].includes(localForecast?.code ?? day.code) && place.type === "outdoor") card.classList.add("weather-warning");
     placeList.append(card);
+  });
+  placeList.querySelectorAll(".visited-button").forEach((button) => {
+    button.addEventListener("click", () => recordPlaceVisit(decodeURIComponent(button.dataset.visitedPlace)));
   });
 }
 
@@ -593,7 +1005,7 @@ function renderEvents() {
   eventList.replaceChildren();
   eventList.append(eventGrid);
   const searchQuery = encodeURIComponent(
-    `${startYear} ${startYear + 1} 순천 전남 경남 부산 경주 지역축제 일정`
+    `${startYear} ${startYear + 1} ${state.location.label} 주변 전국 지역축제 일정`
   );
   const searchLink = document.createElement("a");
   searchLink.className = "event-overview-link";
@@ -602,6 +1014,37 @@ function renderEvents() {
   searchLink.rel = "noopener noreferrer";
   searchLink.textContent = "전체 축제 확정 일정 한 번에 검색 ↗";
   eventList.append(searchLink);
+}
+
+function initializeViewNavigation() {
+  const views = [...document.querySelectorAll("[data-view-page]")];
+  const buttons = [...document.querySelectorAll(".bottom-nav [data-view]")];
+  const headingViews = new Map([
+    ["#recommend-heading", "recommendations"],
+    ["#distance-heading", "distance"],
+    ["#weather-heading", "weather"],
+    ["#events-heading", "events"]
+  ]);
+  const initialView = headingViews.get(location.hash)
+    || views.find((view) => `#${view.id}` === location.hash)?.dataset.viewPage
+    || "recommendations";
+
+  const activateView = (viewName, updateAddress = true) => {
+    if (!views.some((view) => view.dataset.viewPage === viewName)) return;
+    views.forEach((view) => {
+      view.hidden = view.dataset.viewPage !== viewName;
+    });
+    buttons.forEach((button) => {
+      button.setAttribute("aria-pressed", String(button.dataset.view === viewName));
+    });
+    if (updateAddress) history.replaceState(null, "", `#${viewName}-view`);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => activateView(button.dataset.view));
+  });
+  activateView(initialView, false);
 }
 
 async function loadWeather() {
@@ -689,7 +1132,7 @@ async function loadWeather() {
 function useCurrentLocation() {
   if (!navigator.geolocation) {
     weatherStatus.className = "weather-status error";
-    weatherStatus.textContent = "이 브라우저에서는 현재 위치를 사용할 수 없어요. 순천 예보를 계속 보여드릴게요.";
+    weatherStatus.textContent = "이 브라우저에서는 현재 위치를 사용할 수 없어요. 위에서 출발 지역을 선택해 주세요.";
     return;
   }
   weatherStatus.className = "weather-status";
@@ -699,15 +1142,21 @@ function useCurrentLocation() {
       state.location = {
         latitude: position.coords.latitude,
         longitude: position.coords.longitude,
-        label: "현재 위치"
+        label: "현재 위치",
+        island: isJejuCoordinates(position.coords.latitude, position.coords.longitude) ? "jeju" : undefined
       };
-      document.querySelector("#location-button").innerHTML = '<span aria-hidden="true">⌖</span> 현재 위치';
+      document.querySelector("#location-select").value = "current";
       state.selectedDate = null;
+      state.forecast = [];
+      state.destinationWeather.clear();
+      renderDays();
+      renderRecommendations();
+      renderEvents();
       loadWeather();
     },
     () => {
       weatherStatus.className = "weather-status error";
-      weatherStatus.textContent = "위치 권한을 확인할 수 없어 순천 예보를 보여드려요.";
+      weatherStatus.textContent = "위치 권한을 확인할 수 없어요. 출발 지역을 직접 선택해 주세요.";
     },
     { enableHighAccuracy: false, timeout: 10000, maximumAge: 300000 }
   );
@@ -715,6 +1164,27 @@ function useCurrentLocation() {
 
 document.querySelector("#refresh-button").addEventListener("click", loadWeather);
 document.querySelector("#location-button").addEventListener("click", useCurrentLocation);
+document.querySelectorAll(".distance-tab").forEach((button) => {
+  button.addEventListener("click", () => {
+    state.distanceLimitHours = Number(button.dataset.maxHours);
+    renderRecommendations();
+  });
+});
+document.querySelector("#shuffle-recommendations").addEventListener("click", () => {
+  const day = state.forecast.find((item) => item.date === state.selectedDate);
+  if (!day) {
+    state.recommendationFeedback = "날씨를 불러온 뒤 다른 코스를 추천해 드릴게요.";
+    document.querySelector("#recommendation-feedback").textContent = state.recommendationFeedback;
+    return;
+  }
+  saveRecommendationCycle(day);
+  state.recommendationFeedback = "날씨와 가족 조건은 유지하고, 다른 지역·종류의 코스를 골랐어요.";
+  renderRecommendations();
+});
+document.querySelector("#undo-visit").addEventListener("click", undoPlaceVisit);
+initializeViewNavigation();
+initializeLocationSettings();
+loadVisitedPlaces();
 initializeFamilySettings();
 renderEvents();
 loadWeather();

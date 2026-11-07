@@ -1,7 +1,7 @@
 {
-  "name": "주말나들이 - 순천 가족 나들이",
+  "name": "주말나들이 - 전국 가족 나들이",
   "short_name": "주말나들이",
-  "description": "순천에서 출발하는 가족 나들이를 날씨와 계절 행사로 추천합니다.",
+  "description": "현재 위치와 설정 지역을 기준으로 전국 가족 나들이를 추천합니다.",
   "lang": "ko-KR",
   "start_url": "./",
   "display": "standalone",
