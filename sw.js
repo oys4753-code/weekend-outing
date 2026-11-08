@@ -1,4 +1,4 @@
-const CACHE_NAME = "weekend-outing-v18";
+const CACHE_NAME = "weekend-outing-v23";
 const APP_SHELL = ["./", "./index.html", "./styles.css", "./app.js", "./manifest.json", "./icon.svg"];
 
 self.addEventListener("install", (event) => {

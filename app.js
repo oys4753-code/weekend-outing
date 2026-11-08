@@ -359,7 +359,153 @@ const ADDITIONAL_CURATED_PLACES = [
   {
     name: "하남 스타필드", city: "하남", distance: "", driveMinutes: 0, latitude: 37.5455, longitude: 127.2237, type: "indoor", emoji: "🛍️",
     description: "쇼핑과 식사를 실내에서 즐길 수 있어요. 시설별 운영시간과 이용 조건을 확인해 주세요.",
-    tags: ["실내", "식사·쇼핑", "운영정보 확인"], weather: "비·추위·더위 피하기", map: "스타필드 하남"
+    tags: ["쇼핑몰·백화점", "실내", "식사·쇼핑", "운영정보 확인"], weather: "비·추위·더위 피하기", map: "스타필드 하남",
+    category: "쇼핑몰·백화점"
+  },
+  {
+    name: "스타필드 코엑스몰", city: "서울", distance: "", driveMinutes: 0, latitude: 37.5125, longitude: 127.0591, type: "indoor", emoji: "🛍️",
+    description: "쇼핑과 식사, 별마당도서관 등을 한곳에서 즐길 수 있어요. 주말 혼잡도와 시설별 운영시간을 확인해 주세요.",
+    tags: ["쇼핑몰·백화점", "실내", "식사·쇼핑", "운영정보 확인"], weather: "비·추위·더위 피하기", map: "스타필드 코엑스몰", category: "쇼핑몰·백화점"
+  },
+  {
+    name: "더현대 서울", city: "서울", distance: "", driveMinutes: 0, latitude: 37.5259, longitude: 126.9285, type: "indoor", emoji: "🛍️",
+    description: "쇼핑과 식사, 실내 휴식을 함께 즐길 수 있어요. 주말 혼잡도와 유아 편의시설을 확인해 주세요.",
+    tags: ["쇼핑몰·백화점", "실내", "식사·쇼핑", "운영정보 확인"], weather: "비·추위·더위 피하기", map: "더현대 서울", category: "쇼핑몰·백화점"
+  },
+  {
+    name: "스타필드 수원", city: "수원", distance: "", driveMinutes: 0, latitude: 37.2864, longitude: 127.0008, type: "indoor", emoji: "🛍️",
+    description: "쇼핑과 식사, 실내 휴식을 함께 즐길 수 있어요. 주말 혼잡도와 시설별 운영시간을 확인해 주세요.",
+    tags: ["쇼핑몰·백화점", "실내", "식사·쇼핑", "운영정보 확인"], weather: "비·추위·더위 피하기", map: "스타필드 수원", category: "쇼핑몰·백화점"
+  },
+  {
+    name: "신세계 센텀시티", city: "부산", distance: "", driveMinutes: 0, latitude: 35.1691, longitude: 129.1297, type: "indoor", emoji: "🛍️",
+    description: "쇼핑과 식사, 실내 여가시설을 함께 이용할 수 있어요. 시설별 운영시간과 이용 조건을 확인해 주세요.",
+    tags: ["쇼핑몰·백화점", "실내", "식사·쇼핑", "운영정보 확인"], weather: "비·추위·더위 피하기", map: "신세계백화점 센텀시티점", category: "쇼핑몰·백화점"
+  },
+  {
+    name: "광장시장", city: "서울", distance: "", driveMinutes: 0, latitude: 37.5701, longitude: 126.9997, type: "outdoor", emoji: "🧺",
+    description: "전통 먹거리와 상점을 둘러보는 도심 시장 나들이예요. 운영시간과 주말 혼잡도, 유모차 이동 환경을 확인해 주세요.",
+    tags: ["시장·장터", "먹거리", "혼잡 확인"], weather: "맑고 온화한 날", map: "광장시장", category: "시장·장터"
+  },
+  {
+    name: "망원시장", city: "서울", distance: "", driveMinutes: 0, latitude: 37.5563, longitude: 126.9056, type: "outdoor", emoji: "🧺",
+    description: "동네 먹거리와 상점을 구경하며 가볍게 둘러보기 좋아요. 운영시간과 혼잡도를 확인해 주세요.",
+    tags: ["시장·장터", "먹거리", "혼잡 확인"], weather: "맑고 온화한 날", map: "망원시장", category: "시장·장터"
+  },
+  {
+    name: "남대문시장", city: "서울", distance: "", driveMinutes: 0, latitude: 37.5592, longitude: 126.9779, type: "outdoor", emoji: "🧺",
+    description: "다양한 상점과 먹거리가 모인 전통시장입니다. 운영일과 혼잡도, 아이와 다닐 동선을 살펴보세요.",
+    tags: ["시장·장터", "먹거리", "혼잡 확인"], weather: "맑고 온화한 날", map: "남대문시장", category: "시장·장터"
+  },
+  {
+    name: "신포국제시장", city: "인천", distance: "", driveMinutes: 0, latitude: 37.4738, longitude: 126.6252, type: "outdoor", emoji: "🧺",
+    description: "인천 원도심의 먹거리와 상점을 둘러보는 시장 나들이예요. 운영시간과 혼잡도를 확인해 주세요.",
+    tags: ["시장·장터", "먹거리", "원도심 산책"], weather: "맑고 온화한 날", map: "신포국제시장", category: "시장·장터"
+  },
+  {
+    name: "수원 남문시장", city: "수원", distance: "", driveMinutes: 0, latitude: 37.2778, longitude: 127.0192, type: "outdoor", emoji: "🧺",
+    description: "여러 전통시장이 모인 수원 화성 주변 시장 골목을 둘러보세요. 주말 혼잡과 주차 위치를 확인해 주세요.",
+    tags: ["시장·장터", "먹거리", "원도심 산책"], weather: "맑고 온화한 날", map: "수원 남문시장", category: "시장·장터"
+  },
+  {
+    name: "서문시장", city: "대구", distance: "", driveMinutes: 0, latitude: 35.8686, longitude: 128.5827, type: "outdoor", emoji: "🧺",
+    description: "먹거리와 상점, 야시장을 즐길 수 있는 대구 대표 전통시장이에요. 운영시간과 혼잡도를 확인해 주세요.",
+    tags: ["시장·장터", "먹거리", "운영시간 확인"], weather: "맑고 온화한 날", map: "대구 서문시장", category: "시장·장터"
+  },
+  {
+    name: "대전 중앙시장", city: "대전", distance: "", driveMinutes: 0, latitude: 36.3275, longitude: 127.4281, type: "outdoor", emoji: "🧺",
+    description: "대전역 인근의 전통시장 골목에서 먹거리와 상점을 둘러볼 수 있어요. 운영시간과 혼잡도를 확인해 주세요.",
+    tags: ["시장·장터", "먹거리", "원도심 산책"], weather: "맑고 온화한 날", map: "대전 중앙시장", category: "시장·장터"
+  },
+  {
+    name: "양동시장", city: "광주", distance: "", driveMinutes: 0, latitude: 35.1521, longitude: 126.9046, type: "outdoor", emoji: "🧺",
+    description: "광주 도심의 전통시장과 먹거리를 둘러보는 생활형 나들이예요. 운영시간과 혼잡도를 확인해 주세요.",
+    tags: ["시장·장터", "먹거리", "원도심 산책"], weather: "맑고 온화한 날", map: "광주 양동시장", category: "시장·장터"
+  },
+  {
+    name: "전주 남부시장", city: "전주", distance: "", driveMinutes: 0, latitude: 35.8114, longitude: 127.1476, type: "outdoor", emoji: "🧺",
+    description: "전주천과 한옥마을 가까이에서 전통시장 먹거리를 즐길 수 있어요. 야시장 운영일과 혼잡도를 확인해 주세요.",
+    tags: ["시장·장터", "먹거리", "운영일 확인"], weather: "맑고 온화한 날", map: "전주 남부시장", category: "시장·장터"
+  },
+  {
+    name: "자갈치시장", city: "부산", distance: "", driveMinutes: 0, latitude: 35.0967, longitude: 129.0304, type: "outdoor", emoji: "🧺",
+    description: "부산 바다와 수산시장 풍경을 함께 볼 수 있어요. 아이와 방문할 때는 혼잡한 통로와 식당 이용 정보를 확인해 주세요.",
+    tags: ["시장·장터", "바다·먹거리", "혼잡 확인"], weather: "맑고 온화한 날", map: "부산 자갈치시장", category: "시장·장터"
+  },
+  {
+    name: "제주 동문재래시장", city: "제주", distance: "", driveMinutes: 0, latitude: 33.5127, longitude: 126.5271, type: "outdoor", emoji: "🧺",
+    description: "제주 먹거리와 특산품을 둘러보기 좋은 도심 시장이에요. 운영시간과 혼잡도를 확인해 주세요.",
+    tags: ["시장·장터", "먹거리", "운영시간 확인"], weather: "맑고 온화한 날", map: "제주 동문재래시장", island: "jeju", category: "시장·장터"
+  },
+  {
+    name: "서귀포 매일올레시장", city: "서귀포", distance: "", driveMinutes: 0, latitude: 33.2498, longitude: 126.5643, type: "outdoor", emoji: "🧺",
+    description: "제주 남쪽의 시장 먹거리와 상점을 즐겨보세요. 운영시간과 주말 혼잡도를 확인해 주세요.",
+    tags: ["시장·장터", "먹거리", "운영시간 확인"], weather: "맑고 온화한 날", map: "서귀포 매일올레시장", island: "jeju", category: "시장·장터"
+  },
+  {
+    name: "신사동 가로수길", city: "서울", distance: "", driveMinutes: 0, latitude: 37.5204, longitude: 127.0231, type: "outdoor", emoji: "🚶",
+    description: "상점과 카페가 이어지는 도심 거리예요. 주말 혼잡도와 영업 정보를 확인하고 여유 있게 걸어보세요.",
+    tags: ["인기 거리", "카페·상점", "도심 산책"], weather: "맑고 온화한 날", map: "신사동 가로수길", category: "인기 거리"
+  },
+  {
+    name: "경리단길", city: "서울", distance: "", driveMinutes: 0, latitude: 37.5388, longitude: 126.9872, type: "outdoor", emoji: "🚶",
+    description: "식당과 카페가 모인 이태원 인근 거리예요. 언덕과 주말 혼잡을 고려해 편한 신발을 준비하세요.",
+    tags: ["인기 거리", "카페·상점", "언덕·혼잡 확인"], weather: "맑고 온화한 날", map: "경리단길", category: "인기 거리"
+  },
+  {
+    name: "성수동 카페거리", city: "서울", distance: "", driveMinutes: 0, latitude: 37.5445, longitude: 127.0561, type: "outdoor", emoji: "🚶",
+    description: "카페와 편집숍, 팝업 공간을 둘러볼 수 있는 도심 거리예요. 주말 대기와 혼잡도를 확인해 주세요.",
+    tags: ["인기 거리", "카페·상점", "주말 혼잡 확인"], weather: "맑고 온화한 날", map: "성수동 카페거리", category: "인기 거리"
+  },
+  {
+    name: "수원 행리단길", city: "수원", distance: "", driveMinutes: 0, latitude: 37.2814, longitude: 127.0173, type: "outdoor", emoji: "🚶",
+    description: "수원화성 주변 골목의 카페와 상점을 산책하며 즐겨보세요. 주말 혼잡과 주차 위치를 확인해 주세요.",
+    tags: ["인기 거리", "카페·상점", "성곽 산책"], weather: "맑고 온화한 날", map: "수원 행리단길", category: "인기 거리"
+  },
+  {
+    name: "대구 동성로", city: "대구", distance: "", driveMinutes: 0, latitude: 35.8691, longitude: 128.5962, type: "outdoor", emoji: "🚶",
+    description: "쇼핑과 먹거리가 모인 대구 중심 거리예요. 주말 혼잡도와 주차 위치를 확인해 주세요.",
+    tags: ["인기 거리", "쇼핑·먹거리", "도심 산책"], weather: "맑고 온화한 날", map: "대구 동성로", category: "인기 거리"
+  },
+  {
+    name: "대전 으능정이문화의거리", city: "대전", distance: "", driveMinutes: 0, latitude: 36.3281, longitude: 127.4274, type: "outdoor", emoji: "🚶",
+    description: "대전 원도심의 상점과 먹거리를 둘러볼 수 있는 번화가예요. 주말 혼잡과 행사 정보를 확인해 주세요.",
+    tags: ["인기 거리", "쇼핑·먹거리", "원도심 산책"], weather: "맑고 온화한 날", map: "으능정이문화의거리", category: "인기 거리"
+  },
+  {
+    name: "광주 충장로", city: "광주", distance: "", driveMinutes: 0, latitude: 35.1485, longitude: 126.9155, type: "outdoor", emoji: "🚶",
+    description: "광주 원도심의 쇼핑 거리와 주변 문화 공간을 함께 둘러보세요. 운영 정보와 혼잡도를 확인해 주세요.",
+    tags: ["인기 거리", "쇼핑·먹거리", "원도심 산책"], weather: "맑고 온화한 날", map: "광주 충장로", category: "인기 거리"
+  },
+  {
+    name: "부산 전포카페거리", city: "부산", distance: "", driveMinutes: 0, latitude: 35.1545, longitude: 129.0641, type: "outdoor", emoji: "🚶",
+    description: "카페와 개성 있는 상점이 모인 골목을 걸어보세요. 주말 대기와 혼잡도를 확인해 주세요.",
+    tags: ["인기 거리", "카페·상점", "주말 혼잡 확인"], weather: "맑고 온화한 날", map: "부산 전포카페거리", category: "인기 거리"
+  },
+  {
+    name: "춘천 명동 닭갈비골목", city: "춘천", distance: "", driveMinutes: 0, latitude: 37.8802, longitude: 127.7278, type: "outdoor", emoji: "🚶",
+    description: "춘천 명동의 먹거리 골목을 둘러보는 도심 나들이예요. 식당 대기와 영업시간을 확인해 주세요.",
+    tags: ["인기 거리", "먹거리", "영업정보 확인"], weather: "맑고 온화한 날", map: "춘천 명동 닭갈비골목", category: "인기 거리"
+  },
+  {
+    name: "제주 칠성로 쇼핑거리", city: "제주", distance: "", driveMinutes: 0, latitude: 33.5144, longitude: 126.5256, type: "outdoor", emoji: "🚶",
+    description: "제주 원도심의 상점가와 먹거리를 둘러보세요. 운영시간과 주말 혼잡도를 확인해 주세요.",
+    tags: ["인기 거리", "쇼핑·먹거리", "원도심 산책"], weather: "맑고 온화한 날", map: "제주 칠성로 쇼핑거리", island: "jeju", category: "인기 거리"
+  },
+  {
+    name: "순천 아랫장", city: "순천", distance: "", driveMinutes: 0, latitude: 34.9447, longitude: 127.4937, type: "outdoor", emoji: "🧺",
+    description: "순천의 큰 전통시장에서 지역 먹거리와 상점을 둘러보세요. 장날과 운영시간, 주말 혼잡도를 확인해 주세요.",
+    tags: ["시장·장터", "지역 먹거리", "장날 확인"], weather: "맑고 온화한 날", map: "순천 아랫장", category: "시장·장터"
+  },
+  {
+    name: "순천 웃장", city: "순천", distance: "", driveMinutes: 0, latitude: 34.9612, longitude: 127.4848, type: "outdoor", emoji: "🧺",
+    description: "순천 북부 도심의 전통시장 골목을 둘러보는 생활형 나들이예요. 운영시간과 혼잡도를 확인해 주세요.",
+    tags: ["시장·장터", "지역 먹거리", "운영시간 확인"], weather: "맑고 온화한 날", map: "순천 웃장", category: "시장·장터"
+  },
+  {
+    name: "순천 문화의거리", city: "순천", distance: "", driveMinutes: 0, latitude: 34.9571, longitude: 127.4845, type: "outdoor", emoji: "🚶",
+    description: "원도심 골목의 상점과 문화 공간을 산책하며 둘러보세요. 행사와 점포 운영시간을 확인해 주세요.",
+    tags: ["인기 거리", "원도심 산책", "상점·문화"], weather: "맑고 온화한 날", map: "순천 문화의거리", category: "인기 거리"
   },
   {
     name: "춘천 레고랜드 코리아", city: "춘천", distance: "", driveMinutes: 0, latitude: 37.8825, longitude: 127.7024, type: "outdoor", emoji: "🧱",
@@ -410,19 +556,102 @@ const ADDITIONAL_CURATED_PLACES = [
     name: "제주 아쿠아플라넷", city: "서귀포", distance: "", driveMinutes: 0, latitude: 33.4331, longitude: 126.9278, type: "indoor", emoji: "🐋",
     description: "섭지코지 인근의 실내 아쿠아리움이에요. 관람시간과 입장권을 확인해 주세요.",
     tags: ["실내", "아쿠아리움", "운영정보 확인"], weather: "비·강풍 피하기", map: "아쿠아플라넷 제주", island: "jeju"
+  },
+  {
+    name: "조치원전통시장", city: "세종", distance: "", driveMinutes: 0, latitude: 36.6012, longitude: 127.2982, type: "outdoor", emoji: "🧺",
+    description: "세종 북부의 전통시장 골목에서 지역 먹거리와 상점을 둘러보세요. 장날과 운영시간을 확인해 주세요.",
+    tags: ["시장·장터", "지역 먹거리", "장날 확인"], weather: "맑고 온화한 날", map: "조치원전통시장", category: "시장·장터"
+  },
+  {
+    name: "청주 육거리종합시장", city: "청주", distance: "", driveMinutes: 0, latitude: 36.6247, longitude: 127.4894, type: "outdoor", emoji: "🧺",
+    description: "청주 도심의 큰 전통시장에서 먹거리와 상점을 구경해요. 운영시간과 주말 혼잡도를 확인해 주세요.",
+    tags: ["시장·장터", "지역 먹거리", "혼잡 확인"], weather: "맑고 온화한 날", map: "청주 육거리종합시장", category: "시장·장터"
+  },
+  {
+    name: "청주 성안길", city: "청주", distance: "", driveMinutes: 0, latitude: 36.6354, longitude: 127.4895, type: "outdoor", emoji: "🚶",
+    description: "청주 원도심의 상점과 먹거리를 둘러보는 도심 산책 코스예요. 주말 혼잡도와 운영시간을 확인해 주세요.",
+    tags: ["인기 거리", "쇼핑·먹거리", "원도심 산책"], weather: "맑고 온화한 날", map: "청주 성안길", category: "인기 거리"
+  },
+  {
+    name: "천안 중앙시장", city: "천안", distance: "", driveMinutes: 0, latitude: 36.8073, longitude: 127.1477, type: "outdoor", emoji: "🧺",
+    description: "천안역 인근의 전통시장 골목에서 지역 먹거리와 상점을 둘러보세요.",
+    tags: ["시장·장터", "지역 먹거리", "원도심 산책"], weather: "맑고 온화한 날", map: "천안 중앙시장", category: "시장·장터"
+  },
+  {
+    name: "천안 신세계백화점", city: "천안", distance: "", driveMinutes: 0, latitude: 36.8191, longitude: 127.1562, type: "indoor", emoji: "🛍️",
+    description: "천안역 인근에서 쇼핑과 식사를 실내에서 즐길 수 있어요. 운영시간과 주말 혼잡도를 확인해 주세요.",
+    tags: ["쇼핑몰·백화점", "실내", "식사·쇼핑"], weather: "비·추위·더위 피하기", map: "신세계백화점 천안아산점", category: "쇼핑몰·백화점"
+  },
+  {
+    name: "춘천 중앙시장", city: "춘천", distance: "", driveMinutes: 0, latitude: 37.8798, longitude: 127.7278, type: "outdoor", emoji: "🧺",
+    description: "춘천 원도심의 전통시장과 먹거리 골목을 둘러보세요. 운영시간과 주말 혼잡도를 확인해 주세요.",
+    tags: ["시장·장터", "지역 먹거리", "원도심 산책"], weather: "맑고 온화한 날", map: "춘천 중앙시장", category: "시장·장터"
+  },
+  {
+    name: "안동 구시장", city: "안동", distance: "", driveMinutes: 0, latitude: 36.5651, longitude: 128.7254, type: "outdoor", emoji: "🧺",
+    description: "안동의 전통시장과 찜닭 골목을 함께 둘러보는 도심 나들이예요. 영업시간과 혼잡도를 확인해 주세요.",
+    tags: ["시장·장터", "지역 먹거리", "원도심 산책"], weather: "맑고 온화한 날", map: "안동 구시장", category: "시장·장터"
+  },
+  {
+    name: "안동 문화의거리", city: "안동", distance: "", driveMinutes: 0, latitude: 36.5658, longitude: 128.7295, type: "outdoor", emoji: "🚶",
+    description: "안동 원도심의 상점과 문화 공간을 가볍게 둘러보세요. 점포 운영시간을 확인해 주세요.",
+    tags: ["인기 거리", "원도심 산책", "상점·문화"], weather: "맑고 온화한 날", map: "안동 문화의거리", category: "인기 거리"
+  },
+  {
+    name: "울산 신정시장", city: "울산", distance: "", driveMinutes: 0, latitude: 35.5395, longitude: 129.3098, type: "outdoor", emoji: "🧺",
+    description: "울산 도심의 전통시장 먹거리와 상점을 구경해요. 운영시간과 주말 혼잡도를 확인해 주세요.",
+    tags: ["시장·장터", "지역 먹거리", "혼잡 확인"], weather: "맑고 온화한 날", map: "울산 신정시장", category: "시장·장터"
+  },
+  {
+    name: "울산 성남동 젊음의거리", city: "울산", distance: "", driveMinutes: 0, latitude: 35.5532, longitude: 129.3202, type: "outdoor", emoji: "🚶",
+    description: "울산 원도심의 상점과 먹거리, 문화 공간을 둘러보는 거리예요. 운영시간과 혼잡도를 확인해 주세요.",
+    tags: ["인기 거리", "쇼핑·먹거리", "원도심 산책"], weather: "맑고 온화한 날", map: "울산 성남동 젊음의거리", category: "인기 거리"
+  },
+  {
+    name: "창원 상남동 거리", city: "창원", distance: "", driveMinutes: 0, latitude: 35.2215, longitude: 128.6818, type: "outdoor", emoji: "🚶",
+    description: "식당과 상점이 모인 창원 도심 거리예요. 주말 혼잡도와 주차 위치를 확인해 주세요.",
+    tags: ["인기 거리", "쇼핑·먹거리", "도심 산책"], weather: "맑고 온화한 날", map: "창원 상남동 거리", category: "인기 거리"
+  },
+  {
+    name: "마산어시장", city: "창원", distance: "", driveMinutes: 0, latitude: 35.2017, longitude: 128.5766, type: "outdoor", emoji: "🧺",
+    description: "마산 바닷가의 수산시장과 먹거리를 둘러보세요. 운영시간과 혼잡한 통로를 확인해 주세요.",
+    tags: ["시장·장터", "수산시장", "먹거리"], weather: "맑고 온화한 날", map: "마산어시장", category: "시장·장터"
+  },
+  {
+    name: "전주 객리단길", city: "전주", distance: "", driveMinutes: 0, latitude: 35.8192, longitude: 127.1411, type: "outdoor", emoji: "🚶",
+    description: "전주 원도심의 카페와 상점, 식당을 둘러보는 거리예요. 주말 대기와 혼잡도를 확인해 주세요.",
+    tags: ["인기 거리", "카페·상점", "원도심 산책"], weather: "맑고 온화한 날", map: "전주 객리단길", category: "인기 거리"
+  },
+  {
+    name: "광주 신세계백화점", city: "광주", distance: "", driveMinutes: 0, latitude: 35.1601, longitude: 126.8828, type: "indoor", emoji: "🛍️",
+    description: "쇼핑과 식사, 실내 휴식을 함께 즐길 수 있어요. 운영시간과 주말 혼잡도를 확인해 주세요.",
+    tags: ["쇼핑몰·백화점", "실내", "식사·쇼핑"], weather: "비·추위·더위 피하기", map: "광주 신세계백화점", category: "쇼핑몰·백화점"
+  },
+  {
+    name: "대구 신세계백화점", city: "대구", distance: "", driveMinutes: 0, latitude: 35.8775, longitude: 128.6289, type: "indoor", emoji: "🛍️",
+    description: "동대구역과 연결된 실내 쇼핑·식사 코스예요. 주말 혼잡도와 시설별 이용 정보를 확인해 주세요.",
+    tags: ["쇼핑몰·백화점", "실내", "식사·쇼핑"], weather: "비·추위·더위 피하기", map: "신세계백화점 대구점", category: "쇼핑몰·백화점"
   }
 ];
 DESTINATIONS.push(...ADDITIONAL_CURATED_PLACES);
 const BASE_DESTINATION_COUNT = DESTINATIONS.length;
-const PLACE_CACHE_KEY = "weekend-outing-osm-cache";
+const PLACE_CACHE_KEY = "weekend-outing-osm-cache-v4";
 const ITINERARY_KEY = "weekend-outing-itinerary";
 const VISITED_KEY = "weekend-outing-visited";
 const FAMILY_KEY = "weekend-outing-family";
 const INDOOR_FILTER_KEY = "weekend-outing-indoor-only";
 const LEGACY_AMENITY_FILTER_KEY = "weekend-outing-amenity-filters";
 const PLACE_REFRESH_INTERVAL = 7 * 24 * 60 * 60 * 1000;
+const MAX_RECOMMENDATION_DRIVE_MINUTES = 180;
 const PLACE_SEARCH_RADIUS_METERS = 160000;
 const FOOD_SEARCH_RADIUS_METERS = 25000;
+const POPULAR_STREET_PATTERN = /가로수길|경리단길|카페거리|객리단길|동성로|충장로|으능정이거리/;
+const EVERYDAY_PLACE_CATEGORIES = new Set([
+  "쇼핑몰·백화점", "시장·장터", "인기 거리", "보행 거리", "공원·자연",
+  "박물관·전시", "동물·수족관", "테마파크", "역사·문화유산", "문화공간"
+]);
+const MAX_DISCOVERED_PLACES = 40;
+const MAX_DISCOVERED_PER_CATEGORY = 8;
 const WEATHER_REQUEST_TIMEOUT = 12000;
 const AIR_QUALITY_REQUEST_TIMEOUT = 8000;
 const OVERPASS_ENDPOINTS = [
@@ -712,6 +941,10 @@ function estimateDriveMinutes(place) {
   return estimateDriveMinutesBetween(state.location, place);
 }
 
+function isWithinRecommendationDriveRange(driveMinutes) {
+  return driveMinutes != null && driveMinutes <= MAX_RECOMMENDATION_DRIVE_MINUTES;
+}
+
 function estimateDriveMinutesBetween(origin, place) {
   const originIsJeju = origin.island === "jeju"
     || isJejuCoordinates(origin.latitude, origin.longitude);
@@ -882,8 +1115,7 @@ function recommendItinerary() {
 
   const badWeather = outdoorWeatherNeedsBackup(day);
   const candidates = rankDestinations(day).filter(({ place, driveMinutes }) =>
-    driveMinutes != null
-      && driveMinutes <= 180
+    isWithinRecommendationDriveRange(driveMinutes)
       && matchesPlaceFilter(place)
       && (!badWeather || place.type === "indoor")
   );
@@ -1213,18 +1445,59 @@ function createDiscoveredPlaces(elements) {
       });
       return;
     }
+    const shoppingVenue = ["mall", "department_store"].includes(tags.shop);
+    const market = tags.amenity === "marketplace";
+    const pedestrianStreet = tags.highway === "pedestrian";
+    const popularStreet = POPULAR_STREET_PATTERN.test(name);
+    const category = shoppingVenue ? "쇼핑몰·백화점"
+      : market ? "시장·장터"
+        : popularStreet ? "인기 거리"
+          : pedestrianStreet ? "보행 거리"
+            : tags.tourism === "museum" ? "박물관·전시"
+              : ["zoo", "aquarium"].includes(tags.tourism) ? "동물·수족관"
+                : tags.tourism === "theme_park" || tags.leisure === "water_park" ? "테마파크"
+                  : tags.tourism === "gallery" ? "박물관·전시"
+                    : tags.historic ? "역사·문화유산"
+                      : tags.amenity === "arts_centre" || tags.amenity === "library" ? "문화공간"
+                        : ["park", "nature_reserve"].includes(tags.leisure) ? "공원·자연"
+                          : tags.tourism === "viewpoint" ? "전망 명소" : "관광 명소";
     const normalizedName = name.toLocaleLowerCase().replace(/[\s·\-()]/g, "");
     if (knownNames.has(normalizedName)) return;
     const coordinates = { latitude, longitude };
-    if (DESTINATIONS.slice(0, BASE_DESTINATION_COUNT)
-      .some((place) => distanceBetweenCoordinates(coordinates, place) < 0.4)) return;
-    if (discovered.some((place) => distanceBetweenCoordinates(coordinates, place) < 0.25)) return;
-
-    const indoor = ["museum", "aquarium", "gallery"].includes(tags.tourism)
+    if (DESTINATIONS.slice(0, BASE_DESTINATION_COUNT).some((place) =>
+      place.category === category
+      && distanceBetweenCoordinates(coordinates, place) < 0.15
+    )) return;
+    if (discovered.some((place) =>
+      place.category === category
+      && (place.name.toLocaleLowerCase().replace(/[\s·\-()]/g, "") === normalizedName
+        || distanceBetweenCoordinates(coordinates, place) < 0.15)
+    )) return;
+    const indoor = shoppingVenue
+      || (market && (tags.indoor === "yes" || tags.covered === "yes"))
+      || ["museum", "aquarium", "gallery", "arts_centre"].includes(tags.tourism)
+      || tags.amenity === "arts_centre"
       || tags.leisure === "water_park"
       || tags.indoor === "yes";
     const type = indoor ? "indoor" : "outdoor";
     const city = (tags["addr:city"] || tags["addr:town"] || tags["addr:county"] || "주변").slice(0, 40);
+    const description = shoppingVenue
+      ? "쇼핑과 식사, 실내 휴식을 함께 즐길 수 있는 곳이에요. 주말 혼잡도와 유아 편의시설을 확인해 주세요."
+      : market
+        ? "지역 먹거리와 상점을 둘러보는 생활형 나들이예요. 운영일과 혼잡도, 유모차 이동 환경을 확인해 주세요."
+      : popularStreet
+        ? "상점과 먹거리가 모인 거리예요. 주말 혼잡도와 운영 정보를 확인해 주세요."
+        : pedestrianStreet
+          ? "차량 통행이 제한된 보행 거리예요. 주말 혼잡도와 현장 통행 정보를 확인해 주세요."
+          : category === "공원·자연"
+            ? "산책과 야외 활동을 즐길 수 있는 공원·자연 공간이에요. 시설 운영과 날씨를 확인해 주세요."
+            : category === "박물관·전시" || category === "문화공간"
+              ? "전시와 문화 공간을 둘러보는 코스예요. 휴관일과 프로그램을 확인해 주세요."
+              : category === "동물·수족관" || category === "테마파크"
+                ? "가족이 함께 즐길 수 있는 관람·체험 장소예요. 운영시간과 입장 조건을 확인해 주세요."
+                : category === "역사·문화유산"
+                  ? "지역의 역사와 문화유산을 둘러보는 장소예요. 관람 가능 여부와 운영시간을 확인해 주세요."
+                  : "주변 지도 데이터에서 새로 찾은 장소예요. 방문 전 운영시간과 이용 정보를 확인해 주세요.";
     discovered.push({
       name: name.trim(),
       city,
@@ -1232,12 +1505,19 @@ function createDiscoveredPlaces(elements) {
       driveMinutes: 0,
       ...coordinates,
       type,
-      emoji: tags.tourism === "zoo" ? "🦁"
-        : tags.tourism === "aquarium" ? "🐠"
-          : tags.tourism === "museum" ? "🏛️"
-            : tags.tourism === "theme_park" || tags.leisure === "water_park" ? "🎡" : "📍",
-      description: "주변 지도 데이터에서 새로 찾은 장소예요. 방문 전 운영시간과 이용 정보를 확인해 주세요.",
-      tags: ["지도 데이터 신규", indoor ? "실내" : "야외", "운영정보 확인"],
+      category,
+      emoji: shoppingVenue ? "🛍️"
+        : market ? "🧺"
+          : popularStreet || pedestrianStreet ? "🚶"
+            : tags.tourism === "zoo" ? "🦁"
+              : tags.tourism === "aquarium" ? "🐠"
+                : tags.tourism === "museum" || tags.tourism === "gallery" ? "🏛️"
+                  : tags.tourism === "theme_park" || tags.leisure === "water_park" ? "🎡"
+                    : tags.leisure === "park" || tags.leisure === "nature_reserve" ? "🌳"
+                      : tags.historic ? "🏺"
+                        : tags.amenity === "arts_centre" || tags.amenity === "library" ? "🎭" : "📍",
+      description,
+      tags: [category, "지도 데이터 신규", indoor ? "실내" : "야외", "운영정보 확인"],
       weather: indoor ? "비·추위 피하기" : "맑고 온화한 날",
       map: name.trim(),
       source: "OpenStreetMap",
@@ -1246,12 +1526,31 @@ function createDiscoveredPlaces(elements) {
     knownNames.add(normalizedName);
   });
 
-  const places = discovered
+  const rankedDiscovered = discovered
     .map((place) => ({ place, driveMinutes: estimateDriveMinutes(place) }))
-    .filter(({ driveMinutes }) => driveMinutes != null && driveMinutes <= 180)
-    .sort((first, second) => first.driveMinutes - second.driveMinutes)
-    .map(({ place }) => place)
-    .slice(0, 40);
+    .filter(({ driveMinutes }) => isWithinRecommendationDriveRange(driveMinutes))
+    .sort((first, second) => first.driveMinutes - second.driveMinutes);
+  const categoryBuckets = new Map();
+  const categoryCounts = new Map();
+  rankedDiscovered.forEach((item) => {
+    const category = item.place.category;
+    if (!categoryBuckets.has(category)) categoryBuckets.set(category, []);
+    categoryBuckets.get(category).push(item);
+  });
+  const places = [];
+  while (places.length < MAX_DISCOVERED_PLACES && categoryBuckets.size) {
+    for (const [category, bucket] of categoryBuckets) {
+      if (places.length >= MAX_DISCOVERED_PLACES) break;
+      if (!bucket.length) {
+        categoryBuckets.delete(category);
+        continue;
+      }
+      places.push(bucket.shift().place);
+      const count = (categoryCounts.get(category) || 0) + 1;
+      categoryCounts.set(category, count);
+      if (count >= MAX_DISCOVERED_PER_CATEGORY || !bucket.length) categoryBuckets.delete(category);
+    }
+  }
   const nearbyRestaurants = restaurants
     .sort((first, second) =>
       distanceBetweenCoordinates(state.location, first) - distanceBetweenCoordinates(state.location, second)
@@ -1304,7 +1603,7 @@ async function refreshDiscoveredPlaces(force = false) {
 
   const latitude = state.location.latitude.toFixed(5);
   const longitude = state.location.longitude.toFixed(5);
-  const query = `[out:json][timeout:15];(nwr(around:${PLACE_SEARCH_RADIUS_METERS},${latitude},${longitude})[name][tourism~"^(attraction|museum|zoo|aquarium|theme_park)$"];nwr(around:${PLACE_SEARCH_RADIUS_METERS},${latitude},${longitude})[name][leisure=water_park];nwr(around:${FOOD_SEARCH_RADIUS_METERS},${latitude},${longitude})[name][amenity=restaurant];);out center tags 500;`;
+  const query = `[out:json][timeout:20];(nwr(around:${PLACE_SEARCH_RADIUS_METERS},${latitude},${longitude})[name][tourism~"^(attraction|museum|gallery|zoo|aquarium|theme_park|viewpoint)$"];nwr(around:${PLACE_SEARCH_RADIUS_METERS},${latitude},${longitude})[name][historic];nwr(around:${PLACE_SEARCH_RADIUS_METERS},${latitude},${longitude})[name][leisure~"^(water_park|park|nature_reserve)$"];);out center tags 260;(nwr(around:${PLACE_SEARCH_RADIUS_METERS},${latitude},${longitude})[name][shop~"^(mall|department_store)$"];);out center tags 100;(nwr(around:${PLACE_SEARCH_RADIUS_METERS},${latitude},${longitude})[name][amenity=marketplace];);out center tags 100;(nwr(around:${PLACE_SEARCH_RADIUS_METERS},${latitude},${longitude})[name][amenity~"^(arts_centre|library)$"];);out center tags 80;(nwr(around:${PLACE_SEARCH_RADIUS_METERS},${latitude},${longitude})[name][highway=pedestrian];);out center tags 100;(nwr(around:${PLACE_SEARCH_RADIUS_METERS},${latitude},${longitude})[name~"${POPULAR_STREET_PATTERN.source}"];);out center tags 60;(nwr(around:${FOOD_SEARCH_RADIUS_METERS},${latitude},${longitude})[name][amenity=restaurant];);out center tags 300;`;
   let failure;
 
   for (const endpoint of OVERPASS_ENDPOINTS) {
@@ -1313,7 +1612,7 @@ async function refreshDiscoveredPlaces(force = false) {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8" },
         body: new URLSearchParams({ data: query }),
-        signal: AbortSignal.timeout(15000)
+        signal: AbortSignal.timeout(25000)
       });
       if (!response.ok) throw new Error(`OpenStreetMap 응답 오류 (${response.status})`);
       const data = await response.json();
@@ -1678,14 +1977,14 @@ function dateSeed(value) {
 }
 
 function selectRecommendationPlaces(rankedPlaces, day) {
-  const nearbyPlaces = rankedPlaces.filter((item) => item.driveMinutes != null && item.driveMinutes <= 180);
+  const nearbyPlaces = rankedPlaces.filter((item) => isWithinRecommendationDriveRange(item.driveMinutes));
   const unseenPlaces = nearbyPlaces.filter(({ place }) => {
     const visitedDate = state.visitedPlaces[place.name]?.date;
     return !visitedDate || Date.now() - Date.parse(`${visitedDate}T00:00:00`) >= 90 * 24 * 60 * 60 * 1000;
   });
   const pool = unseenPlaces.length >= 3
     ? unseenPlaces
-    : (nearbyPlaces.length ? nearbyPlaces : rankedPlaces.filter((item) => item.driveMinutes != null));
+    : nearbyPlaces;
   if (pool.length <= 3) return pool;
 
   const cycle = getRecommendationCycle(day);
@@ -1693,6 +1992,9 @@ function selectRecommendationPlaces(rankedPlaces, day) {
   const seed = dateSeed(recommendationCycleKey(day));
   const start = (seed + cycle * windowSize) % pool.length;
   const window = Array.from({ length: windowSize }, (_, index) => pool[(start + index) % pool.length]);
+  const everydayPlaces = pool.filter(({ place, score }) =>
+    EVERYDAY_PLACE_CATEGORIES.has(place.category) && score >= 55
+  );
   const selected = [];
 
   while (selected.length < 3 && window.length) {
@@ -1701,13 +2003,19 @@ function selectRecommendationPlaces(rankedPlaces, day) {
     window.forEach((candidate, index) => {
       const repeatedCity = selected.some((item) => item.place.city === candidate.place.city);
       const repeatedType = selected.some((item) => item.place.type === candidate.place.type);
-      const utility = candidate.score - (repeatedCity ? 12 : 0) - (repeatedType ? 5 : 0);
+      const repeatedCategory = candidate.place.category
+        && selected.some((item) => item.place.category === candidate.place.category);
+      const utility = candidate.score - (repeatedCity ? 12 : 0)
+        - (repeatedType ? 5 : 0) - (repeatedCategory ? 8 : 0);
       if (utility > bestUtility) {
         bestUtility = utility;
         bestIndex = index;
       }
     });
     selected.push(window.splice(bestIndex, 1)[0]);
+  }
+  if (everydayPlaces.length && !selected.some(({ place }) => EVERYDAY_PLACE_CATEGORIES.has(place.category))) {
+    selected[selected.length - 1] = everydayPlaces[(seed + cycle) % everydayPlaces.length];
   }
   return selected;
 }
@@ -2023,7 +2331,7 @@ function renderRankedPlaces(rankedPlaces, fallbackDay) {
       <span class="rank-place-icon" aria-hidden="true">${place.emoji}</span>
       <span class="rank-place-content">
         <strong class="rank-place-name">${placeName}</strong>
-        <span class="rank-place-meta">${city} · ${formatDriveTime(driveMinutes)} · ${place.type === "indoor" ? "실내" : "야외"}</span>
+        <span class="rank-place-meta">${city} · ${formatDriveTime(driveMinutes)} · ${place.type === "indoor" ? "실내" : "야외"}${place.category ? ` · ${escapeHTML(place.category)}` : ""}</span>
         <span class="rank-place-weather">${icon} ${condition} · ${Math.round(day.min)}~${Math.round(day.max)}° · 비 ${Math.round(day.rain)}%</span>
       </span>
       <span class="rank-place-score">추천 ${score}점</span>
@@ -2031,7 +2339,7 @@ function renderRankedPlaces(rankedPlaces, fallbackDay) {
     rankedPlaceList.append(item);
   });
   document.querySelector("#all-places-title").textContent =
-    `전체 장소 ${rankedPlaces.length}곳 · 추천 점수순`;
+    `차량 3시간 이내 ${rankedPlaces.length}곳 · 추천 점수순`;
 }
 
 function renderDistanceRecommendations(rankedPlaces, fallbackDay) {
@@ -2040,12 +2348,18 @@ function renderDistanceRecommendations(rankedPlaces, fallbackDay) {
   const maxMinutes = state.distanceLimitHours * 60;
   const minMinutes = (state.distanceLimitHours - 1) * 60;
   const timeRangeLabel = state.distanceLimitHours === 1 ? "1시간 이내" : `${state.distanceLimitHours - 1}~${state.distanceLimitHours}시간`;
-  const nearbyPlaces = rankedPlaces
+  const availablePlaces = rankedPlaces
     .filter((item) => item.driveMinutes != null
       && (state.distanceLimitHours === 1 ? item.driveMinutes >= 0 : item.driveMinutes > minMinutes)
       && item.driveMinutes <= maxMinutes
-      && matchesPlaceFilter(item.place))
-    .slice(0, 8);
+      && matchesPlaceFilter(item.place));
+  const nearbyPlaces = availablePlaces.slice(0, 4);
+  EVERYDAY_PLACE_CATEGORIES.forEach((category) => {
+    if (nearbyPlaces.length >= 8 || nearbyPlaces.some((item) => item.place.category === category)) return;
+    const categoryPlace = availablePlaces.find((item) => item.place.category === category);
+    if (categoryPlace) nearbyPlaces.push(categoryPlace);
+  });
+  nearbyPlaces.sort((first, second) => rankedPlaces.indexOf(first) - rankedPlaces.indexOf(second));
 
   document.querySelectorAll(".distance-tab").forEach((button) => {
     button.setAttribute("aria-pressed", String(Number(button.dataset.maxHours) === state.distanceLimitHours));
@@ -2072,7 +2386,7 @@ function renderDistanceRecommendations(rankedPlaces, fallbackDay) {
       <span class="rank-place-icon" aria-hidden="true">${place.emoji}</span>
       <span class="rank-place-content">
         <strong class="rank-place-name">${placeName}</strong>
-        <span class="rank-place-meta">${city} · ${formatDriveTime(driveMinutes)} · ${place.type === "indoor" ? "실내" : "야외"}</span>
+        <span class="rank-place-meta">${city} · ${formatDriveTime(driveMinutes)} · ${place.type === "indoor" ? "실내" : "야외"}${place.category ? ` · ${escapeHTML(place.category)}` : ""}</span>
         <span class="rank-place-weather">${icon} ${condition} · 추천 ${score}점</span>
       </span>
       <a class="rank-map-link" href="${naverDirectionsUrl(place)}" data-fallback-url="${naverWebDirectionsUrl(place)}" target="_blank" rel="noopener noreferrer" aria-label="${placeName} 네이버 자동차 길찾기">길찾기</a>
@@ -2097,7 +2411,7 @@ function renderWeatherAlternatives(rankedPlaces, day) {
     return;
   }
   const alternatives = rankedPlaces
-    .filter((item) => item.place.type === "indoor")
+    .filter((item) => isWithinRecommendationDriveRange(item.driveMinutes) && item.place.type === "indoor")
     .slice(0, 3);
   document.querySelector("#weather-alternative-note").textContent =
     "선택한 날짜의 비·눈·바람·기온·공기질을 고려해 실내 장소를 골랐어요. 방문 전 운영 여부를 확인해 주세요.";
@@ -2117,7 +2431,7 @@ function renderWeatherAlternatives(rankedPlaces, day) {
     item.innerHTML = `<span class="place-emoji" aria-hidden="true">${escapeHTML(place.emoji)}</span>
       <div class="weather-alternative-content">
         <strong>${placeName}</strong>
-        <span>${city} · ${formatDriveTime(driveMinutes)}</span>
+        <span>${city} · ${formatDriveTime(driveMinutes)}${place.category ? ` · ${escapeHTML(place.category)}` : ""}</span>
         <span>${icon} ${condition} · 비 ${Math.round(destinationDay.rain)}%</span>
       </div>
       ${foodLink}
@@ -2143,7 +2457,10 @@ function renderRecommendations() {
   }
 
   const rankedPlaces = rankDestinations(day);
-  const filteredPlaces = rankedPlaces.filter(({ place }) => matchesPlaceFilter(place));
+  const nearbyRankedPlaces = rankedPlaces.filter(({ driveMinutes }) =>
+    isWithinRecommendationDriveRange(driveMinutes)
+  );
+  const filteredPlaces = nearbyRankedPlaces.filter(({ place }) => matchesPlaceFilter(place));
   renderRankedPlaces(filteredPlaces, day);
   renderDistanceRecommendations(rankedPlaces, day);
   renderWeatherAlternatives(rankedPlaces, day);
@@ -2153,7 +2470,7 @@ function renderRecommendations() {
     ? `아이 만 ${state.family.childAges.join("·")}세`
     : "아이 동반 없음";
   document.querySelector("#recommend-intro").textContent =
-    `${dateLabel(day.date, { month: "long", day: "numeric", weekday: "long" })} · 어른 ${state.family.adults}명, ${childSummary} · ${condition}, ${Math.round(day.min)}~${Math.round(day.max)}° · 비 ${Math.round(day.rain)}%`;
+    `${dateLabel(day.date, { month: "long", day: "numeric", weekday: "long" })} · 어른 ${state.family.adults}명, ${childSummary} · ${condition}, ${Math.round(day.min)}~${Math.round(day.max)}° · 비 ${Math.round(day.rain)}% · 쇼핑몰·시장·거리도 추천`;
   document.querySelector("#recommendation-feedback").textContent = state.recommendationFeedback;
   document.querySelector("#undo-visit").hidden = !state.lastVisitedPlace;
 
@@ -2179,7 +2496,7 @@ function renderRecommendations() {
         <div class="place-emoji" aria-hidden="true">${place.emoji}</div>
         <div class="place-content">
           <div class="place-title-row"><h3 class="place-title">${placeName}</h3><span class="score-pill">추천 ${score}점</span></div>
-          <p class="place-meta">${city} · ${formatDriveTime(driveMinutes)} · ${place.type === "indoor" ? "실내" : "야외"}</p>
+          <p class="place-meta">${city} · ${formatDriveTime(driveMinutes)} · ${place.type === "indoor" ? "실내" : "야외"}${place.category ? ` · ${escapeHTML(place.category)}` : ""}</p>
           <p class="place-description">${place.description}</p>
           <div class="place-tags">${place.tags.map((tag) => `<span class="tag">${tag}</span>`).join("")}</div>
         </div>
@@ -2287,7 +2604,7 @@ async function loadWeather() {
   const weatherPlaces = [...new Map(DESTINATIONS
     .filter((place) => {
       const driveMinutes = estimateDriveMinutes(place);
-      return driveMinutes != null && driveMinutes <= 180;
+      return isWithinRecommendationDriveRange(driveMinutes);
     })
     .map((place) => [`${place.latitude.toFixed(4)}:${place.longitude.toFixed(4)}`, place])).values()];
   const locations = [state.location, ...weatherPlaces];
