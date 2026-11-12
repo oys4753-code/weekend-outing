@@ -2199,11 +2199,15 @@ function naverDirectionsUrl(place) {
   return `nmap://route/car?${params}`;
 }
 
+// 네이버 지도 웹 자동차 길찾기. 검색어("A에서 B 길찾기")는 네이버 지도가 해석하지 못해
+// "조건에 맞는 업체가 없습니다"가 나오므로, 출발·도착 좌표(경도,위도)를 경로 주소에 직접 넣습니다.
 function naverWebDirectionsUrl(place) {
-  // 현재 위치는 "현재 위치"라는 이름으로 검색되지 않으므로 역지오코딩한 동네 이름을 씁니다.
-  const originName = state.location.areaName || state.location.label;
-  const query = `${originName}에서 ${place.map} 길찾기`;
-  return `https://map.naver.com/p/search/${encodeURIComponent(query)}`;
+  const waypoint = (longitude, latitude, name) => {
+    const safeName = String(name || "").replace(/[,/]/g, " ").replace(/\s+/g, " ").trim().slice(0, 60);
+    return `${longitude.toFixed(6)},${latitude.toFixed(6)},${encodeURIComponent(safeName)},,`;
+  };
+  const originName = state.location.isCurrent ? "현재 위치" : state.location.label;
+  return `https://map.naver.com/p/directions/${waypoint(state.location.longitude, state.location.latitude, originName)}/${waypoint(place.longitude, place.latitude, place.name)}/-/car`;
 }
 
 function loadVisitedPlaces() {
