@@ -129,6 +129,32 @@
           <button type="button" id="refresh-places-button">지금 새로 찾기</button>
           <span class="place-data-policy">출발지 주변 최대 3시간 거리 · 웹을 열 때 주 1회 갱신</span>
         </div>
+        <details class="all-places-section custom-place-panel" id="custom-place-panel">
+          <summary class="all-places-summary">
+            <span>
+              <span class="eyebrow">ADD YOUR OWN PLACE</span>
+              <strong>＋ 장소 직접 추가</strong>
+            </span>
+            <span class="summary-chevron" aria-hidden="true">⌄</span>
+          </summary>
+          <p class="all-places-note">목록에 없는 장소를 이름으로 검색해 추가하면 추천·거리별·코스에 함께 반영돼요. 이 기기에만 저장되고 기록 백업 파일에 포함돼요.</p>
+          <form class="custom-place-form" id="custom-place-form">
+            <label class="sr-only" for="custom-place-query">추가할 장소 이름</label>
+            <input type="search" id="custom-place-query" placeholder="예: 국립생태원, 강릉 아르떼뮤지엄" maxlength="80" autocomplete="off" required>
+            <label class="sr-only" for="custom-place-type">장소 유형</label>
+            <select id="custom-place-type">
+              <option value="auto">유형 자동</option>
+              <option value="indoor">실내</option>
+              <option value="outdoor">야외</option>
+            </select>
+            <button type="submit" id="custom-place-search">검색</button>
+          </form>
+          <p class="custom-place-feedback" id="custom-place-feedback" role="status" aria-live="polite"></p>
+          <ul class="ranked-place-list custom-place-results" id="custom-place-results" aria-label="장소 검색 결과"></ul>
+          <h3 class="custom-place-heading">내가 추가한 장소</h3>
+          <ul class="ranked-place-list custom-place-list" id="custom-place-list"></ul>
+          <p class="custom-place-credit">장소 검색: Nominatim · <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">© OpenStreetMap contributors</a></p>
+        </details>
         <p class="distance-estimate-note">예상 시간은 OpenStreetMap 도로망 주행 시간에 날짜·권역별 혼잡과 정차 여유를 반영한 참고치예요. 조회가 안 되면 지형별 추정치를 사용하며, 실시간 정체와 정확한 경로는 네이버 길찾기에서 확인해 주세요.</p>
         <div class="distance-tabs" role="group" aria-label="차량 이동 시간 선택">
           <button type="button" class="distance-tab" data-max-hours="1" aria-pressed="true"><strong>1시간</strong><span>가볍게 당일치기</span></button>
@@ -221,6 +247,7 @@
       <button type="button" data-view="visited" aria-pressed="false"><span aria-hidden="true">♡</span>다녀온 곳</button>
       <button type="button" data-view="events" aria-pressed="false"><span aria-hidden="true">▦</span>행사</button>
     </nav>
+    <script src="./places-data.js" defer></script>
     <script src="./app.js" defer></script>
   </body>
 </html>

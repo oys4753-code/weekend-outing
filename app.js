@@ -20,7 +20,7 @@ const REGIONS = [
 ];
 const DESTINATIONS = [
   {
-    name: "순천만국가정원", city: "순천", distance: "시내", driveMinutes: 0, latitude: 34.9506, longitude: 127.4872, type: "outdoor", emoji: "🌷",
+    name: "순천만국가정원", city: "순천", distance: "시내", driveMinutes: 0, latitude: 34.9270, longitude: 127.4980, type: "outdoor", emoji: "🌷",
     description: "넓은 정원과 실내 전시 공간이 있어 아이들과 천천히 둘러보기 좋아요.",
     tags: ["유모차 추천", "화장실", "반나절 코스"], weather: "맑고 온화한 날",
     map: "순천만국가정원"
@@ -38,13 +38,13 @@ const DESTINATIONS = [
     map: "낙안읍성"
   },
   {
-    name: "순천드라마촬영장", city: "순천", distance: "차량 약 15분", driveMinutes: 15, latitude: 34.9287, longitude: 127.5228, type: "outdoor", emoji: "🎬",
+    name: "순천드라마촬영장", city: "순천", distance: "차량 약 15분", driveMinutes: 15, latitude: 34.9568, longitude: 127.5382, type: "outdoor", emoji: "🎬",
     description: "옛 거리와 세트장을 구경하는 가벼운 야외 나들이 코스예요.",
     tags: ["짧은 산책", "유모차 확인", "야외 코스"], weather: "비 적은 날",
     map: "순천드라마촬영장"
   },
   {
-    name: "여수 아쿠아플라넷", city: "여수", distance: "차량 약 40분", driveMinutes: 40, latitude: 34.7604, longitude: 127.6622, type: "indoor", emoji: "🐠",
+    name: "여수 아쿠아플라넷", city: "여수", distance: "차량 약 40분", driveMinutes: 40, latitude: 34.7463, longitude: 127.7486, type: "indoor", emoji: "🐠",
     description: "비나 추위를 피해 해양 생물을 볼 수 있는 실내 코스예요. 혼잡 시간과 입장권을 확인하세요.",
     tags: ["실내", "유아 동반", "운영시간 확인"], weather: "비·추위·더위 피하기",
     map: "여수 아쿠아플라넷"
@@ -62,7 +62,7 @@ const DESTINATIONS = [
     map: "곡성 섬진강기차마을"
   },
   {
-    name: "여수 아쿠아리움·엑스포 해양공원", city: "여수", distance: "차량 약 40분", driveMinutes: 40, latitude: 34.7604, longitude: 127.6622, type: "indoor", emoji: "⛵",
+    name: "여수 아쿠아리움·엑스포 해양공원", city: "여수", distance: "차량 약 40분", driveMinutes: 40, latitude: 34.7470, longitude: 127.7460, type: "indoor", emoji: "⛵",
     description: "실내 관람 후 날씨가 좋으면 엑스포 해양공원을 짧게 산책할 수 있어요.",
     tags: ["실내외 선택", "유모차 확인", "운영정보 확인"], weather: "날씨에 따라 실내외 선택",
     map: "여수 아쿠아플라넷"
@@ -104,7 +104,7 @@ const DESTINATIONS = [
     map: "진주성"
   },
   {
-    name: "남해 독일마을", city: "남해", distance: "차량 약 1시간 40분", driveMinutes: 100, latitude: 34.8377, longitude: 127.8925, type: "outdoor", emoji: "🏡",
+    name: "남해 독일마을", city: "남해", distance: "차량 약 1시간 40분", driveMinutes: 100, latitude: 34.7992, longitude: 128.0401, type: "outdoor", emoji: "🏡",
     description: "바다 전망과 마을 풍경을 즐기는 코스예요. 언덕이 있어 유아 동반 이동과 주차를 확인해 주세요.",
     tags: ["바다 전망", "마을 산책", "유모차 동선 확인"], weather: "비 적고 바람 약한 날",
     map: "남해 독일마을"
@@ -134,7 +134,7 @@ const DESTINATIONS = [
     map: "보성 대한다원"
   },
   {
-    name: "고흥 나로우주센터 우주과학관", city: "고흥", distance: "차량 약 1시간 30분", driveMinutes: 90, latitude: 34.4319, longitude: 127.535, type: "indoor", emoji: "🚀",
+    name: "고흥 나로우주센터 우주과학관", city: "고흥", distance: "차량 약 1시간 30분", driveMinutes: 90, latitude: 34.4536, longitude: 127.5176, type: "indoor", emoji: "🚀",
     description: "우주과학 전시와 체험을 즐기는 실내 중심 코스예요. 전시·체험 운영시간을 확인해 주세요.",
     tags: ["실내", "과학 체험", "운영시간 확인"], weather: "비·추위 피하기",
     map: "나로우주센터 우주과학관"
@@ -158,7 +158,7 @@ const DESTINATIONS = [
     map: "남원 광한루원"
   },
   {
-    name: "임실치즈테마파크", city: "임실", distance: "차량 약 1시간 40분", driveMinutes: 100, latitude: 35.6127, longitude: 127.2786, type: "outdoor", emoji: "🧀",
+    name: "임실치즈테마파크", city: "임실", distance: "차량 약 1시간 40분", driveMinutes: 100, latitude: 35.6332, longitude: 127.3014, type: "outdoor", emoji: "🧀",
     description: "넓은 테마 공간과 가족 체험을 즐겨요. 체험은 날짜별 운영과 예약 여부를 확인해 주세요.",
     tags: ["가족 체험", "넓은 공간", "예약 확인"], weather: "비 적고 온화한 날",
     map: "임실치즈테마파크"
@@ -170,7 +170,7 @@ const DESTINATIONS = [
     map: "장흥 정남진 편백숲 우드랜드"
   },
   {
-    name: "강진 고려청자박물관", city: "강진", distance: "차량 약 1시간 20분", driveMinutes: 80, latitude: 34.5417, longitude: 126.7953, type: "indoor", emoji: "🏺",
+    name: "강진 고려청자박물관", city: "강진", distance: "차량 약 1시간 20분", driveMinutes: 80, latitude: 34.5086, longitude: 126.8009, type: "indoor", emoji: "🏺",
     description: "고려청자를 살펴보는 실내 전시 코스예요. 전시와 체험 프로그램 운영을 확인하세요.",
     tags: ["실내", "도자기 전시", "체험 확인"], weather: "비·추위 피하기",
     map: "강진 고려청자박물관"
@@ -182,7 +182,7 @@ const DESTINATIONS = [
     map: "영암 왕인박사유적지"
   },
   {
-    name: "나주 국립나주박물관", city: "나주", distance: "차량 약 1시간 20분", driveMinutes: 80, latitude: 34.9854, longitude: 126.7274, type: "indoor", emoji: "🏛️",
+    name: "나주 국립나주박물관", city: "나주", distance: "차량 약 1시간 20분", driveMinutes: 80, latitude: 34.9151, longitude: 126.6595, type: "indoor", emoji: "🏛️",
     description: "영산강 유역의 역사를 실내에서 관람해요. 어린이 체험과 휴관일을 확인해 주세요.",
     tags: ["실내", "역사 전시", "어린이 체험"], weather: "비·추위 피하기",
     map: "국립나주박물관"
@@ -194,7 +194,7 @@ const DESTINATIONS = [
     map: "광주 패밀리랜드"
   },
   {
-    name: "익산 보석박물관", city: "익산", distance: "차량 약 2시간 10분", driveMinutes: 130, latitude: 36.0025, longitude: 127.0008, type: "indoor", emoji: "💎",
+    name: "익산 보석박물관", city: "익산", distance: "차량 약 2시간 10분", driveMinutes: 130, latitude: 35.9894, longitude: 127.0997, type: "indoor", emoji: "💎",
     description: "보석 전시를 실내에서 둘러보는 코스예요. 주변 공원은 날씨가 좋을 때 함께 즐길 수 있어요.",
     tags: ["실내", "전시 관람", "공원 연계"], weather: "비·추위 피하기",
     map: "익산 보석박물관"
@@ -206,7 +206,7 @@ const DESTINATIONS = [
     map: "군산 근대역사박물관"
   },
   {
-    name: "사천 항공우주박물관", city: "사천", distance: "차량 약 1시간 40분", driveMinutes: 100, latitude: 35.0887, longitude: 128.0717, type: "indoor", emoji: "✈️",
+    name: "사천 항공우주박물관", city: "사천", distance: "차량 약 1시간 40분", driveMinutes: 100, latitude: 35.0717, longitude: 128.0632, type: "indoor", emoji: "✈️",
     description: "항공기와 우주 관련 전시를 즐겨요. 야외 전시장도 있어 날씨와 관람 동선을 확인하세요.",
     tags: ["실내외 전시", "항공기", "운영시간 확인"], weather: "날씨에 따라 실내외 선택",
     map: "사천 항공우주박물관"
@@ -296,7 +296,7 @@ const DESTINATIONS = [
     map: "독립기념관"
   },
   {
-    name: "국립대구과학관", city: "대구", distance: "", driveMinutes: 0, latitude: 35.7988, longitude: 128.488, type: "indoor", emoji: "🧪",
+    name: "국립대구과학관", city: "대구", distance: "", driveMinutes: 0, latitude: 35.6866, longitude: 128.4651, type: "indoor", emoji: "🧪",
     description: "어린이 전시와 과학 체험을 즐길 수 있는 실내 장소예요. 체험관 예약을 확인하세요.",
     tags: ["실내", "과학 체험", "어린이 프로그램"], weather: "비·추위 피하기",
     map: "국립대구과학관"
@@ -634,8 +634,14 @@ const ADDITIONAL_CURATED_PLACES = [
   }
 ];
 DESTINATIONS.push(...ADDITIONAL_CURATED_PLACES);
+(Array.isArray(window.EXTRA_CURATED_PLACES) ? window.EXTRA_CURATED_PLACES : []).forEach((place) => {
+  if (!DESTINATIONS.some((saved) => saved.name === place.name)) DESTINATIONS.push(place);
+});
 const BASE_DESTINATION_COUNT = DESTINATIONS.length;
-const PLACE_CACHE_KEY = "weekend-outing-osm-cache-v4";
+const PLACE_CACHE_KEY = "weekend-outing-osm-cache-v5";
+const CUSTOM_PLACES_KEY = "weekend-outing-custom-places";
+const MAX_CUSTOM_PLACES = 60;
+const NOMINATIM_SEARCH_ENDPOINT = "https://nominatim.openstreetmap.org/search";
 const ITINERARY_KEY = "weekend-outing-itinerary";
 const VISITED_KEY = "weekend-outing-visited";
 const FAMILY_KEY = "weekend-outing-family";
@@ -643,20 +649,27 @@ const INDOOR_FILTER_KEY = "weekend-outing-indoor-only";
 const LEGACY_AMENITY_FILTER_KEY = "weekend-outing-amenity-filters";
 const PLACE_REFRESH_INTERVAL = 7 * 24 * 60 * 60 * 1000;
 const MAX_RECOMMENDATION_DRIVE_MINUTES = 180;
-const PLACE_SEARCH_RADIUS_METERS = 160000;
-const FOOD_SEARCH_RADIUS_METERS = 25000;
+// 대형 명소(박물관·동물원·테마파크 등)는 넓게, 공원·유적·시장 등 개수가 많은 유형은 좁게 찾아
+// 공개 Overpass 서버의 응답 시간을 줄입니다.
+const MAJOR_PLACE_SEARCH_RADIUS_METERS = 100000;
+const LOCAL_PLACE_SEARCH_RADIUS_METERS = 40000;
+const FOOD_SEARCH_RADIUS_METERS = 10000;
+const OVERPASS_REQUEST_TIMEOUT = 60000;
+const MINOR_PARK_NAME_PATTERN = /어린이공원$|소공원$|쌈지|마을마당|근린공원$|체육공원$/;
 const POPULAR_STREET_PATTERN = /가로수길|경리단길|카페거리|객리단길|동성로|충장로|으능정이거리/;
 const EVERYDAY_PLACE_CATEGORIES = new Set([
   "쇼핑몰·백화점", "시장·장터", "인기 거리", "보행 거리", "공원·자연",
   "박물관·전시", "동물·수족관", "테마파크", "역사·문화유산", "문화공간"
 ]);
-const MAX_DISCOVERED_PLACES = 40;
-const MAX_DISCOVERED_PER_CATEGORY = 8;
-const WEATHER_REQUEST_TIMEOUT = 12000;
-const AIR_QUALITY_REQUEST_TIMEOUT = 8000;
+const MAX_DISCOVERED_PLACES = 100;
+const MAX_DISCOVERED_PER_CATEGORY = 15;
+const RECOMMENDATION_CARD_COUNT = 6;
+const WEATHER_REQUEST_TIMEOUT = 15000;
+const AIR_QUALITY_REQUEST_TIMEOUT = 10000;
 const OVERPASS_ENDPOINTS = [
-  "https://overpass.kumi.systems/api/interpreter",
-  "https://overpass-api.de/api/interpreter"
+  "https://overpass-api.de/api/interpreter",
+  "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+  "https://overpass.kumi.systems/api/interpreter"
 ];
 
 const EVENTS = [
@@ -703,6 +716,7 @@ const state = {
   forecast: [],
   destinationWeather: new Map(),
   roadDurationMap: new Map(),
+  roadDistanceMap: new Map(),
   routeRequestId: 0,
   selectedDate: null,
   location: SUN_CHEON,
@@ -714,6 +728,10 @@ const state = {
   recommendationFeedback: "",
   lastVisitedPlace: null,
   discoveredPlaceCount: 0,
+  discoveredPlaces: [],
+  customPlaces: [],
+  customPlaceResults: [],
+  customPlaceFeedback: "",
   placeDataUpdatedAt: null,
   placeDataSource: "curated",
   nearbyRestaurants: [],
@@ -740,37 +758,36 @@ function initializeLocationSettings() {
     select.append(option);
   });
 
+  let savedRegion = null;
   try {
-    const savedRegion = localStorage.getItem("weekend-outing-region");
+    savedRegion = localStorage.getItem("weekend-outing-region");
     if (REGIONS.some((region) => region.id === savedRegion)) state.locationRegion = savedRegion;
   } catch (error) {
     console.warn("저장된 출발 지역을 불러오지 못했습니다.", error);
   }
-  const region = REGIONS.find((item) => item.id === state.locationRegion) || REGIONS.find((item) => item.id === "suncheon");
-  state.location = { ...region };
-  select.value = region.id;
+  // 마지막으로 '현재 위치'를 썼다면(12시간 이내) 새로고침해도 그 좌표를 출발지로 유지합니다.
+  const savedCurrent = savedRegion === "current" ? loadSavedCurrentLocation() : null;
+  if (savedCurrent) {
+    state.location = savedCurrent;
+    state.locationRegion = nearestRegionId(savedCurrent.latitude, savedCurrent.longitude);
+    currentLocationOption.textContent = savedCurrent.label;
+    select.value = "current";
+  } else {
+    const region = REGIONS.find((item) => item.id === state.locationRegion) || REGIONS.find((item) => item.id === "suncheon");
+    state.location = { ...region };
+    select.value = region.id;
+  }
   select.addEventListener("change", () => {
     const selectedRegion = REGIONS.find((item) => item.id === select.value);
     if (!selectedRegion) return;
     state.locationRegion = selectedRegion.id;
-    state.location = { ...selectedRegion };
-    state.routeRequestId += 1;
-    state.roadDurationMap.clear();
+    currentLocationOption.textContent = "현재 위치";
     try {
       localStorage.setItem("weekend-outing-region", selectedRegion.id);
     } catch (error) {
       console.warn("출발 지역을 이 기기에 저장하지 못했습니다.", error);
     }
-    state.suggestedItinerary = [];
-    document.querySelector("#suggested-itinerary-summary").textContent =
-      "출발 지역이 바뀌었어요. 코스를 다시 추천받아 보세요.";
-    state.selectedDate = null;
-    state.forecast = [];
-    state.destinationWeather.clear();
-    renderDays();
-    renderRecommendations();
-    renderEvents();
-    refreshPlacesForCurrentLocation();
+    applyStartLocation({ ...selectedRegion });
   });
 }
 
@@ -778,10 +795,14 @@ function isJejuCoordinates(latitude, longitude) {
   return latitude >= 32.8 && latitude <= 34.2 && longitude >= 125.5 && longitude <= 127.5;
 }
 
-const ROUTE_MATRIX_CACHE_KEY = "weekend-outing-route-matrix-v1";
+const ROUTE_MATRIX_CACHE_KEY = "weekend-outing-route-matrix-v2";
+const CURRENT_LOCATION_KEY = "weekend-outing-current-location";
+const CURRENT_LOCATION_MAX_AGE_MS = 12 * 60 * 60 * 1000;
+const OSRM_ROUTE_ENDPOINT = "https://router.project-osrm.org/route/v1/driving/";
 const ROUTE_MATRIX_CACHE_TTL_MS = 30 * 24 * 60 * 60 * 1000;
 const OSRM_TABLE_ENDPOINT = "https://router.project-osrm.org/table/v1/driving/";
 const OSRM_MAX_TARGETS = 90;
+const OSRM_MAX_BATCHES = 4;
 const MAJOR_TOURISM_CITIES = new Set([
   "강릉", "경주", "남해", "부산", "속초", "여수", "전주", "제주", "춘천",
   "통영", "평창", "거제", "서귀포", "보령"
@@ -791,8 +812,9 @@ const MOUNTAIN_OR_COASTAL_CITIES = new Set([
   "영월", "인제", "정선", "태백", "통영", "평창", "홍천"
 ]);
 
+// 약 100m 단위로 묶어, 현재 위치가 조금씩 흔들려도 같은 도로 시간 캐시를 다시 씁니다.
 function getOriginRouteKey(origin) {
-  return `${origin.latitude.toFixed(4)},${origin.longitude.toFixed(4)}`;
+  return `${origin.latitude.toFixed(3)},${origin.longitude.toFixed(3)}`;
 }
 
 function getRouteDestinationKey(place) {
@@ -807,8 +829,21 @@ function isMajorTourismArea(place) {
   return MAJOR_TOURISM_CITIES.has(String(place.city || "").replace(/\s/g, ""));
 }
 
-function getTrafficAdjustedMinutes(origin, destination, rawMinutes) {
+// 공개 OSRM은 신호·정체 없는 자유 주행 속도로 계산해 시내 구간을 짧게 잡는 경향이 있습니다.
+// OSRM이 함께 주는 도로 거리로 평균속도를 구해, 시내(저속)는 크게·고속도로(고속)는 작게 보정합니다.
+function calibrateOsrmMinutes(rawMinutes, roadKm) {
   if (!Number.isFinite(rawMinutes) || rawMinutes <= 0) return 0;
+  const averageSpeedKmh = Number.isFinite(roadKm) && roadKm > 0 ? roadKm / (rawMinutes / 60) : 50;
+  const factor = averageSpeedKmh < 30 ? 1.45
+    : averageSpeedKmh < 45 ? 1.32
+      : averageSpeedKmh < 60 ? 1.2
+        : averageSpeedKmh < 75 ? 1.12 : 1.06;
+  return rawMinutes * factor;
+}
+
+// 날짜(주말·평일)와 권역(수도권·주요 관광지) 혼잡, 장거리 휴게·주차 여유를 더합니다.
+function getTrafficAdjustedMinutes(origin, destination, baseMinutes) {
+  if (!Number.isFinite(baseMinutes) || baseMinutes <= 0) return 0;
 
   const date = state.selectedDate || toISODate(new Date());
   const dayOfWeek = new Date(`${date}T12:00:00`).getDay();
@@ -818,30 +853,58 @@ function getTrafficAdjustedMinutes(origin, destination, rawMinutes) {
     || isMajorTourismArea(destination);
   let multiplier = 1;
 
-  if (isWeekend) multiplier += congestionArea ? 0.27 : 0.15;
-  else if (isMetroArea(origin) && isMetroArea(destination)) multiplier += 0.1;
+  if (isWeekend) multiplier += congestionArea ? 0.18 : 0.08;
+  else if (isMetroArea(origin) && isMetroArea(destination)) multiplier += 0.08;
 
-  const restBuffer = rawMinutes >= 110 ? 15 : rawMinutes >= 70 ? 5 : 0;
-  const parkingBuffer = 5;
-  return Math.max(5, Math.round((rawMinutes * multiplier + restBuffer + parkingBuffer) / 5) * 5);
+  const restBuffer = baseMinutes >= 120 ? 10 : 0;
+  const parkingBuffer = baseMinutes >= 15 ? 5 : 3;
+  return Math.max(5, Math.round((baseMinutes * multiplier + restBuffer + parkingBuffer) / 5) * 5);
 }
 
-function estimateFallbackDriveMinutes(origin, place) {
-  const straightDistanceKm = distanceBetweenCoordinates(origin, place);
-  if (straightDistanceKm < 1) return 0;
-  if (straightDistanceKm < 1.2) return 5;
-
+function estimateRoadFactor(straightDistanceKm, place) {
   const city = String(place.city || "").replace(/\s/g, "");
   const isMountainOrCoastal = MOUNTAIN_OR_COASTAL_CITIES.has(city)
     || (place.latitude > 37.3 && place.longitude > 127.5);
   const baseRoadFactor = straightDistanceKm < 15 ? 1.48
     : straightDistanceKm < 50 ? 1.38
       : straightDistanceKm < 120 ? 1.28 : 1.22;
-  const roadFactor = isMountainOrCoastal ? baseRoadFactor * 1.12 : baseRoadFactor;
-  const averageSpeedKmh = straightDistanceKm < 15 ? 32
-    : straightDistanceKm < 45 ? 52
-      : straightDistanceKm < 100 ? 68 : 78;
-  return Math.round((straightDistanceKm * roadFactor / averageSpeedKmh) * 60) + 6;
+  return isMountainOrCoastal ? baseRoadFactor * 1.12 : baseRoadFactor;
+}
+
+// 도로망 조회가 안 될 때의 추정치(분). 거리대별 평균 실주행 속도를 이미 반영합니다.
+function estimateFallbackDriveMinutes(origin, place) {
+  const straightDistanceKm = distanceBetweenCoordinates(origin, place);
+  if (straightDistanceKm < 1) return 0;
+  if (straightDistanceKm < 1.2) return 5;
+
+  const roadKm = straightDistanceKm * estimateRoadFactor(straightDistanceKm, place);
+  const averageSpeedKmh = straightDistanceKm < 15 ? 28
+    : straightDistanceKm < 45 ? 48
+      : straightDistanceKm < 100 ? 66 : 76;
+  return Math.round((roadKm / averageSpeedKmh) * 60) + 4;
+}
+
+function isSameOrigin(first, second) {
+  return Math.abs(first.latitude - second.latitude) < 0.001
+    && Math.abs(first.longitude - second.longitude) < 0.001;
+}
+
+// 출발지→장소 도로 거리(km)와 실측 여부. 도로망 결과가 없으면 지형별 굴곡 계수로 추정합니다.
+function estimateDriveDistanceBetween(origin, place) {
+  const originIsJeju = origin.island === "jeju" || isJejuCoordinates(origin.latitude, origin.longitude);
+  const destinationIsJeju = place.island === "jeju" || isJejuCoordinates(place.latitude, place.longitude);
+  if (originIsJeju !== destinationIsJeju) return null;
+  const straightDistanceKm = distanceBetweenCoordinates(origin, place);
+  const measuredKm = isSameOrigin(origin, state.location)
+    ? state.roadDistanceMap.get(getRouteDestinationKey(place))
+    : undefined;
+  if (Number.isFinite(measuredKm)) return { km: measuredKm, measured: true };
+  if (straightDistanceKm < 1) return { km: straightDistanceKm, measured: false };
+  return { km: straightDistanceKm * estimateRoadFactor(straightDistanceKm, place), measured: false };
+}
+
+function formatDistanceKm(km) {
+  return km < 10 ? `${(Math.round(km * 10) / 10).toFixed(1)}km` : `${Math.round(km)}km`;
 }
 
 async function fetchActualRoadTimes() {
@@ -861,8 +924,7 @@ async function fetchActualRoadTimes() {
     .map((place) => ({ place, fallbackMinutes: estimateFallbackDriveMinutes(origin, place) }))
     .filter(({ fallbackMinutes }) => fallbackMinutes <= 240)
     .sort((first, second) => first.fallbackMinutes - second.fallbackMinutes)
-    .slice(0, OSRM_MAX_TARGETS);
-  const targetKeys = targets.map(({ place }) => getRouteDestinationKey(place));
+    .slice(0, OSRM_MAX_TARGETS * OSRM_MAX_BATCHES);
 
   let cachedOrigin = null;
   try {
@@ -876,6 +938,10 @@ async function fetchActualRoadTimes() {
       state.roadDurationMap = new Map(
         Object.entries(entry.durations).filter(([, minutes]) => Number.isFinite(minutes) && minutes >= 0)
       );
+      state.roadDistanceMap = new Map(
+        Object.entries(entry.distances && typeof entry.distances === "object" ? entry.distances : {})
+          .filter(([, km]) => Number.isFinite(km) && km >= 0)
+      );
     }
   } catch (error) {
     console.warn("도로 시간 캐시를 불러오지 못했습니다. 온라인 조회를 시도합니다.", error);
@@ -883,58 +949,71 @@ async function fetchActualRoadTimes() {
 
   const cachedKeys = new Set(cachedOrigin?.targetKeys || []);
   const missingTargets = targets.filter(({ place }) => !cachedKeys.has(getRouteDestinationKey(place)));
-  if (cachedOrigin && missingTargets.length === 0) {
-    renderRecommendations();
+  if (!missingTargets.length) {
+    if (cachedOrigin) renderRecommendations();
     return;
   }
-  if (!targets.length || requestId !== state.routeRequestId) return;
+  if (requestId !== state.routeRequestId) return;
 
-  const coordinates = [
-    `${origin.longitude.toFixed(5)},${origin.latitude.toFixed(5)}`,
-    ...targets.map(({ place }) => `${place.longitude.toFixed(5)},${place.latitude.toFixed(5)}`)
-  ].join(";");
-
-  try {
-    const response = await fetch(`${OSRM_TABLE_ENDPOINT}${coordinates}?sources=0`, {
-      signal: AbortSignal.timeout(8000)
-    });
-    if (!response.ok) throw new Error(`OSRM 응답 오류 (${response.status})`);
-    const data = await response.json();
-    if (data.code !== "Ok" || !Array.isArray(data.durations?.[0])
-      || data.durations[0].length !== targets.length + 1) {
-      throw new Error("OSRM 응답에 유효한 이동 시간 표가 없습니다.");
-    }
-    if (requestId !== state.routeRequestId || getOriginRouteKey(state.location) !== originKey) return;
-
-    const durations = Object.fromEntries(state.roadDurationMap);
-    targets.forEach(({ place }, index) => {
-      const seconds = data.durations[0][index + 1];
-      if (typeof seconds === "number" && Number.isFinite(seconds) && seconds >= 0) {
-        durations[getRouteDestinationKey(place)] = Math.round(seconds / 60);
-      }
-    });
-    state.roadDurationMap = new Map(Object.entries(durations));
-
+  const durations = Object.fromEntries(state.roadDurationMap);
+  const distances = Object.fromEntries(state.roadDistanceMap);
+  const fetchedKeys = [];
+  for (let start = 0; start < missingTargets.length; start += OSRM_MAX_TARGETS) {
+    const batch = missingTargets.slice(start, start + OSRM_MAX_TARGETS);
+    const coordinates = [
+      `${origin.longitude.toFixed(5)},${origin.latitude.toFixed(5)}`,
+      ...batch.map(({ place }) => `${place.longitude.toFixed(5)},${place.latitude.toFixed(5)}`)
+    ].join(";");
     try {
-      const cache = JSON.parse(localStorage.getItem(ROUTE_MATRIX_CACHE_KEY) || "{}");
-      cache[originKey] = {
-        updatedAt: Date.now(),
-        targetKeys: [...new Set([...(cachedOrigin?.targetKeys || []), ...targetKeys])],
-        durations
-      };
-      const recentEntries = Object.entries(cache)
-        .sort((first, second) => second[1].updatedAt - first[1].updatedAt)
-        .slice(0, 10);
-      localStorage.setItem(ROUTE_MATRIX_CACHE_KEY, JSON.stringify(Object.fromEntries(recentEntries)));
+      const response = await fetch(`${OSRM_TABLE_ENDPOINT}${coordinates}?sources=0&annotations=duration,distance`, {
+        signal: AbortSignal.timeout(10000)
+      });
+      if (!response.ok) throw new Error(`OSRM 응답 오류 (${response.status})`);
+      const data = await response.json();
+      if (data.code !== "Ok" || !Array.isArray(data.durations?.[0])
+        || data.durations[0].length !== batch.length + 1) {
+        throw new Error("OSRM 응답에 유효한 이동 시간 표가 없습니다.");
+      }
+      if (requestId !== state.routeRequestId || getOriginRouteKey(state.location) !== originKey) return;
+      batch.forEach(({ place }, index) => {
+        const key = getRouteDestinationKey(place);
+        const seconds = data.durations[0][index + 1];
+        if (typeof seconds === "number" && Number.isFinite(seconds) && seconds >= 0) {
+          durations[key] = Math.round(seconds / 6) / 10;
+        }
+        const meters = data.distances?.[0]?.[index + 1];
+        if (typeof meters === "number" && Number.isFinite(meters) && meters >= 0) {
+          distances[key] = Math.round(meters / 100) / 10;
+        }
+        fetchedKeys.push(key);
+      });
     } catch (error) {
-      console.warn("도로 시간 캐시를 저장하지 못했습니다.", error);
-    }
-    renderRecommendations();
-  } catch (error) {
-    if (requestId === state.routeRequestId) {
-      console.warn("OSRM 실제 도로 시간 조회에 실패했습니다. 지형 보정 추정치를 사용합니다.", error);
+      if (requestId === state.routeRequestId) {
+        console.warn("OSRM 실제 도로 시간 조회에 실패했습니다. 지형 보정 추정치를 사용합니다.", error);
+      }
+      break;
     }
   }
+  if (!fetchedKeys.length || requestId !== state.routeRequestId) return;
+  state.roadDurationMap = new Map(Object.entries(durations));
+  state.roadDistanceMap = new Map(Object.entries(distances));
+
+  try {
+    const cache = JSON.parse(localStorage.getItem(ROUTE_MATRIX_CACHE_KEY) || "{}");
+    cache[originKey] = {
+      updatedAt: cachedOrigin?.updatedAt ?? Date.now(),
+      targetKeys: [...new Set([...(cachedOrigin?.targetKeys || []), ...fetchedKeys])],
+      durations,
+      distances
+    };
+    const recentEntries = Object.entries(cache)
+      .sort((first, second) => second[1].updatedAt - first[1].updatedAt)
+      .slice(0, 10);
+    localStorage.setItem(ROUTE_MATRIX_CACHE_KEY, JSON.stringify(Object.fromEntries(recentEntries)));
+  } catch (error) {
+    console.warn("도로 시간 캐시를 저장하지 못했습니다.", error);
+  }
+  renderRecommendations();
 }
 
 function estimateDriveMinutes(place) {
@@ -953,17 +1032,25 @@ function estimateDriveMinutesBetween(origin, place) {
   if (originIsJeju !== destinationIsJeju) return null;
 
   const straightDistanceKm = distanceBetweenCoordinates(origin, place);
-  if (straightDistanceKm < 1) return 0;
-
-  const isMainOrigin = Math.abs(origin.latitude - state.location.latitude) < 0.01
-    && Math.abs(origin.longitude - state.location.longitude) < 0.01;
-  const roadMinutes = isMainOrigin
-    ? state.roadDurationMap.get(getRouteDestinationKey(place))
+  const routeKey = getRouteDestinationKey(place);
+  const roadMinutes = isSameOrigin(origin, state.location)
+    ? state.roadDurationMap.get(routeKey)
     : undefined;
-  const rawMinutes = Number.isFinite(roadMinutes)
-    ? roadMinutes
+  const roadKm = state.roadDistanceMap.get(routeKey);
+  // 직선 1km 미만이라도 강·철길 등으로 도로가 돌아가면 실제 도로 거리를 우선합니다.
+  if (Number.isFinite(roadMinutes)) {
+    if ((Number.isFinite(roadKm) ? roadKm : straightDistanceKm) < 1.5) return 0;
+  } else if (straightDistanceKm < 1) {
+    return 0;
+  }
+  const baseMinutes = Number.isFinite(roadMinutes)
+    ? calibrateOsrmMinutes(roadMinutes, roadKm)
     : estimateFallbackDriveMinutes(origin, place);
-  return getTrafficAdjustedMinutes(origin, place, rawMinutes);
+  return getTrafficAdjustedMinutes(origin, place, baseMinutes);
+}
+
+function estimateDriveDistance(place) {
+  return estimateDriveDistanceBetween(state.location, place);
 }
 
 function distanceBetweenCoordinates(first, second) {
@@ -1090,7 +1177,7 @@ function renderItinerary() {
       <span class="rank-place-icon" aria-hidden="true">${escapeHTML(place.emoji || "📍")}</span>
       <span class="rank-place-content">
         <strong class="rank-place-name">${placeName}</strong>
-        <span class="rank-place-meta">${escapeHTML(place.city)} · ${formatDriveTime(estimateDriveMinutes(place))}</span>
+        <span class="rank-place-meta">${escapeHTML(place.city)} · ${formatDriveTime(estimateDriveMinutes(place), place)}</span>
       </span>
       <div class="itinerary-actions">
         <button type="button" data-itinerary-action="up" data-index="${index}" aria-label="${placeName} 순서 위로" ${index === 0 ? "disabled" : ""}>↑</button>
@@ -1161,10 +1248,60 @@ function recommendItinerary() {
   state.suggestedItinerary = route;
   const weatherLabel = badWeather ? "날씨를 고려해 실내 위주로" : "날씨와 가까운 이동 거리를 고려해";
   const returnMinutes = estimateDriveMinutesBetween(route[route.length - 1].place, state.location) || 0;
-  const totalMinutes = route.reduce((total, stop) => total + stop.legMinutes, returnMinutes);
-  document.querySelector("#suggested-itinerary-summary").textContent =
-    `${dateLabel(day.date, { month: "long", day: "numeric" })} · ${weatherLabel} ${route.length}곳을 골랐어요. 출발·복귀 포함 예상 차량 이동 ${formatDuration(totalMinutes)}.`;
+  renderSuggestedItinerarySummary(route, day, weatherLabel, returnMinutes, null);
   renderSuggestedItinerary();
+  refineSuggestedItineraryWithRoads(route, day, weatherLabel);
+}
+
+function renderSuggestedItinerarySummary(route, day, weatherLabel, returnMinutes, roadTotals) {
+  const totalMinutes = route.reduce((total, stop) => total + stop.legMinutes, returnMinutes);
+  const distanceLabel = roadTotals
+    ? ` · 총 ${formatDistanceKm(roadTotals.km)} (도로망 기준)`
+    : " (추정치, 도로 경로 확인 중)";
+  document.querySelector("#suggested-itinerary-summary").textContent =
+    `${dateLabel(day.date, { month: "long", day: "numeric" })} · ${weatherLabel} ${route.length}곳을 골랐어요. 출발·복귀 포함 예상 차량 이동 ${formatDuration(totalMinutes)}${distanceLabel}.`;
+}
+
+// 출발지 → 코스 장소들 → 출발지 경로를 실제 도로망으로 한 번에 조회해 구간별 시간·거리를 바꿉니다.
+async function refineSuggestedItineraryWithRoads(route, day, weatherLabel) {
+  const origin = { ...state.location };
+  const points = [origin, ...route.map(({ place }) => place), origin];
+  const coordinates = points.map((point) => `${point.longitude.toFixed(5)},${point.latitude.toFixed(5)}`).join(";");
+  try {
+    const response = await fetch(`${OSRM_ROUTE_ENDPOINT}${coordinates}?overview=false`, {
+      signal: AbortSignal.timeout(10000)
+    });
+    if (!response.ok) throw new Error(`OSRM 경로 응답 오류 (${response.status})`);
+    const data = await response.json();
+    const legs = data.routes?.[0]?.legs;
+    if (data.code !== "Ok" || !Array.isArray(legs) || legs.length !== route.length + 1) {
+      throw new Error("OSRM 경로 응답에 구간 정보가 없습니다.");
+    }
+    if (state.suggestedItinerary !== route) return;
+    let returnMinutes = 0;
+    let totalKm = 0;
+    legs.forEach((leg, index) => {
+      const km = Number.isFinite(leg.distance) ? leg.distance / 1000 : 0;
+      const rawMinutes = Number.isFinite(leg.duration) ? leg.duration / 60 : 0;
+      const minutes = km < 0.3 ? 0 : getTrafficAdjustedMinutes(points[index], points[index + 1], calibrateOsrmMinutes(rawMinutes, km));
+      totalKm += km;
+      if (index < route.length) {
+        route[index].legMinutes = minutes;
+        route[index].legKm = km;
+      } else {
+        returnMinutes = minutes;
+      }
+    });
+    renderSuggestedItinerarySummary(route, day, weatherLabel, returnMinutes, { km: totalKm });
+    renderSuggestedItinerary();
+  } catch (error) {
+    if (state.suggestedItinerary !== route) return;
+    console.warn("추천 코스의 도로 경로를 조회하지 못해 추정치를 표시합니다.", error);
+    const returnMinutes = estimateDriveMinutesBetween(route[route.length - 1].place, origin) || 0;
+    const summary = document.querySelector("#suggested-itinerary-summary");
+    renderSuggestedItinerarySummary(route, day, weatherLabel, returnMinutes, null);
+    summary.textContent = summary.textContent.replace(" (추정치, 도로 경로 확인 중)", " (추정치)");
+  }
 }
 
 function renderSuggestedItinerary() {
@@ -1172,14 +1309,15 @@ function renderSuggestedItinerary() {
   const addButton = document.querySelector("#add-suggested-itinerary");
   list.replaceChildren();
   addButton.disabled = state.suggestedItinerary.length === 0;
-  state.suggestedItinerary.forEach(({ place, legMinutes }, index) => {
+  state.suggestedItinerary.forEach(({ place, legMinutes, legKm }, index) => {
     const item = document.createElement("li");
     item.className = "suggested-stop";
+    const legDistance = Number.isFinite(legKm) ? ` · ${formatDistanceKm(legKm)}` : "";
     item.innerHTML = `<span class="itinerary-order">${index + 1}</span>
       <span class="rank-place-icon" aria-hidden="true">${escapeHTML(place.emoji || "📍")}</span>
       <span class="rank-place-content">
         <strong class="rank-place-name">${escapeHTML(place.name)}</strong>
-        <span class="rank-place-meta">${escapeHTML(place.city)} · 차량 약 ${formatDuration(legMinutes)}${index === 0 ? " 출발지에서" : " 다음 장소까지"}</span>
+        <span class="rank-place-meta">${escapeHTML(place.city)} · ${index === 0 ? "출발지에서" : "이전 장소에서"} 차량 약 ${formatDuration(legMinutes)}${legDistance}</span>
       </span>
       <a class="rank-map-link" href="https://map.naver.com/p/search/${encodeURIComponent(place.map)}" target="_blank" rel="noopener noreferrer" aria-label="${escapeHTML(place.name)} 지도에서 보기">지도</a>
       <a class="rank-map-link" href="${nearbyFoodSearchUrl(place)}" target="_blank" rel="noopener noreferrer" aria-label="${escapeHTML(place.name)} 주변 식당 검색">식당</a>`;
@@ -1188,7 +1326,8 @@ function renderSuggestedItinerary() {
       const leg = document.createElement("li");
       leg.className = "suggested-leg";
       leg.setAttribute("aria-hidden", "true");
-      leg.textContent = `↓ 차량 약 ${formatDuration(state.suggestedItinerary[index + 1].legMinutes)}`;
+      const nextStop = state.suggestedItinerary[index + 1];
+      leg.textContent = `↓ 차량 약 ${formatDuration(nextStop.legMinutes)}${Number.isFinite(nextStop.legKm) ? ` · ${formatDistanceKm(nextStop.legKm)}` : ""}`;
       list.append(leg);
     }
   });
@@ -1410,16 +1549,47 @@ function restoreSharedItineraryFromUrl() {
   }
 }
 
+function isUsablePlace(place) {
+  return place && typeof place === "object"
+    && typeof place.name === "string" && place.name.trim().length > 0
+    && typeof place.city === "string"
+    && typeof place.map === "string"
+    && ["indoor", "outdoor"].includes(place.type)
+    && Number.isFinite(place.latitude) && Number.isFinite(place.longitude)
+    && Array.isArray(place.tags);
+}
+
+function rebuildDestinations() {
+  const usedNames = new Set(DESTINATIONS.slice(0, BASE_DESTINATION_COUNT).map((place) => place.name));
+  const dynamicPlaces = [];
+  [...state.customPlaces, ...state.discoveredPlaces].forEach((place) => {
+    if (usedNames.has(place.name)) return;
+    usedNames.add(place.name);
+    dynamicPlaces.push(place);
+  });
+  DESTINATIONS.splice(BASE_DESTINATION_COUNT, DESTINATIONS.length - BASE_DESTINATION_COUNT, ...dynamicPlaces);
+}
+
 function applyDiscoveredPlaces(places, restaurants = []) {
-  DESTINATIONS.splice(BASE_DESTINATION_COUNT);
-  places.forEach((place) => DESTINATIONS.push(place));
-  state.discoveredPlaceCount = places.length;
-  state.nearbyRestaurants = restaurants;
+  state.discoveredPlaces = (Array.isArray(places) ? places : []).filter(isUsablePlace);
+  state.discoveredPlaceCount = state.discoveredPlaces.length;
+  state.nearbyRestaurants = Array.isArray(restaurants) ? restaurants : [];
+  rebuildDestinations();
+}
+
+function normalizePlaceName(name) {
+  return String(name).toLocaleLowerCase().replace(/[\s·\-()]/g, "");
+}
+
+function placeNamesOverlap(first, second) {
+  const a = normalizePlaceName(first);
+  const b = normalizePlaceName(second);
+  return a.length >= 3 && b.length >= 3 && (a.includes(b) || b.includes(a));
 }
 
 function createDiscoveredPlaces(elements) {
   const knownNames = new Set(DESTINATIONS.slice(0, BASE_DESTINATION_COUNT)
-    .map((place) => place.name.toLocaleLowerCase().replace(/[\s·\-()]/g, "")));
+    .map((place) => normalizePlaceName(place.name)));
   const seenIds = new Set();
   const discovered = [];
   const restaurants = [];
@@ -1461,16 +1631,18 @@ function createDiscoveredPlaces(elements) {
                       : tags.amenity === "arts_centre" || tags.amenity === "library" ? "문화공간"
                         : ["park", "nature_reserve"].includes(tags.leisure) ? "공원·자연"
                           : tags.tourism === "viewpoint" ? "전망 명소" : "관광 명소";
-    const normalizedName = name.toLocaleLowerCase().replace(/[\s·\-()]/g, "");
+    if (category === "공원·자연" && MINOR_PARK_NAME_PATTERN.test(name.trim())) return;
+    const normalizedName = normalizePlaceName(name);
     if (knownNames.has(normalizedName)) return;
     const coordinates = { latitude, longitude };
-    if (DESTINATIONS.slice(0, BASE_DESTINATION_COUNT).some((place) =>
-      place.category === category
-      && distanceBetweenCoordinates(coordinates, place) < 0.15
-    )) return;
+    if (DESTINATIONS.slice(0, BASE_DESTINATION_COUNT).some((place) => {
+      const distanceKm = distanceBetweenCoordinates(coordinates, place);
+      return (place.category === category && distanceKm < 0.15)
+        || (distanceKm < 0.6 && placeNamesOverlap(place.name, name));
+    })) return;
     if (discovered.some((place) =>
       place.category === category
-      && (place.name.toLocaleLowerCase().replace(/[\s·\-()]/g, "") === normalizedName
+      && (normalizePlaceName(place.name) === normalizedName
         || distanceBetweenCoordinates(coordinates, place) < 0.15)
     )) return;
     const indoor = shoppingVenue
@@ -1579,13 +1751,70 @@ function renderPlaceDataStatus(message) {
   const updated = state.placeDataUpdatedAt
     ? new Intl.DateTimeFormat("ko-KR", { month: "numeric", day: "numeric" }).format(state.placeDataUpdatedAt)
     : null;
-  const summary = `지도 새 장소 ${count}곳${updated ? ` · ${updated} 갱신` : ""}`;
+  const customCount = state.customPlaces.length;
+  const loading = state.placeDataSource === "loading" ? " · 주변 새 장소를 찾는 중이에요(최대 1분)…" : "";
+  const summary = `기본 장소 ${BASE_DESTINATION_COUNT}곳${customCount ? ` · 직접 추가 ${customCount}곳` : ""} · 지도 새 장소 ${count}곳${updated ? ` · ${updated} 갱신` : ""}${loading}`;
   status.querySelector(".place-data-copy").textContent = message || summary;
   status.classList.toggle("has-error", Boolean(message));
   status.querySelector("#refresh-places-button").disabled = state.placeDataSource === "loading";
 }
 
+function buildOverpassPlaceQuery(origin) {
+  const center = `${origin.latitude.toFixed(5)},${origin.longitude.toFixed(5)}`;
+  const major = `around:${MAJOR_PLACE_SEARCH_RADIUS_METERS},${center}`;
+  const local = `around:${LOCAL_PLACE_SEARCH_RADIUS_METERS},${center}`;
+  const food = `around:${FOOD_SEARCH_RADIUS_METERS},${center}`;
+  return `[out:json][timeout:50];`
+    + `(nwr(${major})[name][tourism~"^(museum|zoo|aquarium|theme_park)$"];nwr(${major})[name][leisure=water_park];);out center tags 220;`
+    + `(nwr(${local})[name][tourism~"^(attraction|gallery|viewpoint)$"];`
+    + `nwr(${local})[name][historic~"^(castle|fort|palace|city_gate|archaeological_site|monument|ruins|manor|building|temple)$"];`
+    + `wr(${local})[name][leisure~"^(park|nature_reserve)$"];);out center tags 260;`
+    + `(nwr(${local})[name][shop~"^(mall|department_store)$"];nwr(${local})[name][amenity=marketplace];);out center tags 120;`
+    + `(nwr(${local})[name][amenity=arts_centre];wr(${local})[name][highway=pedestrian];nwr(${major})[name~"${POPULAR_STREET_PATTERN.source}"];);out center tags 120;`
+    + `(nwr(${food})[name][amenity=restaurant];);out center tags 300;`;
+}
+
+// 공개 Overpass 서버는 혼잡할 때 응답이 수십 초 걸리므로 여러 서버에 동시에 요청하고
+// 가장 먼저 성공한 응답을 사용합니다. 나머지 요청은 바로 취소합니다.
+let activeOverpassControllers = [];
+let placeRefreshToken = 0;
+async function fetchOverpassElements(query) {
+  // 출발지를 바꾸면 이전 지역의 요청을 취소해 서버에 요청이 쌓이지 않게 합니다(429 방지).
+  activeOverpassControllers.forEach((controller) => controller.abort());
+  const controllers = OVERPASS_ENDPOINTS.map(() => new AbortController());
+  activeOverpassControllers = controllers;
+  const timeout = setTimeout(() => controllers.forEach((controller) => controller.abort()), OVERPASS_REQUEST_TIMEOUT);
+  try {
+    return await Promise.any(OVERPASS_ENDPOINTS.map(async (endpoint, index) => {
+      try {
+        const response = await fetch(endpoint, {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8" },
+          body: new URLSearchParams({ data: query }),
+          signal: controllers[index].signal
+        });
+        if (!response.ok) throw new Error(`OpenStreetMap 응답 오류 (${response.status})`);
+        const data = await response.json();
+        if (!Array.isArray(data.elements)) throw new Error("주변 장소 데이터 형식이 올바르지 않습니다.");
+        if (!data.elements.length && data.remark) throw new Error(`OpenStreetMap 처리 오류: ${data.remark}`);
+        controllers.forEach((controller, otherIndex) => {
+          if (otherIndex !== index) controller.abort();
+        });
+        return data.elements;
+      } catch (error) {
+        if (error.name !== "AbortError") console.warn(`주변 장소를 ${endpoint}에서 불러오지 못했습니다.`, error);
+        throw error;
+      }
+    }));
+  } finally {
+    clearTimeout(timeout);
+    if (activeOverpassControllers === controllers) activeOverpassControllers = [];
+  }
+}
+
 async function refreshDiscoveredPlaces(force = false) {
+  activeOverpassControllers.forEach((controller) => controller.abort());
+  placeRefreshToken += 1;
   const requestedAreaKey = placeCacheAreaKey();
   const cached = readPlaceCache();
   const cacheIsFresh = cached && Date.now() - cached.updatedAt < PLACE_REFRESH_INTERVAL;
@@ -1601,44 +1830,321 @@ async function refreshDiscoveredPlaces(force = false) {
   renderPlaceDataStatus();
   if (!force && cacheIsFresh) return false;
 
-  const latitude = state.location.latitude.toFixed(5);
-  const longitude = state.location.longitude.toFixed(5);
-  const query = `[out:json][timeout:20];(nwr(around:${PLACE_SEARCH_RADIUS_METERS},${latitude},${longitude})[name][tourism~"^(attraction|museum|gallery|zoo|aquarium|theme_park|viewpoint)$"];nwr(around:${PLACE_SEARCH_RADIUS_METERS},${latitude},${longitude})[name][historic];nwr(around:${PLACE_SEARCH_RADIUS_METERS},${latitude},${longitude})[name][leisure~"^(water_park|park|nature_reserve)$"];);out center tags 260;(nwr(around:${PLACE_SEARCH_RADIUS_METERS},${latitude},${longitude})[name][shop~"^(mall|department_store)$"];);out center tags 100;(nwr(around:${PLACE_SEARCH_RADIUS_METERS},${latitude},${longitude})[name][amenity=marketplace];);out center tags 100;(nwr(around:${PLACE_SEARCH_RADIUS_METERS},${latitude},${longitude})[name][amenity~"^(arts_centre|library)$"];);out center tags 80;(nwr(around:${PLACE_SEARCH_RADIUS_METERS},${latitude},${longitude})[name][highway=pedestrian];);out center tags 100;(nwr(around:${PLACE_SEARCH_RADIUS_METERS},${latitude},${longitude})[name~"${POPULAR_STREET_PATTERN.source}"];);out center tags 60;(nwr(around:${FOOD_SEARCH_RADIUS_METERS},${latitude},${longitude})[name][amenity=restaurant];);out center tags 300;`;
+  const query = buildOverpassPlaceQuery(state.location);
+  const refreshToken = ++placeRefreshToken;
   let failure;
 
-  for (const endpoint of OVERPASS_ENDPOINTS) {
-    try {
-      const response = await fetch(endpoint, {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8" },
-        body: new URLSearchParams({ data: query }),
-        signal: AbortSignal.timeout(25000)
-      });
-      if (!response.ok) throw new Error(`OpenStreetMap 응답 오류 (${response.status})`);
-      const data = await response.json();
-      if (!Array.isArray(data.elements)) throw new Error("주변 장소 데이터 형식이 올바르지 않습니다.");
-      if (requestedAreaKey !== placeCacheAreaKey()) return false;
-      const { places, restaurants } = createDiscoveredPlaces(data.elements);
-      applyDiscoveredPlaces(places, restaurants);
-      state.placeDataUpdatedAt = new Date();
-      state.placeDataSource = "openstreetmap";
-      savePlaceCache(places, restaurants);
-      renderPlaceDataStatus();
-      return true;
-    } catch (error) {
-      failure = error;
-      console.warn(`주변 장소를 ${endpoint}에서 불러오지 못했습니다.`, error);
-    }
+  try {
+    const elements = await fetchOverpassElements(query);
+    if (refreshToken !== placeRefreshToken || requestedAreaKey !== placeCacheAreaKey()) return false;
+    const { places, restaurants } = createDiscoveredPlaces(elements);
+    applyDiscoveredPlaces(places, restaurants);
+    state.placeDataUpdatedAt = new Date();
+    state.placeDataSource = "openstreetmap";
+    savePlaceCache(places, restaurants);
+    renderPlaceDataStatus();
+    return true;
+  } catch (error) {
+    failure = error;
   }
 
-  if (requestedAreaKey !== placeCacheAreaKey()) return false;
+  // 더 최근 요청이 시작됐다면(출발지 변경·다시 찾기) 이 요청의 실패는 화면에 알리지 않습니다.
+  if (refreshToken !== placeRefreshToken || requestedAreaKey !== placeCacheAreaKey()) return false;
   state.placeDataSource = cached ? "cache" : "curated";
   const message = cached
     ? `지도 데이터에 연결하지 못해 ${new Intl.DateTimeFormat("ko-KR", { month: "numeric", day: "numeric" }).format(state.placeDataUpdatedAt)} 저장 목록을 보여드려요.`
-    : "새 장소를 불러오지 못했어요. 기존 장소는 계속 이용할 수 있어요.";
+    : `지도 서버가 혼잡해 주변 새 장소를 불러오지 못했어요. 기본 장소 ${BASE_DESTINATION_COUNT}곳과 직접 추가한 장소는 그대로 이용할 수 있어요.`;
   renderPlaceDataStatus(message);
   if (!cached) console.warn("주변 장소 자동 갱신에 실패했습니다.", failure);
   return false;
+}
+
+// ── 직접 추가한 장소 ──
+const EXCLUDED_SEARCH_CATEGORIES = new Set(["railway", "highway", "public_transport", "waterway", "landuse", "office"]);
+const EXCLUDED_SEARCH_AMENITIES = new Set(["parking", "parking_entrance", "bus_station", "toilets", "fuel", "atm", "bank", "townhall", "police"]);
+
+function normalizeCustomPlaces(places) {
+  if (!Array.isArray(places)) throw new Error("직접 추가한 장소 목록 형식이 올바르지 않습니다.");
+  const names = new Set();
+  return places.slice(0, MAX_CUSTOM_PLACES).flatMap((place) => {
+    if (!place || typeof place !== "object"
+      || typeof place.name !== "string" || !place.name.trim() || place.name.length > 120
+      || typeof place.city !== "string" || place.city.length > 40
+      || !["indoor", "outdoor"].includes(place.type)
+      || !Number.isFinite(place.latitude) || Math.abs(place.latitude) > 90
+      || !Number.isFinite(place.longitude) || Math.abs(place.longitude) > 180) return [];
+    const name = place.name.trim();
+    if (names.has(name)) return [];
+    names.add(name);
+    const category = typeof place.category === "string" && place.category.length <= 30 ? place.category : "관광 명소";
+    const indoor = place.type === "indoor";
+    return [{
+      name,
+      city: place.city.trim() || "주변",
+      distance: "",
+      driveMinutes: 0,
+      latitude: place.latitude,
+      longitude: place.longitude,
+      type: place.type,
+      category,
+      emoji: typeof place.emoji === "string" && place.emoji.length <= 16 ? place.emoji : "📍",
+      description: "직접 추가한 장소예요. 방문 전 운영시간과 이용 정보를 확인해 주세요.",
+      tags: ["내가 추가", category, indoor ? "실내" : "야외"],
+      weather: indoor ? "비·추위 피하기" : "맑고 온화한 날",
+      map: typeof place.map === "string" && place.map.trim() && place.map.length <= 200 ? place.map.trim() : name,
+      source: "custom",
+      ...(place.island === "jeju" || isJejuCoordinates(place.latitude, place.longitude) ? { island: "jeju" } : {})
+    }];
+  });
+}
+
+function loadCustomPlaces() {
+  try {
+    state.customPlaces = normalizeCustomPlaces(JSON.parse(localStorage.getItem(CUSTOM_PLACES_KEY) || "[]"));
+  } catch (error) {
+    console.warn("직접 추가한 장소를 불러오지 못했습니다.", error);
+    state.customPlaces = [];
+  }
+  rebuildDestinations();
+}
+
+function saveCustomPlaces() {
+  try {
+    localStorage.setItem(CUSTOM_PLACES_KEY, JSON.stringify(state.customPlaces.map(createStoredCustomPlace)));
+    return true;
+  } catch (error) {
+    console.warn("직접 추가한 장소를 이 기기에 저장하지 못했습니다.", error);
+    return false;
+  }
+}
+
+function createStoredCustomPlace(place) {
+  return {
+    name: place.name,
+    city: place.city,
+    latitude: place.latitude,
+    longitude: place.longitude,
+    type: place.type,
+    category: place.category,
+    emoji: place.emoji,
+    map: place.map,
+    ...(place.island === "jeju" ? { island: "jeju" } : {})
+  };
+}
+
+function shortKoreanCityName(address = {}) {
+  const raw = address.city || address.county || address.town || address.province || address.state || "";
+  const trimmed = String(raw).replace(/(특별자치시|특별자치도|특별시|광역시)$/, "");
+  return (trimmed.length > 2 ? trimmed.replace(/[시군]$/, "") : trimmed).slice(0, 40) || "주변";
+}
+
+function classifySearchResult(result) {
+  const category = result.category;
+  const type = result.type;
+  if (category === "tourism" && ["museum", "gallery"].includes(type)) return { category: "박물관·전시", type: "indoor", emoji: "🏛️" };
+  if (category === "tourism" && type === "aquarium") return { category: "동물·수족관", type: "indoor", emoji: "🐠" };
+  if (category === "tourism" && type === "zoo") return { category: "동물·수족관", type: "outdoor", emoji: "🦁" };
+  if ((category === "tourism" && type === "theme_park") || type === "water_park") return { category: "테마파크", type: "outdoor", emoji: "🎡" };
+  if (category === "shop" && ["mall", "department_store"].includes(type)) return { category: "쇼핑몰·백화점", type: "indoor", emoji: "🛍️" };
+  if (category === "amenity" && type === "marketplace") return { category: "시장·장터", type: "outdoor", emoji: "🧺" };
+  if (category === "amenity" && ["arts_centre", "library", "theatre", "cinema"].includes(type)) return { category: "문화공간", type: "indoor", emoji: "🎭" };
+  if (category === "historic") return { category: "역사·문화유산", type: "outdoor", emoji: "🏺" };
+  if (category === "natural" || category === "boundary"
+    || (category === "leisure" && ["park", "garden", "nature_reserve"].includes(type))) {
+    return { category: "공원·자연", type: "outdoor", emoji: "🌳" };
+  }
+  if (category === "leisure" && ["sports_centre", "fitness_centre", "bowling_alley", "ice_rink"].includes(type)) {
+    return { category: "관광 명소", type: "indoor", emoji: "📍" };
+  }
+  return { category: "관광 명소", type: "outdoor", emoji: "📍" };
+}
+
+function findExistingPlace(candidate) {
+  return DESTINATIONS.find((place) => place.name === candidate.name
+    || (distanceBetweenCoordinates(place, candidate) < 0.6 && placeNamesOverlap(place.name, candidate.name)));
+}
+
+function renderCustomPlaces() {
+  const results = document.querySelector("#custom-place-results");
+  const list = document.querySelector("#custom-place-list");
+  if (!results || !list) return;
+  document.querySelector("#custom-place-feedback").textContent = state.customPlaceFeedback;
+
+  results.replaceChildren();
+  state.customPlaceResults.forEach((result, index) => {
+    const item = document.createElement("li");
+    item.className = "ranked-place-item";
+    const existing = findExistingPlace(result);
+    const added = Boolean(existing && existing.source !== "OpenStreetMap");
+    const driveMinutes = estimateDriveMinutes(result);
+    item.innerHTML = `<span class="rank-place-icon" aria-hidden="true">${escapeHTML(result.emoji)}</span>
+      <span class="rank-place-content">
+        <strong class="rank-place-name">${escapeHTML(result.name)}</strong>
+        <span class="rank-place-meta">${escapeHTML(result.city)} · ${formatDriveTime(driveMinutes, result)} · ${result.type === "indoor" ? "실내" : "야외"} · ${escapeHTML(result.category)}</span>
+        <span class="rank-place-weather">${escapeHTML(result.address)}</span>
+      </span>
+      <button type="button" class="custom-place-action" data-custom-add="${index}" ${added ? `disabled title="${escapeHTML(existing.name)}(으)로 이미 있어요"` : ""}>${added ? "이미 있음" : "추가"}</button>`;
+    results.append(item);
+  });
+
+  list.replaceChildren();
+  if (!state.customPlaces.length) {
+    list.innerHTML = '<li class="empty-state">아직 직접 추가한 장소가 없어요. 위에서 장소 이름을 검색해 보세요.</li>';
+    return;
+  }
+  state.customPlaces.forEach((place) => {
+    const item = document.createElement("li");
+    item.className = "ranked-place-item";
+    const placeName = escapeHTML(place.name);
+    item.innerHTML = `<span class="rank-place-icon" aria-hidden="true">${escapeHTML(place.emoji)}</span>
+      <span class="rank-place-content">
+        <strong class="rank-place-name">${placeName}</strong>
+        <span class="rank-place-meta">${escapeHTML(place.city)} · ${formatDriveTime(estimateDriveMinutes(place), place)} · ${place.type === "indoor" ? "실내" : "야외"} · ${escapeHTML(place.category)}</span>
+      </span>
+      <a class="rank-map-link" href="https://map.naver.com/p/search/${encodeURIComponent(place.map)}" target="_blank" rel="noopener noreferrer" aria-label="${placeName} 지도에서 보기">지도</a>
+      <button type="button" class="custom-place-action secondary" data-custom-remove="${encodeURIComponent(place.name)}" aria-label="${placeName} 삭제">삭제</button>`;
+    list.append(item);
+  });
+}
+
+async function searchCustomPlaces(event) {
+  event.preventDefault();
+  const input = document.querySelector("#custom-place-query");
+  const button = document.querySelector("#custom-place-search");
+  const query = input.value.trim();
+  if (query.length < 2) {
+    state.customPlaceFeedback = "장소 이름을 두 글자 이상 입력해 주세요.";
+    renderCustomPlaces();
+    return;
+  }
+  const typePreference = document.querySelector("#custom-place-type").value;
+  button.disabled = true;
+  state.customPlaceResults = [];
+  state.customPlaceFeedback = "장소를 찾고 있어요…";
+  renderCustomPlaces();
+  try {
+    const params = new URLSearchParams({
+      format: "jsonv2",
+      q: query,
+      countrycodes: "kr",
+      "accept-language": "ko",
+      addressdetails: "1",
+      limit: "10"
+    });
+    const response = await fetch(`${NOMINATIM_SEARCH_ENDPOINT}?${params}`, {
+      headers: { Accept: "application/json" },
+      signal: AbortSignal.timeout(12000)
+    });
+    if (!response.ok) throw new Error(`장소 검색 응답 오류 (${response.status})`);
+    const data = await response.json();
+    if (!Array.isArray(data)) throw new Error("장소 검색 결과 형식이 올바르지 않습니다.");
+    const seen = new Set();
+    state.customPlaceResults = data.flatMap((result) => {
+      const latitude = Number(result.lat);
+      const longitude = Number(result.lon);
+      const name = String(result.name || String(result.display_name || "").split(",")[0] || "").trim().slice(0, 120);
+      if (!name || !Number.isFinite(latitude) || !Number.isFinite(longitude)
+        || EXCLUDED_SEARCH_CATEGORIES.has(result.category)
+        || (result.category === "amenity" && EXCLUDED_SEARCH_AMENITIES.has(result.type))) return [];
+      const key = `${name}|${latitude.toFixed(3)},${longitude.toFixed(3)}`;
+      if (seen.has(key)) return [];
+      seen.add(key);
+      const classified = classifySearchResult(result);
+      const city = shortKoreanCityName(result.address);
+      return [{
+        name,
+        city,
+        latitude,
+        longitude,
+        type: typePreference === "auto" ? classified.type : typePreference,
+        category: classified.category,
+        emoji: classified.emoji,
+        map: name.includes(city) || city === "주변" ? name : `${city} ${name}`,
+        address: String(result.display_name || "").split(",").slice(1, 4).join(",").trim().slice(0, 80)
+      }];
+    }).slice(0, 8);
+    state.customPlaceFeedback = state.customPlaceResults.length
+      ? `${state.customPlaceResults.length}곳을 찾았어요. 추가할 장소를 골라 주세요.`
+      : "검색 결과가 없어요. 지역명을 함께 넣거나(예: 가평 아침고요수목원) 다른 이름으로 검색해 보세요.";
+  } catch (error) {
+    console.warn("장소 검색에 실패했습니다.", error);
+    state.customPlaceFeedback = error.name === "TimeoutError"
+      ? "장소 검색 응답이 늦어요. 잠시 후 다시 시도해 주세요."
+      : "장소를 검색하지 못했어요. 인터넷 연결을 확인하고 다시 시도해 주세요.";
+  } finally {
+    button.disabled = false;
+    renderCustomPlaces();
+  }
+}
+
+function addCustomPlace(index) {
+  const result = state.customPlaceResults[index];
+  if (!result) return;
+  if (state.customPlaces.length >= MAX_CUSTOM_PLACES) {
+    state.customPlaceFeedback = `직접 추가한 장소는 최대 ${MAX_CUSTOM_PLACES}곳까지 저장할 수 있어요.`;
+    renderCustomPlaces();
+    return;
+  }
+  const existing = findExistingPlace(result);
+  if (existing && existing.source !== "OpenStreetMap") {
+    state.customPlaceFeedback = `이미 ‘${existing.name}’(으)로 목록에 있는 장소예요.`;
+    renderCustomPlaces();
+    return;
+  }
+  const [place] = normalizeCustomPlaces([result]);
+  state.customPlaces = [place, ...state.customPlaces];
+  if (!saveCustomPlaces()) {
+    state.customPlaces = state.customPlaces.slice(1);
+    state.customPlaceFeedback = "저장 공간 문제로 장소를 추가하지 못했어요.";
+    renderCustomPlaces();
+    return;
+  }
+  rebuildDestinations();
+  const driveMinutes = estimateDriveMinutes(place);
+  state.customPlaceFeedback = isWithinRecommendationDriveRange(driveMinutes)
+    ? `${place.name}을(를) 추가했어요. 추천과 거리별 목록에 함께 반영돼요.`
+    : `${place.name}을(를) 추가했어요. 현재 출발지에서 차량 3시간 밖이라, 가까운 출발 지역을 고르면 추천에 나타나요.`;
+  renderCustomPlaces();
+  renderPlaceDataStatus();
+  renderRecommendations();
+  refreshCustomPlaceRouteAndWeather();
+}
+
+function removeCustomPlace(name) {
+  const before = state.customPlaces.length;
+  state.customPlaces = state.customPlaces.filter((place) => place.name !== name);
+  if (state.customPlaces.length === before) return;
+  saveCustomPlaces();
+  rebuildDestinations();
+  state.customPlaceFeedback = `${name}을(를) 목록에서 삭제했어요. 방문 기록과 담아 둔 코스는 그대로 남아요.`;
+  renderCustomPlaces();
+  renderPlaceDataStatus();
+  renderRecommendations();
+}
+
+let customPlaceRefreshTimer = null;
+function refreshCustomPlaceRouteAndWeather() {
+  clearTimeout(customPlaceRefreshTimer);
+  customPlaceRefreshTimer = setTimeout(async () => {
+    if (state.forecast.length) await loadWeather({ keepOnError: true });
+    await fetchActualRoadTimes();
+  }, 1500);
+}
+
+function initializeCustomPlaces() {
+  loadCustomPlaces();
+  document.querySelector("#custom-place-form").addEventListener("submit", searchCustomPlaces);
+  document.querySelector("#custom-place-panel").addEventListener("click", (event) => {
+    if (!(event.target instanceof Element)) return;
+    const addButton = event.target.closest("[data-custom-add]");
+    if (addButton) {
+      addCustomPlace(Number(addButton.dataset.customAdd));
+      return;
+    }
+    const removeButton = event.target.closest("[data-custom-remove]");
+    if (removeButton) removeCustomPlace(decodeURIComponent(removeButton.dataset.customRemove));
+  });
+  renderCustomPlaces();
 }
 
 function nearbyFoodSearchUrl(place) {
@@ -1660,10 +2166,15 @@ function getNearbyRestaurants(place) {
     .slice(0, 3);
 }
 
-function formatDriveTime(minutes) {
+// place를 함께 넘기면 출발지 기준 도로 거리(km)도 표시합니다. 도로망 실측이 아니면 "약"을 붙입니다.
+function formatDriveTime(minutes, place) {
   if (minutes == null) return "항공·선박 필요";
-  if (minutes === 0) return "출발지 인근";
-  return `차량 약 ${formatDuration(minutes)}`;
+  const distance = place ? estimateDriveDistance(place) : null;
+  if (minutes === 0) {
+    return distance && distance.km >= 0.3 ? `출발지 인근 · ${formatDistanceKm(distance.km)}` : "출발지 인근";
+  }
+  const distanceLabel = distance ? ` · ${distance.measured ? "" : "약 "}${formatDistanceKm(distance.km)}` : "";
+  return `차량 약 ${formatDuration(minutes)}${distanceLabel}`;
 }
 
 function formatDuration(minutes) {
@@ -1689,7 +2200,9 @@ function naverDirectionsUrl(place) {
 }
 
 function naverWebDirectionsUrl(place) {
-  const query = `${state.location.label}에서 ${place.map} 길찾기`;
+  // 현재 위치는 "현재 위치"라는 이름으로 검색되지 않으므로 역지오코딩한 동네 이름을 씁니다.
+  const originName = state.location.areaName || state.location.label;
+  const query = `${originName}에서 ${place.map} 길찾기`;
   return `https://map.naver.com/p/search/${encodeURIComponent(query)}`;
 }
 
@@ -1887,7 +2400,8 @@ function exportVisitedBackup() {
       exportedAt: new Date().toISOString(),
       visitedPlaces: state.visitedPlaces,
       itinerary: state.itinerary,
-      family: state.family
+      family: state.family,
+      customPlaces: state.customPlaces.map(createStoredCustomPlace)
     };
     const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
     const url = URL.createObjectURL(blob);
@@ -1932,7 +2446,15 @@ async function importVisitedBackup(event) {
       importedFamily = validateFamilyBackup(data.family);
       updates.push([FAMILY_KEY, JSON.stringify(importedFamily)]);
     }
-    if (!updates.length) throw new Error("백업 파일에 불러올 방문 기록이나 코스가 없습니다.");
+    let importedCustomPlaces;
+    if (Object.prototype.hasOwnProperty.call(data, "customPlaces")) {
+      const incoming = normalizeCustomPlaces(data.customPlaces);
+      const incomingNames = new Set(incoming.map((place) => place.name));
+      importedCustomPlaces = [...incoming, ...state.customPlaces.filter((place) => !incomingNames.has(place.name))]
+        .slice(0, MAX_CUSTOM_PLACES);
+      updates.push([CUSTOM_PLACES_KEY, JSON.stringify(importedCustomPlaces.map(createStoredCustomPlace))]);
+    }
+    if (!updates.length) throw new Error("백업 파일에 불러올 방문 기록이나 코스, 직접 추가한 장소가 없습니다.");
 
     const previousValues = updates.map(([key]) => [key, localStorage.getItem(key)]);
     try {
@@ -1951,6 +2473,11 @@ async function importVisitedBackup(event) {
 
     if (importedVisits) state.visitedPlaces = { ...state.visitedPlaces, ...importedVisits };
     if (importedItinerary) state.itinerary = importedItinerary;
+    if (importedCustomPlaces) {
+      state.customPlaces = importedCustomPlaces;
+      rebuildDestinations();
+      renderPlaceDataStatus();
+    }
     if (importedFamily) {
       state.family = importedFamily;
       document.querySelector("#adult-count").value = String(state.family.adults);
@@ -1982,13 +2509,13 @@ function selectRecommendationPlaces(rankedPlaces, day) {
     const visitedDate = state.visitedPlaces[place.name]?.date;
     return !visitedDate || Date.now() - Date.parse(`${visitedDate}T00:00:00`) >= 90 * 24 * 60 * 60 * 1000;
   });
-  const pool = unseenPlaces.length >= 3
+  const pool = unseenPlaces.length >= RECOMMENDATION_CARD_COUNT
     ? unseenPlaces
     : nearbyPlaces;
-  if (pool.length <= 3) return pool;
+  if (pool.length <= RECOMMENDATION_CARD_COUNT) return pool;
 
   const cycle = getRecommendationCycle(day);
-  const windowSize = Math.min(9, pool.length);
+  const windowSize = Math.min(RECOMMENDATION_CARD_COUNT * 3, pool.length);
   const seed = dateSeed(recommendationCycleKey(day));
   const start = (seed + cycle * windowSize) % pool.length;
   const window = Array.from({ length: windowSize }, (_, index) => pool[(start + index) % pool.length]);
@@ -1997,7 +2524,7 @@ function selectRecommendationPlaces(rankedPlaces, day) {
   );
   const selected = [];
 
-  while (selected.length < 3 && window.length) {
+  while (selected.length < RECOMMENDATION_CARD_COUNT && window.length) {
     let bestIndex = 0;
     let bestUtility = -Infinity;
     window.forEach((candidate, index) => {
@@ -2104,7 +2631,8 @@ function nextWeekendDate(days) {
   const day = today.getDay();
   const daysUntilSaturday = (6 - day + 7) % 7;
   const preferred = new Date(today);
-  preferred.setDate(today.getDate() + (daysUntilSaturday === 0 && day === 6 ? 0 : daysUntilSaturday));
+  // 일요일에는 다음 주 토요일이 아니라 오늘(일요일)을 우선 선택합니다.
+  preferred.setDate(today.getDate() + (day === 0 ? 0 : daysUntilSaturday));
   const matching = days.find((item) => item.date === toISODate(preferred));
   if (matching) return matching.date;
   return days[0]?.date || null;
@@ -2331,7 +2859,7 @@ function renderRankedPlaces(rankedPlaces, fallbackDay) {
       <span class="rank-place-icon" aria-hidden="true">${place.emoji}</span>
       <span class="rank-place-content">
         <strong class="rank-place-name">${placeName}</strong>
-        <span class="rank-place-meta">${city} · ${formatDriveTime(driveMinutes)} · ${place.type === "indoor" ? "실내" : "야외"}${place.category ? ` · ${escapeHTML(place.category)}` : ""}</span>
+        <span class="rank-place-meta">${city} · ${formatDriveTime(driveMinutes, place)} · ${place.type === "indoor" ? "실내" : "야외"}${place.category ? ` · ${escapeHTML(place.category)}` : ""}</span>
         <span class="rank-place-weather">${icon} ${condition} · ${Math.round(day.min)}~${Math.round(day.max)}° · 비 ${Math.round(day.rain)}%</span>
       </span>
       <span class="rank-place-score">추천 ${score}점</span>
@@ -2353,9 +2881,9 @@ function renderDistanceRecommendations(rankedPlaces, fallbackDay) {
       && (state.distanceLimitHours === 1 ? item.driveMinutes >= 0 : item.driveMinutes > minMinutes)
       && item.driveMinutes <= maxMinutes
       && matchesPlaceFilter(item.place));
-  const nearbyPlaces = availablePlaces.slice(0, 4);
+  const nearbyPlaces = availablePlaces.slice(0, 14);
   EVERYDAY_PLACE_CATEGORIES.forEach((category) => {
-    if (nearbyPlaces.length >= 8 || nearbyPlaces.some((item) => item.place.category === category)) return;
+    if (nearbyPlaces.length >= 20 || nearbyPlaces.some((item) => item.place.category === category)) return;
     const categoryPlace = availablePlaces.find((item) => item.place.category === category);
     if (categoryPlace) nearbyPlaces.push(categoryPlace);
   });
@@ -2365,7 +2893,7 @@ function renderDistanceRecommendations(rankedPlaces, fallbackDay) {
     button.setAttribute("aria-pressed", String(Number(button.dataset.maxHours) === state.distanceLimitHours));
   });
   document.querySelector("#distance-intro").textContent =
-    `${state.location.label} 출발 · 차량 ${timeRangeLabel} 거리의 장소예요. 앞 시간대에 포함된 장소는 제외했어요.`;
+    `${state.location.label} 출발 · 차량 ${timeRangeLabel} 거리 장소 ${availablePlaces.length}곳 중 추천순 ${nearbyPlaces.length}곳이에요. 앞 시간대에 포함된 장소는 제외했어요.`;
 
   if (!nearbyPlaces.length) {
     const emptyMessage = state.indoorOnly
@@ -2386,7 +2914,7 @@ function renderDistanceRecommendations(rankedPlaces, fallbackDay) {
       <span class="rank-place-icon" aria-hidden="true">${place.emoji}</span>
       <span class="rank-place-content">
         <strong class="rank-place-name">${placeName}</strong>
-        <span class="rank-place-meta">${city} · ${formatDriveTime(driveMinutes)} · ${place.type === "indoor" ? "실내" : "야외"}${place.category ? ` · ${escapeHTML(place.category)}` : ""}</span>
+        <span class="rank-place-meta">${city} · ${formatDriveTime(driveMinutes, place)} · ${place.type === "indoor" ? "실내" : "야외"}${place.category ? ` · ${escapeHTML(place.category)}` : ""}</span>
         <span class="rank-place-weather">${icon} ${condition} · 추천 ${score}점</span>
       </span>
       <a class="rank-map-link" href="${naverDirectionsUrl(place)}" data-fallback-url="${naverWebDirectionsUrl(place)}" target="_blank" rel="noopener noreferrer" aria-label="${placeName} 네이버 자동차 길찾기">길찾기</a>
@@ -2431,7 +2959,7 @@ function renderWeatherAlternatives(rankedPlaces, day) {
     item.innerHTML = `<span class="place-emoji" aria-hidden="true">${escapeHTML(place.emoji)}</span>
       <div class="weather-alternative-content">
         <strong>${placeName}</strong>
-        <span>${city} · ${formatDriveTime(driveMinutes)}${place.category ? ` · ${escapeHTML(place.category)}` : ""}</span>
+        <span>${city} · ${formatDriveTime(driveMinutes, place)}${place.category ? ` · ${escapeHTML(place.category)}` : ""}</span>
         <span>${icon} ${condition} · 비 ${Math.round(destinationDay.rain)}%</span>
       </div>
       ${foodLink}
@@ -2442,6 +2970,7 @@ function renderWeatherAlternatives(rankedPlaces, day) {
 }
 
 function renderRecommendations() {
+  renderCustomPlaces();
   renderItinerary();
   renderSuggestedItinerary();
   renderVisitedPlaces();
@@ -2496,9 +3025,9 @@ function renderRecommendations() {
         <div class="place-emoji" aria-hidden="true">${place.emoji}</div>
         <div class="place-content">
           <div class="place-title-row"><h3 class="place-title">${placeName}</h3><span class="score-pill">추천 ${score}점</span></div>
-          <p class="place-meta">${city} · ${formatDriveTime(driveMinutes)} · ${place.type === "indoor" ? "실내" : "야외"}${place.category ? ` · ${escapeHTML(place.category)}` : ""}</p>
-          <p class="place-description">${place.description}</p>
-          <div class="place-tags">${place.tags.map((tag) => `<span class="tag">${tag}</span>`).join("")}</div>
+          <p class="place-meta">${city} · ${formatDriveTime(driveMinutes, place)} · ${place.type === "indoor" ? "실내" : "야외"}${place.category ? ` · ${escapeHTML(place.category)}` : ""}</p>
+          <p class="place-description">${escapeHTML(place.description)}</p>
+          <div class="place-tags">${place.tags.map((tag) => `<span class="tag">${escapeHTML(tag)}</span>`).join("")}</div>
         </div>
       </div>
       <div class="place-reason">${localWeatherSummary}<br>${reason}</div>
@@ -2596,17 +3125,34 @@ function initializeViewNavigation() {
   activateView(initialView, false);
 }
 
-async function loadWeather() {
+// 날씨 모델 해상도를 고려해 약 5km 격자로 목적지를 묶어 요청 수와 주소 길이를 줄입니다.
+const MAX_WEATHER_GRID_POINTS = 180;
+
+function weatherGridKey(place) {
+  return `${(Math.round(place.latitude * 20) / 20).toFixed(2)}:${(Math.round(place.longitude * 20) / 20).toFixed(2)}`;
+}
+
+function weatherGridPoint(place) {
+  return {
+    key: weatherGridKey(place),
+    latitude: Math.round(place.latitude * 20) / 20,
+    longitude: Math.round(place.longitude * 20) / 20
+  };
+}
+
+async function loadWeather(options = {}) {
+  const keepOnError = options.keepOnError === true && state.forecast.length > 0;
+  const previousStatus = weatherStatus.textContent;
   const requestId = ++state.weatherRequestId;
   weatherStatus.className = "weather-status";
   weatherStatus.textContent = `${state.location.label} 주말 예보와 목적지별 예보를 불러오는 중이에요…`;
   document.querySelector("#refresh-button").disabled = true;
   const weatherPlaces = [...new Map(DESTINATIONS
-    .filter((place) => {
-      const driveMinutes = estimateDriveMinutes(place);
-      return isWithinRecommendationDriveRange(driveMinutes);
-    })
-    .map((place) => [`${place.latitude.toFixed(4)}:${place.longitude.toFixed(4)}`, place])).values()];
+    .map((place) => ({ place, driveMinutes: estimateDriveMinutes(place) }))
+    .filter(({ driveMinutes }) => isWithinRecommendationDriveRange(driveMinutes))
+    .sort((first, second) => first.driveMinutes - second.driveMinutes)
+    .map(({ place }) => [weatherGridKey(place), weatherGridPoint(place)])).values()]
+    .slice(0, MAX_WEATHER_GRID_POINTS);
   const locations = [state.location, ...weatherPlaces];
   const params = new URLSearchParams({
     latitude: locations.map((location) => location.latitude).join(","),
@@ -2639,15 +3185,15 @@ async function loadWeather() {
     state.forecast.forEach((day) => {
       day.ampm = summarizeAmPmWeather(weatherLocations[0].hourly, day.date);
     });
-    const weatherByCoordinates = new Map(weatherPlaces.map((place, index) => [
-      `${place.latitude.toFixed(4)}:${place.longitude.toFixed(4)}`,
+    const weatherByCoordinates = new Map(weatherPlaces.map((point, index) => [
+      point.key,
       weatherLocations[index + 1]?.daily?.time?.length
         ? parseDailyWeather(weatherLocations[index + 1].daily)
         : new Map()
     ]));
     state.destinationWeather = new Map(DESTINATIONS.map((place) => [
       place.name,
-      weatherByCoordinates.get(`${place.latitude.toFixed(4)}:${place.longitude.toFixed(4)}`) || new Map()
+      weatherByCoordinates.get(weatherGridKey(place)) || new Map()
     ]));
     state.airQualityAvailable = false;
     const airParams = new URLSearchParams({
@@ -2677,9 +3223,9 @@ async function loadWeather() {
       };
       const homeAqi = parseDailyAqi(airLocations[0]?.hourly);
       state.forecast.forEach((day) => { day.aqi = homeAqi.get(day.date) ?? null; });
-      weatherPlaces.forEach((place, index) => {
+      weatherPlaces.forEach((point, index) => {
         const localAqi = parseDailyAqi(airLocations[index + 1]?.hourly);
-        const localWeather = state.destinationWeather.get(place.name);
+        const localWeather = weatherByCoordinates.get(point.key);
         localWeather?.forEach((day) => { day.aqi = localAqi.get(day.date) ?? null; });
       });
       state.airQualityAvailable = homeAqi.size > 0;
@@ -2691,6 +3237,12 @@ async function loadWeather() {
     renderRecommendations();
   } catch (error) {
     if (requestId !== state.weatherRequestId) return;
+    if (keepOnError) {
+      console.warn("새 장소의 현지 예보를 불러오지 못해 기존 예보를 유지합니다.", error);
+      weatherStatus.textContent = previousStatus;
+      renderRecommendations();
+      return;
+    }
     weatherStatus.className = "weather-status error";
     weatherStatus.textContent = error.name === "TimeoutError"
       ? "날씨 응답이 늦어지고 있어요. 잠시 후 다시 시도해 주세요."
@@ -2710,50 +3262,161 @@ async function refreshPlacesForCurrentLocation(force = false) {
   state.destinationWeather.clear();
   const placeRefresh = refreshDiscoveredPlaces(force);
   await loadWeather();
-  const placesUpdated = await placeRefresh;
-  if (placesUpdated && state.forecast.length) renderRecommendations();
+  // 지도 서버(Overpass)는 응답이 최대 1분까지 늦을 수 있으므로 기다리지 않고 도로 시간을 먼저 조회합니다.
   await fetchActualRoadTimes();
+  const placesUpdated = await placeRefresh;
+  if (placesUpdated) {
+    // 새로 찾은 장소도 현지 예보와 실제 도로 시간을 쓰도록 한 번 더 불러옵니다(주 1회 갱신 시에만 발생).
+    await loadWeather({ keepOnError: true });
+    await fetchActualRoadTimes();
+  }
 }
 
-function useCurrentLocation() {
+function nearestRegionId(latitude, longitude) {
+  return REGIONS
+    .map((region) => ({ id: region.id, km: distanceBetweenCoordinates({ latitude, longitude }, region) }))
+    .sort((first, second) => first.km - second.km)[0].id;
+}
+
+function createCurrentLocation(latitude, longitude, areaName = "") {
+  return {
+    latitude,
+    longitude,
+    label: areaName ? `현재 위치 · ${areaName}` : "현재 위치",
+    areaName,
+    isCurrent: true,
+    ...(isJejuCoordinates(latitude, longitude) ? { island: "jeju" } : {})
+  };
+}
+
+function saveCurrentLocation(location, accuracy) {
+  try {
+    localStorage.setItem(CURRENT_LOCATION_KEY, JSON.stringify({
+      latitude: location.latitude,
+      longitude: location.longitude,
+      areaName: location.areaName || "",
+      accuracy: Number.isFinite(accuracy) ? Math.round(accuracy) : null,
+      savedAt: Date.now()
+    }));
+    localStorage.setItem("weekend-outing-region", "current");
+  } catch (error) {
+    console.warn("현재 위치를 이 기기에 저장하지 못했습니다.", error);
+  }
+}
+
+function loadSavedCurrentLocation() {
+  try {
+    const saved = JSON.parse(localStorage.getItem(CURRENT_LOCATION_KEY) || "null");
+    if (!saved || !Number.isFinite(saved.latitude) || !Number.isFinite(saved.longitude)
+      || Math.abs(saved.latitude) > 90 || Math.abs(saved.longitude) > 180
+      || !Number.isFinite(saved.savedAt) || Date.now() - saved.savedAt > CURRENT_LOCATION_MAX_AGE_MS) return null;
+    const areaName = typeof saved.areaName === "string" ? saved.areaName.slice(0, 30) : "";
+    return createCurrentLocation(saved.latitude, saved.longitude, areaName);
+  } catch (error) {
+    console.warn("저장된 현재 위치를 불러오지 못했습니다.", error);
+    return null;
+  }
+}
+
+// 좌표 → "분당구"·"해운대구" 같은 동네 이름. 실패해도 위치 기능에는 영향이 없습니다.
+async function reverseGeocodeAreaName(latitude, longitude) {
+  try {
+    const params = new URLSearchParams({
+      format: "jsonv2",
+      lat: String(latitude),
+      lon: String(longitude),
+      zoom: "14",
+      "accept-language": "ko"
+    });
+    const response = await fetch(`https://nominatim.openstreetmap.org/reverse?${params}`, {
+      headers: { Accept: "application/json" },
+      signal: AbortSignal.timeout(8000)
+    });
+    if (!response.ok) return "";
+    const address = (await response.json())?.address || {};
+    const area = address.borough || address.city_district || address.town || address.county || address.city || address.suburb || "";
+    return String(area).slice(0, 30);
+  } catch (error) {
+    console.warn("현재 위치의 동네 이름을 확인하지 못했습니다.", error);
+    return "";
+  }
+}
+
+function applyStartLocation(location) {
+  state.location = location;
+  state.routeRequestId += 1;
+  state.roadDurationMap.clear();
+  state.roadDistanceMap.clear();
+  state.suggestedItinerary = [];
+  document.querySelector("#suggested-itinerary-summary").textContent =
+    "출발 위치가 바뀌었어요. 코스를 다시 추천받아 보세요.";
+  state.selectedDate = null;
+  state.forecast = [];
+  state.destinationWeather.clear();
+  renderDays();
+  renderRecommendations();
+  renderEvents();
+  refreshPlacesForCurrentLocation();
+}
+
+function getPosition(options) {
+  return new Promise((resolve, reject) => navigator.geolocation.getCurrentPosition(resolve, reject, options));
+}
+
+async function useCurrentLocation() {
   if (!navigator.geolocation) {
     weatherStatus.className = "weather-status error";
     weatherStatus.textContent = "이 브라우저에서는 현재 위치를 사용할 수 없어요. 위에서 출발 지역을 선택해 주세요.";
     return;
   }
+  if (!window.isSecureContext) {
+    weatherStatus.className = "weather-status error";
+    weatherStatus.textContent = "현재 위치는 HTTPS 주소(또는 localhost)에서만 사용할 수 있어요. 출발 지역을 직접 선택해 주세요.";
+    return;
+  }
+  const button = document.querySelector("#location-button");
+  button.disabled = true;
   weatherStatus.className = "weather-status";
   weatherStatus.textContent = "현재 위치를 확인하고 있어요…";
-  navigator.geolocation.getCurrentPosition(
-    (position) => {
-      state.location = {
-        latitude: position.coords.latitude,
-        longitude: position.coords.longitude,
-        label: "현재 위치",
-        island: isJejuCoordinates(position.coords.latitude, position.coords.longitude) ? "jeju" : undefined
-      };
-      state.routeRequestId += 1;
-      state.roadDurationMap.clear();
-      state.suggestedItinerary = [];
-      document.querySelector("#suggested-itinerary-summary").textContent =
-        "출발 지역이 바뀌었어요. 코스를 다시 추천받아 보세요.";
-      document.querySelector("#location-select").value = "current";
-      state.selectedDate = null;
-      state.forecast = [];
-      state.destinationWeather.clear();
-      renderDays();
+  try {
+    let position;
+    try {
+      // 먼저 GPS 수준의 정밀 위치를 시도하고, 실내 등에서 늦어지면 네트워크 위치로 다시 시도합니다.
+      position = await getPosition({ enableHighAccuracy: true, timeout: 12000, maximumAge: 60000 });
+    } catch (error) {
+      if (error.code === 1) throw error;
+      position = await getPosition({ enableHighAccuracy: false, timeout: 10000, maximumAge: 300000 });
+    }
+    const { latitude, longitude, accuracy } = position.coords;
+    const location = createCurrentLocation(latitude, longitude);
+    state.locationRegion = nearestRegionId(latitude, longitude);
+    document.querySelector("#location-select").value = "current";
+    saveCurrentLocation(location, accuracy);
+    applyStartLocation(location);
+    const accuracyNote = Number.isFinite(accuracy) && accuracy > 1000
+      ? ` 위치 오차가 약 ${formatDistanceKm(accuracy / 1000)}로 커서 이동시간이 다소 다를 수 있어요.`
+      : "";
+    weatherStatus.textContent = `현재 위치 기준으로 날씨와 차량 이동시간을 다시 계산하고 있어요.${accuracyNote}`;
+
+    const areaName = await reverseGeocodeAreaName(latitude, longitude);
+    if (areaName && state.location === location) {
+      location.areaName = areaName;
+      location.label = `현재 위치 · ${areaName}`;
+      saveCurrentLocation(location, accuracy);
+      document.querySelector("#location-select option[value='current']").textContent = location.label;
       renderRecommendations();
-      renderEvents();
-      refreshPlacesForCurrentLocation();
-    },
-    () => {
-      weatherStatus.className = "weather-status error";
-      weatherStatus.textContent = "위치 권한을 확인할 수 없어요. 출발 지역을 직접 선택해 주세요.";
-    },
-    { enableHighAccuracy: false, timeout: 10000, maximumAge: 300000 }
-  );
+    }
+  } catch (error) {
+    weatherStatus.className = "weather-status error";
+    weatherStatus.textContent = error?.code === 1
+      ? "위치 권한이 꺼져 있어요. 브라우저 설정에서 위치 권한을 허용하거나 출발 지역을 직접 선택해 주세요."
+      : "현재 위치를 확인하지 못했어요. 잠시 후 다시 시도하거나 출발 지역을 직접 선택해 주세요.";
+  } finally {
+    button.disabled = false;
+  }
 }
 
-document.querySelector("#refresh-button").addEventListener("click", loadWeather);
+document.querySelector("#refresh-button").addEventListener("click", () => loadWeather());
 document.querySelector("#refresh-places-button").addEventListener("click", () => {
   document.querySelector("#refresh-places-button").disabled = true;
   document.querySelector("#place-data-status .place-data-copy").textContent = "주변의 새 장소를 찾고 있어요…";
@@ -2806,6 +3469,7 @@ loadVisitedPlaces();
 loadItinerary();
 initializeIndoorFilter();
 initializeFamilySettings();
+initializeCustomPlaces();
 restoreSharedItineraryFromUrl();
 initializeViewNavigation();
 renderVisitedPlaces();
